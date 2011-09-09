@@ -17,8 +17,6 @@ $vehicleNode = node_load($vehicleNodeInfo[0]['nid']);
         <img id="front-page-slideshow-next" src="/<?php echo file_directory_path();?>/images/frontPageSlideshow/previousArrow.png"/>
         <img id="front-page-slideshow-previous" src="/<?php echo file_directory_path();?>/images/frontPageSlideshow/nextArrow.png"/>
     </div>
-    <a id="front-page-slideshow-view-more" href="/<?php echo $vehicleNode->path;?>"> <img src="/<?php echo file_directory_path();?>/images/frontPageSlideshow/moreButton.png"/> </a>
-    <div id="front-page-bottom-text">
-        <?php echo $node->field_front_slideshow_text[0]['value'];?>
-    </div>
+    
+    
 </div>
