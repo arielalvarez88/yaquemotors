@@ -32,7 +32,7 @@
 
 <a class="filter-brand-modifier-button" id="vehicles-agency-all-brands" value="todas" >TODAS LAS MARCAS</a>
         <a id="vehicles-agency-make-appointment"></a>
-        <a id="vehicles-agency-parts"></a>
+        <a id="vehicles-agency-parts" href="/tienda-de-repuestos"></a>
     </div>
 
     <?php require dirname(__FILE__).'/bigVerticalDivisor.php';?>
