@@ -1,0 +1,42 @@
+<?php
+require dirname(__FILE__).'/../../../../includes/paths.php';
+
+function front_page_news_perm() {
+    return array('view_front_page_news');
+}
+
+
+
+function front_page_news_block($op='list', $delta=0, $edit=array()) 
+{
+    $block = array();
+    if ($op == 'list') {
+
+        $block[0]["info"] = t('Front Page News Block');
+        return $block;
+    } 
+    
+    elseif ($op == 'view') {
+        $block['subject'] = 'Noticias';
+        $block['content'] = '';
+        $newsNodesResults = db_query("SELECT nid FROM {node} where type='%s'","front_news");
+
+         $block['content'].= '<div id="news-container">';
+         while($result = db_fetch_object($newsNodesResults))
+         {
+             $newsNode = node_load($result->nid);
+             $newsText = $newsNode->field_front_news_body[0]['value'];
+             
+             $newsTeaser = strlen($newsText) > 30 ? substr($newsText,0,30).'...<br/>'.'<a href="'.$newsNode->path.'"></a>' : $newsText;
+             
+             $block['content'] .=  '<p class="news">'.$newsTeaser.'</p>';
+
+         }
+         $block['content'].='</div>';
+           return $block;
+        }
+        
+    
+    
+}
+

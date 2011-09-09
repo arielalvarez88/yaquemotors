@@ -1,0 +1,232 @@
+<?php
+// $Id: jquery_colorpicker.module,v 1.6 2011/01/20 09:25:05 hakulicious Exp $
+
+/**
+ * Implementation of hook_perm()
+ */
+function jquery_colorpicker_perm()
+{
+	return array
+	(
+		'administer jquery colorpicker'
+	);
+}
+
+/**
+ * Implementation of hook_init()
+ * This function will check to see if required files exist, and if they do not,
+ * it outputs an error message for any users who have the required permissions to 
+ * administer the module.
+ */
+function jquery_colorpicker_init()
+{
+	// Set a variable indicating that this page does NOT require IE6 code to be added to the head. Then for pages where the code is required (on any form that has
+	// the jquery element in it, when IE6 support is enabled) it will be set in the theme function for the element.
+	variable_set('jquery_colorpicker_ie6_page', 0);
+}
+
+/**
+ * Implementation of hook_menu()
+ */
+function jquery_colorpicker_menu()
+{
+	// This creates the URL for the settings page.
+	$menu['admin/settings/jquery_colorpicker'] = array
+	(
+		'title' => 'Jquery Colorpicker',
+		'description' => 'Settings page for jquery colorpicker',
+		'page callback' => 'drupal_get_form',
+		'page arguments' => array('jquery_colorpicker_settings'),
+		'access arguments' => array('administer jquery colorpicker'),
+	);
+	return $menu;
+}
+
+/**
+ * Implementation of hook_elements()
+ */
+function jquery_colorpicker_elements()
+{
+	// this is the definition for the new form API element
+	return array
+	(
+		'colorpicker' => array
+		(
+			'#input' => TRUE,
+			'#process' => array('jquery_colorpicker_process'),
+			'#element_validate' => array('jquery_colorpicker_validate'),
+			'#jquery_colorpicker_background' => 'select.png',
+		),
+	);
+}
+
+/**
+ * Implementation of hook_theme()
+ */
+function jquery_colorpicker_theme()
+{
+	return array
+	(
+		'colorpicker' => array
+		(
+			'arguments' => array
+			(
+				'element' => NULL
+			),
+		),
+	);
+}
+
+/**
+ * callback theme for the new form element
+ */
+function theme_colorpicker($element)
+{
+	$class = array('form-colorpicker');
+	$output = '';
+	$path = drupal_get_path('module', 'jquery_colorpicker') . '/';
+	// First we add the 3rd party CSS files and JS files that are required for the form elmeent
+	drupal_add_css($path . 'colorpicker/css/colorpicker.css');
+	drupal_add_js($path . 'colorpicker/js/colorpicker.js');
+	// Then we add the JS file required by this module
+	drupal_add_js($path . 'js/jquery_colorpicker.js');
+	// If IE6 support has been enabled, we set a variable that will be used later during page rendering to indicate that 
+	// IE6 specific code should be added to the <head> of the page.
+	if(variable_get('jquery_colorpicker_ie6_support', 0))
+	{
+		variable_set('jquery_colorpicker_ie6_page', 1);
+	}
+	// Next we decide what background to use to render the element. In order to ensure the background exists, we create an array of
+	// the two possibilities, that we will use to compare the value submitted in the Form API definition
+	$backgrounds = array('select.png', 'select2.png');
+	// Now we check to see if the value in the Form API definition is valid. If it is, we use it, if it's not, we use a default value
+	$background = (in_array($element['#jquery_colorpicker_background'], $backgrounds)) ? $element['#jquery_colorpicker_background'] : 'select.png';
+	// Since we know the background, we can then get the URL of it to pass to the javascript function
+	$background_url = base_path() . $path .'colorpicker/images/' . $background;
+	// next we determine what the default value for the form element is. This will also be passed to the javascript function.
+	if(isset($element['#value']))
+	{
+		$default_color = '#' . $element['#value'];
+	}
+	elseif(isset($element['#default_value']) && strlen($element['#default_value']) == 6 && preg_match('/^[0-9a-f]{6}$/i', $element['#default_value']))
+	{
+		$default_color = '#' . strtolower($element['#default_value']);
+	}
+	else
+	{
+		$default_color =  "#ffffff";
+	}
+	// Finally we build an array of all the settings to be used by the javascript function
+	$settings = array('ids' => array($element['#id']), 'backgrounds' => array($background_url), 'backgroundColors' => array($default_color), $element['#id'] . '-defaultColor' => $default_color);
+
+	// And we pass the settings in a namespace to the Javascript
+	drupal_add_js(array('jqueryColorpicker' => $settings), 'setting');
+
+	// Over the next few lines we build the output of the element in HTML and to send to the browser
+	_form_set_class($element, $class);
+
+	if (isset($element['#field_prefix']))
+	{
+		$output .= '<span class="field-prefix">'. $element['#field_prefix'] .'</span> ';
+	}
+
+	$output .= '<div id="' . $element['#id'] . '-inner_wrapper" class="inner_wrapper">';
+	$output .= '<div class="color_picker" style="background-color:' . $default_color . '">';
+	$output .= '<span class="hash">#</span>';
+	$output .= '<input type="text"'. ' maxlength="6"' .' name="'. $element['#name'] .'" id="'. $element['#id'] .'"'. ' size="7"' .' value="'. check_plain($element['#value']) .'"'. drupal_attributes($element['#attributes']) .' />';
+	$output .= '<div class="description">' . t('Enter a hexidecimal color value. Enabling javascript will replace this input with a graphical color selector.') . '</div>';
+	$output .= '</div>';
+	$output .= '</div>';
+
+	if (isset($element['#field_suffix']))
+	{
+		$output .= '<span class="field-suffix">'. $element['#field_suffix'] .'</span>';
+	}
+
+	// and finally we pass the newly built element output to the form API to take care of the rest of the rendering
+	return theme('form_element', $element, $output);
+
+}
+
+/**
+ * Validation functinon for the new form element
+ */
+function jquery_colorpicker_validate($element, &$form_state)
+{
+	// All values must be 6 characters in length (will probably add support for 3 character definitions and predifined colors in version 2
+	if($element['#value'] != '' && strlen($element['#value']) != 6)
+	{
+		form_error($element, t('Color values must be exactly six characters in length'));
+	}
+	// All values must not include the hash symbol
+	elseif($element['#value'] != '' && preg_match('/^#/', $element['#value']))
+	{
+		form_error($element, t('Do not include the hash symbol (#) when entering colors'));
+	}
+	// All values must be hexadecimal values
+	elseif($element['#value'] != '' && !preg_match('/^[0-9a-f]{6}$/i', $element['#value']))
+	{
+		form_error($element, t("You entered an invalid value for the color. Colors must be hexadecimal, and can only contain the characters '0' to '9' and 'a' to 'f'."));
+	}
+}
+
+/**
+ * Implementation of theme_preprocess_page()
+ * This function adds IE6 conditional comments to the <head> tags of the theme when IE6 support has been enabled for the module
+ */
+function jquery_colorpicker_preprocess_page(&$vars)
+{
+	// First we check to see if IE6 support has been enabled for the module. The following code is only executed when IE6 support is enabled
+	if(variable_get('jquery_colorpicker_ie6_page', 0))
+	{
+		// we need to add a conditional comment with some styles, and another conditional comment with some scripts. This is taken care of below.
+		$path = base_path() . drupal_get_path('module', 'jquery_colorpicker') . '/twin_helix/';
+		$path_to_pngfix = $path . 'iepngfix.htc';
+		$path_to_tilebg = $path . 'iepngfix_tilebg.js';
+		$vars['styles'] .= PHP_EOL .
+							'<!--[if lt IE 7]>' .
+							PHP_EOL .
+							'<style type="text/css">' .
+							PHP_EOL .
+							'.inner_wrapper, .color_picker, .colorpicker_color div, .colorpicker_color div div  { behavior: url("' . $path_to_pngfix . '") } ' .
+							PHP_EOL . 
+							'</style>' .
+							PHP_EOL .
+							'<![endif]-->' .
+							PHP_EOL;
+		$vars['scripts'] .= PHP_EOL .
+							'<!--[if lt IE 7]>' .
+							PHP_EOL .
+							'<script type="text/javascript" src="' . $path_to_tilebg . '"></script>' .
+							PHP_EOL .
+							'<![endif]-->' .
+							PHP_EOL;
+	}
+}
+
+/**
+ * Callback function for the URL admin/settings/jquery_colorpicker
+ * This function creates the settings page for the module
+ */
+function jquery_colorpicker_settings()
+{
+	// First we create a fieldset to make it all look nice. If ever other settings are enabled, this will keep the page looking nice
+	$form['ie6'] = array
+	(
+		'#type' => 'fieldset',
+		'#title' => t('Internet Explorer 6'),
+	);
+	// Next we add a description of the necessary steps to enable IE6 support
+	$form['ie6']['description'] = array
+	(
+		'#value' => '<p>' . t('Internet Explorer 6 does not support transparencies in .png files. They are rendered with a non-transparent blue glow anywhere where there should be transparency. Since jquery colorpicker relies on transparent .png files to work, this means that out of the box, the jquery colorpicker will not work with IE6. You can solve this using the following steps:') . '</p><ol><li>' . t('Inside the jquery colorpicker module folder (generally located at sites/all/modules), create a new folder named "twin_helix". If the jquery colorpicker module is in the standard location, this means you will have the folder sites/all/modules/twin_helix') . '</li><li>' . t('Download the iepngfix.zip from !twin_helix', array('!twin_helix' => l('Twin Helix', 'http://www.twinhelix.com/css/iepngfix/', array('absolute' => TRUE)))) . '</li><li>' . t('Unpack the zip file, and place the following three files into the twin_helix folder you created in step 1:') . '<ul><li>iepngfix.htc</li><li>blank.gif</li><li>iepngfix_tilebg.js</li></ul></li><li>' . t('Check the box below, and save this page') . '</li></ol>',
+	);
+	// And finally we add a checkbox so the user can indicate that IE6 should be supported
+	$form['ie6']['jquery_colorpicker_ie6_support'] = array
+	(
+		'#type' => 'checkbox',
+		'#title' => t('Support IE6'),
+		'#default_value' => variable_get('jquery_colorpicker_ie6_support', 0),
+	);
+	return system_settings_form($form);
+}

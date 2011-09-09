@@ -1,0 +1,3 @@
+name = Front Page News
+description = Shows the front_news nodes teaser in front page.
+core = 6.x

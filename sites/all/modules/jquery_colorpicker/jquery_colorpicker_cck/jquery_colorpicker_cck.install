@@ -1,0 +1,39 @@
+<?php
+// $Id: jquery_colorpicker_cck.install,v 1.1.2.1 2011/01/24 05:25:54 hakulicious Exp $
+
+/**
+ * Implementation of hook_install().
+ */
+function jquery_colorpicker_cck_install() {
+  drupal_load('module', 'content');
+  content_notify('install', 'jquery_colorpicker_cck');
+  db_query('UPDATE {system} SET weight = 1 WHERE name = "jquery_colorpicker_cck"');
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function jquery_colorpicker_cck_uninstall() {
+  drupal_load('module', 'content');
+  content_notify('uninstall', 'jquery_colorpicker_cck');
+}
+
+/**
+ * Implementation of hook_enable().
+ *
+ * Notify content module when this module is enabled.
+ */
+function jquery_colorpicker_cck_enable() {
+  drupal_load('module', 'content');
+  content_notify('enable', 'jquery_colorpicker_cck');
+}
+
+/**
+ * Implementation of hook_disable().
+ *
+ * Notify content module when this module is disabled.
+ */
+function jquery_colorpicker_cck_disable() {
+  drupal_load('module', 'content');
+  content_notify('disable', 'jquery_colorpicker_cck');
+}

@@ -1,0 +1,109 @@
+<?php
+
+
+require_once dirname(__FILE__).'/../../../../includes/classes/VehicleTypeFilter.php';
+require_once dirname(__FILE__).'/../../../../includes/classes/BrandFilter.php';
+require_once dirname(__FILE__).'/../../../../includes/classes/NullFilter.php';
+
+function vehicles_search_perm() {
+    return array('view_vehicles_search');
+}
+
+
+
+function vehicles_search_block($op='list', $delta=0, $edit=array())
+{
+    require dirname(__FILE__).'/../../../../includes/paths.php';
+      $block = array();
+    if($op == 'list')
+    {
+        $block[0]["info"] = t('Vehicle Search Bock');
+    }
+ elseif($op == 'view') {
+     
+     $block['subject'] = 'Vehicle Search Result';
+     $block['content'] = '';
+     $filters  = array();
+     $filters[] = isset($_GET['categoria']) && $_GET['categoria'] != 'todas'? new VehicleTypeFilter($_GET['categoria']) : new NullFilter();
+     
+     $filters[] = isset($_GET['marca']) && $_GET['marca'] != 'todas' ? new BrandFilter($_GET['marca']) : new NullFilter();
+     
+     $query = "SELECT * FROM {node} WHERE type = 'vehicle'";
+     $queryResults = db_query($query);
+     $unfilteredNodes = array();
+     
+     while($nodeInfo = db_fetch_object($queryResults))
+     {
+         $unfilteredNodes[]= node_load($nodeInfo->nid);
+     }
+    
+     $filteredNodes = array();
+     
+     foreach ($unfilteredNodes as $unfilteredNode)
+     {
+         
+         if(applyFilters($unfilteredNode,$filters))
+                 $filteredNodes[]= $unfilteredNode;
+         
+     }
+      
+     $block['content'] .= '<div id="vehicles-agency-search-results">' ;
+     
+     if(!isset ($_GET['marca']) || $_GET['marca'] == 'todas')
+     {
+        $block['content'].= '<div><img src="'.$paths->images.'/vehiclesAgency/allVehicles.png" alt="todas-lasmarcas"/></div>';
+     }
+     else
+     {
+          $block['content'] .= '<h2 id="vehicles-agency-search-results-title">' ;
+            $block['content'] .= 'VEHÍCULOS' ;
+
+            
+            $block['content'] .= '<span class="brand-logo vehicles-agency-search-results-title-brand-logo '.$_GET['marca'].'" id="vehicles-agency-search-results-title-brand-logo"></span>';
+         $block['content'] .= '</h2>' ;
+     }
+         
+
+         foreach($filteredNodes as $vehicleNode)
+         {
+
+
+
+
+                 $block['content'] .= '<a href="'.$vehicleNode->path.'" class="vehicle-search-result">';
+                 $block['content'] .= '<img src="/'.$vehicleNode->field_vehicle_photos[0]['filepath'].'" alt="foto-del-vehiculo" class="vehicle-search-result-photo" />';
+                 $block['content'] .= '<p class="vehicle-search-result-brand">'.$vehicleNode->field_vehicle_brand[0]['value'].'</p>';
+                 $block['content'] .= '<p class="vehicle-search-result-model">'.$vehicleNode->field_vehicle_model[0]['value'].' <span>'.$vehicleNode->field_vehicle_year[0]['value'].'</span> </p>';
+
+
+             $block['content'] .= '</a>';
+
+
+         }
+
+     
+     $block['content'] .= '</div>' ;
+     
+ }
+ 
+ return $block;
+    
+}
+
+
+  function applyFilters($node, $filters) {
+
+     
+      
+        $filtersCount = count($filters);
+        $i = 0;
+        for ($i; $i < $filtersCount; $i++) {
+          
+            if (!$filters[$i]->meetsCondition($node)) {
+
+                break;
+            }
+        }
+       
+        return $i == $filtersCount;
+    }

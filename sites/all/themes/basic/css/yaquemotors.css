@@ -1,0 +1,1536 @@
+/* 
+    Document   : yaquemotors
+    Created on : Aug 27, 2011, 6:31:05 AM
+    Author     : ariel
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+#top-blue-bar
+{
+    background-color: #151C24;
+    height: 6px;
+}
+
+
+
+
+/*pre-header */
+#appoiment-text,#global-search
+{
+    float: right;
+}
+#global-search
+{
+    border: 3px solid #e5e5e5;
+    height: 23px;
+}
+#appoiment-text
+{
+    margin-right: 50px;
+    position: relative;
+    
+}
+#search-icon
+{
+    float: right;
+    
+}
+
+#search-icon
+{
+    left: 935px;
+    position: absolute;
+    top: 6px;
+}
+#pre-header
+{
+    position: relative;
+}
+
+#top-calendar
+{
+  
+    position: absolute;
+    top: 1px;
+    right: -33px;
+        
+}
+/*pre-header ENDS*/
+
+/*Vehicle Agency*/
+
+#vehicles-agency-left-side
+{
+    float: left;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+#vehicles-agency
+{}
+
+
+.vehicle-search-result
+{
+    background-image: url("/sites/default/files/images/vehiclesAgency/resultVehicleBackground.png");
+    float: left;
+    height: 233px;
+    margin: 10px 20px;
+    padding: 10px;
+    width: 267px;
+    color: #333333;
+    
+}
+
+
+#vehicles-agency-search-results
+{
+    float: left;
+}
+
+#vehicles-agency-search-results-title
+{
+        background-image: url("/sites/default/files/images/vehiclesAgency/resultsHeader.png");
+        height: 63px;
+        padding-left: 19px;
+        padding-top: 23px;
+        width: 407px;
+        position: relative;
+}
+
+
+.vehicle-search-result-brand
+{
+    font-size: 1em;
+    
+    margin-bottom: 0;
+    margin-right: 10px;
+    text-transform: capitalize;
+    font-weight: bolder;
+        
+}
+
+#vehicles-agency-search-results-title-brand-logo
+
+{
+    
+    background-size: 223px 48px;
+    display: block;
+    height: 57px;
+    position: absolute;
+    right: 9px;
+    top:11px;    
+    width: 73px;
+    
+    
+}
+
+#vehicles-agency-search-results-title-brand-logo.chevrolet
+{
+    background-position: 82px 4px;
+}
+
+#vehicles-agency-search-results-title-brand-logo.nissan
+{
+    background-position: 157px 4px;
+}
+
+#vehicles-agency-search-results-title-brand-logo.suzuki
+{
+     background-position: 230px 4px;
+}
+
+
+
+
+.vehicle-search-result-model
+{
+    font-size: 1.4em;    
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.vehicle-search-result-model span
+{
+    font-weight: normal;
+}
+
+.vehicles-agency-left-menu-text-link
+{
+    display: block;    
+    height: 31px;
+    padding-top: 5px;
+    width: 127px;
+}
+#vehicles-agency-left-menu ul
+{
+    list-style: none;
+    padding:  0;
+}
+
+#vehicles-agency-left-menu ul li a
+{
+    float: left;
+    color: #333333;
+    display: block;
+    width: 218px;
+    
+}
+#vehicles-agency-left-menu ul li
+{
+    clear: both;
+    height: 30px;
+    width: 216px;
+    border: 2px solid #cdcdcd;
+}
+
+#vehicles-agency-camion-icon span
+{
+    background-position: -80px 0;
+}
+#vehicles-agency-camioneta-icon span
+{
+    background-position: -160px 0;
+}
+
+#vehicles-agency-jeepeta-icon span
+
+{
+    background-position: -240px 0;
+}
+#vehicles-agency-brands-header
+{
+    margin: 0;
+    font-size: 1.2em;
+    
+}
+
+
+.vehicle-search-result-photo
+{
+    width: 269px;
+    height: 172px;
+}
+
+#vehicles-agency-selected-brand
+{
+    background-image: url("/sites/default/files/images/vehiclesAgency/selectedBrand.png");
+    width: 64px;
+    height: 54px;
+}
+
+#vehicles-agency-mini-icon span
+{
+    background-position: -320px 0;
+    
+}
+#vehicles-agency-nissan-button, #vehicles-agency-suzuki-button, #vehicles-agency-chevrolet-button
+{
+    background-image: url("/sites/default/files/images/vehiclesAgency/unselectedBrands.png");
+    display: block;
+    float: left;
+    margin: 0 6px;
+        width: 68px;
+    height: 60px;
+    
+}
+
+#vehicles-agency-nissan-button
+{
+
+    background-position: -12px -9px;
+}
+
+#vehicles-agency-nissan-button.selected-brand
+{
+   background-image: url("/sites/default/files/images/vehiclesAgency/selectedBrands.png"); 
+}
+
+#vehicles-agency-suzuki-button
+{
+    background-position: 150px -9px;
+}
+
+#vehicles-agency-suzuki-button.selected-brand
+{
+    background-image: url("/sites/default/files/images/vehiclesAgency/selectedBrands.png"); 
+}
+
+#vehicles-agency-chevrolet-button
+{
+    background-position: 80px -9px;
+}
+
+#vehicles-agency-chevrolet-button.selected-brand
+{
+    background-image: url("/sites/default/files/images/vehiclesAgency/selectedBrands.png"); 
+}
+
+
+
+#vehicles-all-categories
+{
+    
+    width: 201px;
+    height: 34px;
+    color:#333333;
+        padding-left: 17px;
+    padding-top: 8px;
+}
+
+#vehicles-agency-left-menu
+{
+    background-image: url("/sites/default/files/images/vehiclesAgency/leftMenuBackground.png");
+    width: 241px;
+    height: 352px;
+}
+
+.vehicles-agency-icon
+{
+    background-image: url("/sites/default/files/images/vehiclesAgency/vehiclesIconsSprite.png");
+    display: block;
+    float: left;
+    height: 30px;
+    width: 80px;
+    border: 2px solid #cdcdcd;
+    margin-right: 5px;
+        
+}
+
+#vehicles-agency-make-appointment
+{
+    background-image: url('/sites/default/files/images/common/appointmentOffersSprite.png');
+    display: block;
+    width: 233px;
+    height: 85px;
+    margin: 10px 0;
+    
+}
+
+#vehicles-agency-parts
+{
+    display: block;
+    width: 235px;
+    height: 87px;
+    margin: 10px 0;
+    background-image: url('/sites/default/files/images/vehiclesAgency/parts.png');
+}
+
+
+
+#vehicles-agency-all-brands
+{
+    
+    background-color: white;
+    color: #333333;
+    display: block;
+    font-weight: bold;
+    height: 25px;
+    padding-top: 5px;    
+    text-align: center;
+    width: 241px;
+    
+}
+
+/*Vehicle Agency ENDS*/
+
+/*Warranty*/
+
+#warranty-header
+{
+    background-image: url("/sites/default/files/images/common/bigRedCornerButton.png");
+    font-size: 1.7em;    
+    height: 43px;
+    padding-left: 8px;
+    padding-top: 2px;
+    position: relative;
+    width: 483px;    
+    
+    
+}
+
+#warranty a img{
+    margin: 0 5px;
+}
+#warranty a
+{
+    color: #333333;
+}
+#warranty ul
+{
+    margin-bottom: 10px;
+}
+
+#warranty-nissan-logo
+{
+    background-position: 174px 0;
+}
+
+#warranty-chevrolet-logo
+{
+    background-position: 91px 0;
+}
+
+#warranty-header img
+{
+    position: absolute;
+    right: 9px;
+    top: 5px;
+}
+
+
+
+/*Warranty ENDS*/
+
+/*header*/
+    
+#header
+{
+    background-color: white;
+}
+
+#logo
+{
+    display: block;
+    float: left;
+    
+}
+#menu
+{
+    float: right;
+    padding-top: 55px;
+}
+#header
+{
+    width: 935px;
+    height: 85px;
+    padding: 15px 10px 0 15px;
+}
+
+li a.active
+{
+    border-bottom: 3px solid #ce0000;
+    color: #333333;
+}
+
+#primary li a
+{
+    color: #333333;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+#menu #nice-menu-1 li a
+{
+    color: #333333;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 0;
+}
+#menu #nice-menu-1 li
+{
+    border:none;
+    background: none;
+}
+
+
+/*header ENDS*/
+
+/*Authorized Distributor*/
+
+#authorized-distributor
+{
+    float: left;
+}
+
+/*Authorized Distributor ENDS*/
+
+/*promotion-vehicle*/
+
+.promotion-vehicle
+{
+    position: relative;
+}
+#promotion-vehicle-view-more
+{
+    border-radius: 5px;
+    color: white;    
+    display: block;
+    height: 26px;
+    left: 43px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    position: absolute;
+    text-decoration: none;
+    top: 166px;
+    width: 166px;
+    
+}
+
+#promotion-vehicle-view-more-arrow
+{
+    left: 40px;
+    position: relative;
+    top: 5px;
+    width: 12px;
+    height: 19px;
+}
+
+#promotion-vehicle-view-more span
+{
+    display: block;
+    height: 13px;
+}
+
+#promotion-vehicle-upper-link-color
+{
+    border-radius: 5px 5px 0 0;
+}
+
+#promotion-vehicle-bottom-link-color
+{
+    border-radius: 0 0 5px 5px;
+}
+
+#promotion-vehicle-link-text
+{
+    height: 27px;
+    left: 8px;
+    position: relative;
+    top: -27px;
+        
+}
+/*promotion-vehicle ENDS*/
+
+
+
+/*Contactos Info*/
+
+#contacts-info
+{
+    float: left;
+}
+#contacts-info a.contacts-redcorenered-button
+{
+    background-image: url("/sites/default/files/images/common/redCornerButton.png");
+    display: block;
+    height: 30px;
+    text-align: center;
+    width: 266px;
+    position: relative;
+    padding: 8px 0;
+    color: #333333;
+    
+    
+}
+
+#contacts-info-offer
+{
+    margin-top: 25px;
+}
+#contacts-info a.contacts-redcorenered-button img
+{
+    left: 240px;
+    position: absolute;
+    top: 5px;
+    
+}
+
+#contacts-info h4
+{
+    margin:0;
+}
+
+/*Contactos Info ENDS*/
+
+
+
+
+
+
+/*Slideshow*/
+.slideshow-big-slide
+{
+    width: 438px;
+    height: 192px;
+}
+
+.slideshow-pager-picture
+{
+    width: 61px;
+    height: 47px;
+}
+/*Slideshow ENDS*/
+
+
+
+/*Family Tradition*/
+
+#family-tradition
+{
+    clear: both;
+}
+
+#family-tradition a
+{
+    display: block;
+    background-image: url('/sites/default/files/images/common/redCornerButton.png');
+    height: 28px;
+    padding: 9px 13px;
+    width: 240px;
+    color: #333333;
+    font-weight: bold;
+}
+
+
+
+ #family-tradition-director {
+    background-image: url("/sites/default/files/images/familyTradition/employeesSprite.png");
+    background-position: -31px -26px;
+    float: left;
+    height: 263px;
+    
+    width: 106px;
+}
+
+
+#family-tradition-director,#family-tradition-directors-message, .family-tradition-secondary-employees
+{
+    float: left;
+}
+
+.quote-sign
+{
+    display: block;
+}
+#family-tradition-directors-message
+{
+    margin: 0 5px;
+    padding-top: 8px;
+    width: 485px;
+    
+}
+
+#family-tradition-directors-message h3
+{
+    margin: 0;
+}
+
+
+#family-tradition-directors-message-text
+{
+    padding: 0 30px;
+}
+
+#family-tradition-directors-sign
+{
+    
+}
+
+#family-tradition-employees
+{
+    height: 280px;
+    padding: 0 20px;
+    
+}
+.family-tradition-secondary-employees
+{
+    background-image: url('/sites/default/files/images/familyTradition/employeesSprite.png');
+    width: 106px;
+    height: 263px;
+    background-position: -244px -25px;
+}
+
+#final-quote
+{
+    float: right;
+}
+/*Family Tradition ENDS*/
+
+
+/*Slideshow*/
+#slideshow-container
+{
+    float: left;
+}
+/*Slideshow ENDS*/
+
+
+/*historic-review*/
+
+#historic-review
+{
+    width: 500px;
+    float: left;    
+}
+
+/*historic-review ENDS*/
+
+
+
+
+
+/*Available Finanacing*/
+
+#available-financing p
+{
+    margin-bottom: 40px;
+}
+
+#available-financing img
+{
+    display: block;
+    margin: 15px 0;
+}
+
+
+/*Available Finanacing ENDS*/
+
+/*Footer*/
+#footer
+{
+    height: 168px;
+    background-image: url('/sites/default/files/images/theme/footer/footerGradient.png');
+    padding: 15px;
+    color: #cccccc;
+    position: relative;
+}
+
+#footer-logo
+{
+    display: block;
+    padding: 20px 0;
+    margin-right: 25px;
+    
+    
+}
+
+.footer-menu
+{
+    padding: 10px 30px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.footer-menu li a 
+{
+    color: #cccccc;
+}
+
+.footer-menu, .footer-divisor, #footer-logo
+{
+    float: left;
+}
+
+#footer-address
+{
+    text-align: right;
+    float: right;
+}
+
+#footer-contactos-header, .footer-spaced-paragraph
+{
+    margin-bottom: 5px;
+}
+
+
+#footer-copyright
+{
+    position: absolute;
+    top: 160px;
+}
+
+/*Footer ENDS*/
+
+/*FrontPageSlider*/
+
+#front-page-slideshow
+{
+    
+}
+
+.front-page-slides
+{
+    width: 960px;
+    height: 540px;
+}
+
+#front-page-slideshow-container
+{
+    position: relative;
+}
+
+#front-page-slideshow-next-previous, #front-page-slideshow-view-more
+{
+    position: absolute;
+    z-index: 1000;
+}
+
+#front-page-bottom-text
+{
+    left: 50%;
+    position: absolute;
+    top: 460px;
+    z-index: 1000;
+}
+
+#front-page-divisor
+{
+    position: absolute;
+    top: 431px;
+    z-index: 1000;
+}
+#front-page-slideshow-view-more
+{
+    top:313px;
+    left: 40px;
+}
+
+
+#front-page-slideshow-next-previous
+{
+    right: 0;
+    top: 0;
+}
+
+/*FrontPageSlider ENDS*/
+
+/*make-appointment*/
+#make-appointment-link
+{
+    position: absolute;
+    z-index: 2000;
+    right: 6px;
+    top: 430px;
+}
+
+/*make-appointment ENDS*/
+
+/*last-vehicles*/
+#last-vehicles-link
+{
+    position: absolute;
+    z-index: 2000;
+    left: 12px;
+    top: 430px;
+}
+
+/*last-vehicles ENDS*/
+
+
+/*Work Shop Services Link*/
+#workshop-services-link
+{
+    float: left;
+}
+#workshop-services-link p
+{
+    width: 288px;
+}
+#workshop-services-link a
+{
+    display: block;
+}
+/*Work Shop Services Link ENDS*/
+
+/*Work Shop Services Menu*/
+
+#workshop-services-menu {
+    padding: 20px;
+    width: 560px;
+}
+    
+    
+#workshop-services-menu-header
+{
+    background-image: url('/sites/default/files/images/common/redCornerButton.png');
+    font-size: 1.4em;
+    height: 46px;
+    padding-left: 10px;
+    width: 256px;
+}
+
+
+
+.workshop-services-menu-item {
+    float: left;
+    height: 35px;
+    width: 250px;
+    
+}
+
+
+#workshop-services-menu-header img
+{
+    position: relative;
+    top: 6px;
+    left: 39px;
+}
+.workshop-services-menu-item-text, .workshop-services-menu-item-icon
+{
+    display: block;
+    float: right;
+    font-weight: bold;
+   
+}
+
+.workshop-services-menu-item {
+    height: 35px;
+}
+
+
+#workshop-services-menu-item-diagnostico  .workshop-services-menu-item-icon
+{
+  background-position: 170px 0px;
+}
+
+#workshop-services-menu-item-reparacion  .workshop-services-menu-item-icon
+{
+    background-position: 68px 0;
+}
+
+#workshop-services-menu-item-desabolladura  .workshop-services-menu-item-icon
+{
+    background-position: 136px 0;
+}
+
+#workshop-services-menu-item-aire  .workshop-services-menu-item-icon
+{
+   background-position: 102px 0;
+ 
+}
+#workshop-services-menu-item-todas  .workshop-services-menu-item-icon
+{
+    background-position: 34px 0;
+}
+
+
+
+
+#workshop-services-menu ul
+{
+    height: 134px;
+    list-style: none;
+    padding: 0;
+    
+    
+}
+
+.workshop-services-menu-item-icon
+{
+    
+   background-image: url("/sites/default/files/images/workshopServicesMenu/workshopMenuIconsSprite.png");
+    height: 34px;
+    margin-left: 10px;
+    width: 34px;
+    
+}
+
+
+
+/*Work Shop Services Menu ENDS*/
+
+
+/*Work Shop Services Slideshow*/
+#workshop-services-slideshow-container {
+  background-image: url("/sites/default/files/images/workshopServicesSlideshow/slideshowBackground.png");
+    height: 219px;
+    padding-left: 23px;
+    padding-top: 76px;
+    width: 599px;
+    float: left;
+    margin-right: 10px;
+}
+
+#workshop-sevices-slideshow-pager span.activeSlide
+{
+    background-image: url("/sites/default/files/images/workshopServicesSlideshow/selectedNumbers.png");
+}
+
+#workshop-sevices-slideshow-pager
+{
+    height: 30px;
+    margin-bottom: 30px;
+    padding-left: 138px;
+}
+
+
+.workshop-sevices-slideshow-number
+{
+      background-image: url("/sites/default/files/images/workshopServicesSlideshow/unselectedNumbers.png");
+    display: block;
+    float: left;
+    height: 29px;
+    margin: 0 9px;
+    width: 31px;
+}
+
+#workshop-sevices-slideshow-pager span.activeSlide
+{
+    background-image: url("/sites/default/files/images/workshopServicesSlideshow/selectedNumbers.png");
+}
+
+
+/*Work Shop Services Slideshow ENDS*/
+
+
+
+/*workshop-services-form*/
+#workshop-services-form-container 
+{
+    float: left;
+    margin-left: 10px;
+}
+
+#workshop-services-form-container a{
+    color : black;
+}
+
+#workshop-services-form
+{
+    
+}
+
+#workshop-services-form label, workshop-services-form select {
+    margin: 5px 0;
+}
+
+#workshop-services-form-find
+{
+     background-color: #EFF3F5;
+    border: 2px solid #797979;
+    display: block;
+    height: 20px;
+    margin: 10px 0;
+    padding: 2px;
+    text-align: center;
+    width: 76px;
+    float: right;
+}
+
+#workshop-services-form-header, #workshop-services-view-all
+{
+    background-image: url('/sites/default/files/images/common/grayButton.png');
+    
+    display: block;
+}
+
+#workshop-services-form-header
+{
+    font-size: 1.4em;
+    height: 33px;
+    padding: 6px;
+    text-align: center;
+    width: 278px;
+}
+   
+#workshop-services-form select
+{
+    width: 285px;
+    height: 35px;
+    border: 5px solid #d8d8d8;
+}
+   
+    
+    
+#workshop-services-warranty-campaign-link
+{
+    
+}
+#workshop-services-view-all
+{
+      font-weight: bold;
+    height: 31px;
+    margin-bottom: 20px;
+    padding: 7px;
+    text-align: center; 
+    clear: both;
+}
+
+
+#workshop-services-form label, #workshop-services-form select
+{
+    display: block;
+}
+
+.big-horizontal-divisor
+{
+    float: left;
+}
+
+/*workshop-services-form ENDS*/
+
+/*Vehicles for the Company*/
+
+#vehicles-for-the-company
+{
+    float: left;
+}
+#vehicles-for-the-company p
+{
+    width: 288px;
+    display: block;
+    
+}
+/*Vehicles for the Company ENDS*/
+
+
+/*Front  News*/
+#news-container
+{
+    background-image: url('/sites/default/files/images/news/news.png');
+    float: left;
+    height: 52px;
+    
+    padding-top: 30px;
+    width: 346px;
+    position: relative;
+    top:-9px;
+    width: 346px;
+}
+.news
+{
+    margin-left: 70px;
+    margin-top: 30px;
+}
+/*Front  News ENDS*/
+
+
+/*Vehicle*/
+#vehicle-available-photos-title
+{
+    display: block;
+    margin: 10px 0;
+}
+
+#vehicle-info-container .big-horizontal-divisor
+{
+    float: left;
+}
+#vehicle-upper-menu h2
+{
+    float: left;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-right: 125px;
+    position: relative;
+    top: 12px;
+       
+        
+}
+
+.vehicle-upper-menu-item
+{
+     background-image: url('/sites/default/files/images/vehicle/vehicleUpperMenu.png');
+     display: block;
+     float: left;
+    width: 181px;
+    height: 45px;
+    
+}
+#vehicle-slideshow-container
+{
+    float: left;
+    margin-right: 10px;
+}
+
+#vehicle-colors h3
+{
+    margin:0;
+}
+
+.vehicle-color-sample
+{
+    border-radius: 5px;
+    display: block;
+    width: 31px;
+    height: 16px;
+    float: left;
+    margin: 0 5px;
+    
+}
+#vehicle-slideshow
+{
+    clear: both;
+}
+
+#vehicle-upper-menu
+{
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#vehicle-description-top
+{
+    border-bottom: 2px dotted #a9a9a9;
+    height: 50px;
+}
+
+#vehicle-description
+{
+    float: left;
+    margin-left: 16px;
+}
+
+
+.financing-post-sell-buttons
+{
+    display: block;
+    background-image: url('/sites/default/files/images/vehicle/financingPostSellSprite.png');
+    height: 67px;
+    width: 363px;
+    float: left;
+    margin-top: 20px;
+}
+
+#vehicle-financing
+{
+    margin-right: 15px;
+    clear: left;
+}
+
+#vehicle-post-sell
+{
+    background-position: 362px 0;
+}
+
+#vehicle-description
+{
+    padding-left: 5px;
+}
+
+#vehicle-description-bottom ul
+{
+    
+    list-style: none;
+    padding: 0;
+}
+
+#vehicle-available-description-title
+{
+    
+}
+
+#vehicle-description-bottom ul li
+{
+    margin: 8px 0;
+}
+#vehicle-upper-menu-cotizar
+{
+    width: 176px;
+}
+
+#vehicle-description-top div
+{
+    float: left;
+    margin-right: 10px;
+}
+
+#vehicle-description-top h3, #vehicle-description-top p
+{
+    margin: 0;
+    text-transform: capitalize;
+}
+
+#vehicle-upper-menu-contactar
+{
+    background-position: 181px 0px;
+}
+
+#vehicle-upper-menu-imprimir
+{
+    background-position: 364px 0px;
+}
+
+
+.vehicle-slideshow-big-slide
+{
+    display: block;
+    width: 406px;
+    height: 283px;
+}
+
+.vehicle-slideshow-pager-item
+{
+    display: block;
+    width: 77px;
+    height: 54px;
+    float: left;
+}
+
+/*Vehicle ENDS*/
+
+/*Parts Store*/
+.parts-store-left-menu-button
+{
+    display: block;
+     background-image: url('/sites/default/files/images/common/appointmentOffersSprite.png');
+      width: 233px;
+}
+
+
+#parts-store-left-menu-appointment
+{
+    
+   
+    height: 86px;
+}
+#parts-store-left-menu-offers
+{
+   
+    background-position: 0 128px;
+    height: 124px;
+}
+
+#parts-store-left-menu, #parts-store-form, #parts-store-text-container
+{
+    float: left;
+}
+
+#parts-store-text
+{
+    margin-bottom: 25px;
+}
+
+#parts-store-text-container
+{
+    margin-left: 18px;
+    width: 700px;
+        
+}
+
+#parts-store-user-info
+{
+    height: 140px;
+}
+
+#parts-store-form input, #parts-store-form textarea
+{
+    border: 3px solid #d8d8d8;
+}
+
+
+
+#parts-store-part-info input, #parts-store-part-info input, #parts-store-user-info input
+{
+    display: block;    
+    float: left;
+    height: 22px;
+    margin-bottom: 10px;
+    margin-right: 35px;
+    width: 197px;
+}
+
+#parts-store-part-info
+{
+margin-bottom: 20px;    
+}
+
+#part-store-form-clean
+{
+    margin-left: 195px;
+    margin-right: 20px;
+        
+}
+
+#parts-store-user-info label,
+#parts-store-part-info label
+{
+    float: left;
+
+    display: block;
+    
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-right: 8px;
+    
+    width: 90px;
+}
+
+label#part-store-part-comment-label
+{
+    clear: both;
+    display: block;
+    float: none;
+    margin-bottom: 10px;
+}
+
+
+
+#parts-store-part-comment
+{
+    clear: both;
+    height: 178px;
+    width: 500px;
+    
+    
+}
+
+
+/*Parts Store ENDS*/
+
+/*Contacts Form*/
+#contacts-form form input
+{
+  border: 5px solid #d8d8d8;
+  width: 281px;
+  height: 30px;
+}
+
+#contacts-form form input, #contacts-form form textarea
+{
+    border: 5px solid #d8d8d8;
+    margin-bottom: 10px;
+  width: 281px;
+ 
+}
+#contacts-form form textarea
+{
+    height: 157px;
+    margin-bottom: 20px;
+}
+
+#contacts-form form label
+{
+   display: block;
+   float: left;
+   font-size: 1.5em;   
+   width: 100px;
+  
+}
+#contacts-form
+{
+   margin-left: 25px;
+   float: left;
+}
+
+#contacts-map-container
+{
+    width: 640px;
+    height: 271px;
+    padding: 8px 0;
+    background-color: #ddd8d2;
+}
+
+#contacts-button-container
+{
+    margin-left: 100px;
+    height: 60px;
+}
+
+
+
+a.contacts-form-button
+{
+    background-image: url('/sites/default/files/images/common/redButton.png');
+    color: white;
+    display: block;
+    float: left;
+    font-weight: bold;
+    height: 19px;
+    padding: 10px 0;
+    text-align: center;
+    width: 145px;
+    
+    
+}
+#contacts-map
+{
+    width: 624px;
+    height: 271px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Contacts Form ENDS*/
+
+
+
+/*Useful Classes*/
+
+.bold
+{
+    font-weight: bold;
+}
+
+.no-margin
+{
+    margin: 0;
+}
+
+
+.required-text
+{
+    color: red;
+}
+
+#contacts-info
+{
+    float: left;
+    margin-right: 20px;
+}
+
+
+.brand-logo
+{
+    background-image: url('/sites/default/files/images/common/brandsSprite.png');
+    width: 77px;
+    height: 75px;
+    display: block;
+}
+
+
+.red-corner-button
+{
+    display: block;
+     background-image: url("/sites/default/files/images/common/redCornerButton.png");
+     
+}
+
+.red-corner-button-with-arrow
+{
+    display: block;
+     background-image: url("/sites/default/files/images/common/redCornerButtonWithArrow.png");
+     
+}
+
+/*Useful Classes ENDS*/
+
+#main
+{
+    position: relative;
+}
+
+#content-header
+{
+    clear: both;
+}
+
+input, textarea
+{
+    color: #333333;
+    font-size: 1.5em;
+    padding-left: 5px;
+}
+
+a
+{
+    cursor: pointer;
+}
