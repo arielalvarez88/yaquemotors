@@ -109,8 +109,8 @@ root {
         background-image: url("/sites/default/files/images/vehiclesAgency/resultsHeader.png");
         height: 63px;
         padding-left: 19px;
-        padding-top: 23px;
-        width: 407px;
+        padding-top: 34px;
+        width: 418px;
         position: relative;
 }
 
@@ -130,30 +130,30 @@ root {
 
 {
     
-    background-size: 223px 48px;
+
     display: block;
     height: 57px;
     position: absolute;
     right: 9px;
-    top:11px;    
-    width: 73px;
+    top:17px;    
+    width: 81px;
     
     
 }
 
 #vehicles-agency-search-results-title-brand-logo.chevrolet
 {
-    background-position: 82px 4px;
+    background-position: 92px -5px;
 }
 
 #vehicles-agency-search-results-title-brand-logo.nissan
 {
-    background-position: 157px 4px;
+    background-position: 176px -5px;
 }
 
 #vehicles-agency-search-results-title-brand-logo.suzuki
 {
-     background-position: 230px 4px;
+     background-position: 6px -5px;
 }
 
 
