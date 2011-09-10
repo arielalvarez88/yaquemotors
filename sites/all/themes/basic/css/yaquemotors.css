@@ -1099,12 +1099,11 @@ li a.active
     background-image: url('/sites/default/files/images/news/news.png');
     float: left;
     height: 52px;
-    
+    left: 545px;
     padding-top: 30px;
-    width: 346px;
-    position: relative;
-    top:-9px;
-    width: 346px;
+    position: absolute;
+    top:825px;        
+    width: 411px;
 }
 .news
 {

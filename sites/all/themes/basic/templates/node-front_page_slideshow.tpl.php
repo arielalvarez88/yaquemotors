@@ -1,16 +1,31 @@
 <?php
-$slides = $node->field_front_page_slides;
-$vehicleNodeInfo = $node->field_front_slide_vehicle_link;
-$vehicleNode = node_load($vehicleNodeInfo[0]['nid']);
+$slidesInfo = $node->field_front_page_slides;
+
+
 
 ?>
-<div id="front-page-slideshow-container">
+
+
+<?php if($node->field_front_page_slides[0]):?>
+                 <div id="front-page-slideshow-container">
 
     <div id="front-page-slideshow">
+        <?php foreach($slidesInfo as $slideInfo):?>
+              <?php $slideNode = node_load($slideInfo['nid']);?>
+              <?php $vehicleNode = node_load($slideNode->field_front_page_slide_vehicle[0]['nid']);?>
 
-        <?php foreach ($slides as $slide): ?>
-            <img class="front-page-slides" src="<?php echo $slide['filepath'] ?>"/>
-        <?php endforeach; ?>
+       
+                  <?php if($slideNode->field_front_page_slide_photo[0]['filepath']):?>
+                    <a class="front-page-slides" href="/<?php echo $vehicleNode->path;?>">
+                        
+                        <img src="/<?php echo $slideNode->field_front_page_slide_photo[0]['filepath'];?>" alt="foto-slideshow"/>
+                    
+                    </a>
+                    <?php endif;?>
+        <?php endforeach;?>
+
+            
+        
 
     </div>
     <div id="front-page-slideshow-next-previous"> 
@@ -20,3 +35,5 @@ $vehicleNode = node_load($vehicleNodeInfo[0]['nid']);
     
     
 </div>
+
+<?php endif;?>
