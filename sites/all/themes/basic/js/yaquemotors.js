@@ -214,7 +214,7 @@ Filter = function(brandModifierButtonsSelector,categoryModifierButtonsSelector)
   var initialBrand = $.getUrlVar('marca');
   var initialCategory = $.getUrlVar('categoria');
   
-  this.brand = initialBrand ? initialBrand  : 'todas';  
+  this.brand = initialBrand ? initialBrand  : 'nissan';  
   this.category = initialCategory ? initialCategory : 'todas';
   var agencyFilter = this;
   

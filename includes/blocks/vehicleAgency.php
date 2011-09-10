@@ -18,11 +18,11 @@
 
             <h3 id="vehicles-agency-brands-header">MARCAS AUTORIZADAS ///</h3>
 
-            <a  class="filter-brand-modifier-button <?php echo !isset($_GET['marca']) || $_GET['marca'] == 'nissan' || $_GET['marca'] == 'todas'? 'selected-brand' : ''; ?>" id="vehicles-agency-nissan-button" value="nissan"   ></a>
+            <a  class="filter-brand-modifier-button <?php echo !isset($_GET['marca']) || $_GET['marca']  == 'nissan' || $_GET['marca'] == 'todas'? 'selected-brand' : ''; ?>" id="vehicles-agency-nissan-button" value="nissan"   ></a>
 
 
-            <a  class="filter-brand-modifier-button <?php echo isset($_GET['marca']) && $_GET['marca'] == 'suzuki' ? 'selected-brand' : ''; ?>" id="vehicles-agency-suzuki-button" value="suzuki"  ></a>
-            <a  class="filter-brand-modifier-button <?php echo isset($_GET['marca']) && $_GET['marca'] == 'chevrolet' ? 'selected-brand' : ''; ?> " id="vehicles-agency-chevrolet-button"  value="chevrolet" ></a>
+            <a  class="filter-brand-modifier-button <?php echo (isset($_GET['marca']) && $_GET['marca'] == 'suzuki') || $_GET['marca'] == 'todas' ? 'selected-brand' : ''; ?>" id="vehicles-agency-suzuki-button" value="suzuki"  ></a>
+            <a  class="filter-brand-modifier-button <?php echo (isset($_GET['marca']) && $_GET['marca'] == 'chevrolet') || $_GET['marca'] == 'todas' ? 'selected-brand' : ''; ?> " id="vehicles-agency-chevrolet-button"  value="chevrolet" ></a>
 
 
             

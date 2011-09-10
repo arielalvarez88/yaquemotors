@@ -20,13 +20,14 @@ function vehicles_search_block($op='list', $delta=0, $edit=array())
         $block[0]["info"] = t('Vehicle Search Bock');
     }
  elseif($op == 'view') {
-     
+        
      $block['subject'] = 'Vehicle Search Result';
      $block['content'] = '';
      $filters  = array();
+     $brand = isset($_GET['marca']) ? $_GET['marca']: 'nissan';
      $filters[] = isset($_GET['categoria']) && $_GET['categoria'] != 'todas'? new VehicleTypeFilter($_GET['categoria']) : new NullFilter();
      
-     $filters[] = isset($_GET['marca']) && $_GET['marca'] != 'todas' ? new BrandFilter($_GET['marca']) : new NullFilter();
+     $filters[] = $_GET['marca'] != 'todas' ? new BrandFilter($brand) : new NullFilter();
      
      $query = "SELECT * FROM {node} WHERE type = 'vehicle'";
      $queryResults = db_query($query);
@@ -49,7 +50,7 @@ function vehicles_search_block($op='list', $delta=0, $edit=array())
       
      $block['content'] .= '<div id="vehicles-agency-search-results">' ;
      
-     if(!isset ($_GET['marca']) || $_GET['marca'] == 'todas')
+     if($_GET['marca'] == 'todas')
      {
         $block['content'].= '<div><img src="'.$paths->images.'/vehiclesAgency/allVehicles.png" alt="todas-lasmarcas"/></div>';
      }
@@ -58,8 +59,8 @@ function vehicles_search_block($op='list', $delta=0, $edit=array())
           $block['content'] .= '<h2 id="vehicles-agency-search-results-title">' ;
             $block['content'] .= 'VEHÍCULOS' ;
 
-            
-            $block['content'] .= '<span class="brand-logo vehicles-agency-search-results-title-brand-logo '.$_GET['marca'].'" id="vehicles-agency-search-results-title-brand-logo"></span>';
+         
+            $block['content'] .= '<span class="brand-logo vehicles-agency-search-results-title-brand-logo '.$brand.'" id="vehicles-agency-search-results-title-brand-logo"></span>';
          $block['content'] .= '</h2>' ;
      }
          

@@ -1110,6 +1110,88 @@ li a.active
 }
 /*Front  News ENDS*/
 
+/*post-sell*/
+#post-sell
+{
+    height: 500px;
+    margin-top: 40px;
+}
+#post-sell .post-sell-divisor{
+    float: left;
+}
+
+#post-sell-workshop-parts-store,#post-sell-workshop-services
+{
+    float: left;
+     width: 408px;
+}
+
+
+#post-sell-workshop-services-divisor
+{
+    margin-right: 45px;
+}
+
+#post-sell-workshop-parts-store-photo
+{
+    
+    
+      
+       background-image: url('/sites/default/files/images/postSell/sprite.jpg');
+    display: block;
+    height: 280px;
+    width: 408px;
+      background-position: 410px 0;
+     
+}
+
+#post-sell-workshop-parts-store-title
+{
+      background-image: url('/sites/default/files/images/common/mediumRedCornerButton.png');
+    color: #333333;
+      display: block;     
+      font-size: 23px;
+      height: 33px;
+      padding-left: 20px;
+      padding-top: 4px;
+      width: 388px;
+      position: relative;
+}
+
+#post-sell-workshop-services
+{
+    width: 408px;
+}
+
+#post-sell-workshop-services-photo
+{
+    background-image: url('/sites/default/files/images/postSell/sprite.jpg');
+    display: block;
+    height: 280px;
+    width: 408px;
+  
+}
+
+.post-sell-white-arrow
+{
+    position: absolute;
+    right: 3px;
+    top: 1px;
+}
+
+#post-sell-workshop-services-title
+{
+    background-image: url('/sites/default/files/images/common/mediumRedCornerButton.png');
+    color: #333333;
+      display: block;     
+      font-size: 23px;
+      height: 33px;
+      padding-left: 20px;
+      padding-top: 4px;
+      width: 388px;
+      position: relative;
+}
+/*post-sell ENDS*/
 
 /*Vehicle*/
 #vehicle-available-photos-title
