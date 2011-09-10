@@ -399,10 +399,13 @@ root {
 /*Warranty ENDS*/
 
 /*header*/
-    
 #header
 {
-    background-color: white;
+    width: 935px;
+    height: 85px;
+    padding: 15px 10px 0 15px;
+    background-image: url("/sites/default/files/images/common/headerGradient.jpg");
+    border-bottom: 6px solid #9a9999;
 }
 
 #logo
@@ -416,12 +419,7 @@ root {
     float: right;
     padding-top: 55px;
 }
-#header
-{
-    width: 935px;
-    height: 85px;
-    padding: 15px 10px 0 15px;
-}
+
 
 li a.active
 {
@@ -795,7 +793,7 @@ li a.active
 #front-page-divisor
 {
     position: absolute;
-    top: 431px;
+    top: 391px;
     z-index: 1000;
 }
 #front-page-slideshow-view-more
@@ -819,7 +817,7 @@ li a.active
     position: absolute;
     z-index: 2000;
     right: 6px;
-    top: 430px;
+    top: 371px;
 }
 
 /*make-appointment ENDS*/
@@ -827,10 +825,10 @@ li a.active
 /*last-vehicles*/
 #last-vehicles-link
 {
-    position: absolute;
-    z-index: 2000;
     left: 12px;
-    top: 430px;
+    position: absolute;      
+    top: 371px;
+    z-index: 2000;
 }
 
 /*last-vehicles ENDS*/
@@ -1102,7 +1100,7 @@ li a.active
     left: 545px;
     padding-top: 30px;
     position: absolute;
-    top:825px;        
+    top:766px;        
     width: 411px;
 }
 .news
