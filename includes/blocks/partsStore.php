@@ -65,8 +65,8 @@
 
             </div>
 
-            <a id="part-store-form-clean" class="contacts-form-button">Limiar Formulario</a>
-            <a id="part-store-form-send" class="contacts-form-button">Enviar</a>
+            <a id="part-store-form-clean" class="form-button">Limiar Formulario</a>
+            <a id="part-store-form-send" class="form-button">Enviar</a>
         </div>
     </div>
 

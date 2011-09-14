@@ -13,7 +13,17 @@
   width: 960px;
   margin: 0 auto;
   background-color: #ececec;
-  padding: 11px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#wrapper
+{
+    margin-right: auto;
+    margin-left: auto;
+    width: 960px;
+    padding: 0 11px 11px;
+    background-image: url('/sites/default/files/images/theme/backPattern.jpg');
 }
 
 /* Layout rules. (Disclaimer: do not change if you're not sure you know what you're doing.) */
@@ -61,7 +71,7 @@
 /* line 56, ../sass/layout.sass */
 .two-sidebars .center,
 .sidebar-left .center {
-  margin-left: 190px;
+ /*margin-left: 190px;*/
 }
 
 /* line 60, ../sass/layout.sass */
@@ -73,7 +83,7 @@
 /* line 66, ../sass/layout.sass */
 .two-sidebars .center,
 .sidebar-right .center {
-  margin-right: 200px;
+ /* margin-right: 200px;*/
 }
 
 /* line 70, ../sass/layout.sass */

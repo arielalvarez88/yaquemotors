@@ -461,62 +461,8 @@ li a.active
 
 /*Authorized Distributor ENDS*/
 
-/*promotion-vehicle*/
 
-.promotion-vehicle
-{
-    position: relative;
-}
-#promotion-vehicle-view-more
-{
-    border-radius: 5px;
-    color: white;    
-    display: block;
-    height: 26px;
-    left: 43px;
-    padding-bottom: 2px;
-    padding-left: 20px;
-    position: absolute;
-    text-decoration: none;
-    top: 166px;
-    width: 166px;
-    
-}
 
-#promotion-vehicle-view-more-arrow
-{
-    left: 40px;
-    position: relative;
-    top: 5px;
-    width: 12px;
-    height: 19px;
-}
-
-#promotion-vehicle-view-more span
-{
-    display: block;
-    height: 13px;
-}
-
-#promotion-vehicle-upper-link-color
-{
-    border-radius: 5px 5px 0 0;
-}
-
-#promotion-vehicle-bottom-link-color
-{
-    border-radius: 0 0 5px 5px;
-}
-
-#promotion-vehicle-link-text
-{
-    height: 27px;
-    left: 8px;
-    position: relative;
-    top: -27px;
-        
-}
-/*promotion-vehicle ENDS*/
 
 
 
@@ -793,7 +739,7 @@ li a.active
 #front-page-divisor
 {
     position: absolute;
-    top: 391px;
+    top: 392px;
     z-index: 1000;
 }
 #front-page-slideshow-view-more
@@ -820,7 +766,80 @@ li a.active
     top: 371px;
 }
 
+#make-appointment p
+{
+    clear: both;
+    height: 20px;
+}
+
+#make-appointment-text-container
+{
+    float: left;
+    margin-left: 20px;
+    
+}
+
+#make-appointment p span, #make-appointment p input 
+{
+    display: block;
+    float: left;
+}
+
+#make-appointment p span
+{
+    width: 200px;
+}
+
+#make-appointment-left-menu-appointment
+{
+    
+   
+    height: 86px;
+}
+
+#make-appointment-left-menu
+{
+    float: left;
+    margin-right: 20px;
+}
+
+#make-appointment span#appointment-hour-text
+{
+    width: auto;
+    margin: 0 10px;
+}
+
+.make-appointment-left-menu-button
+{
+    display: block;
+     background-image: url('/sites/default/files/images/common/appointmentOffersSprite.png');
+      width: 233px;
+}
+
+#make-appointment-left-menu-offers
+{
+   
+    background-position: 0 128px;
+    height: 124px;
+}
+
+#appointment-service
+{
+    margin-bottom: 20px;
+}
+
+#make-appointment-send-button, #make-appointment-clean-button
+{
+    float: right;
+}
+
+#make-appointment-send-button
+{
+    margin-left: 30px;
+}
 /*make-appointment ENDS*/
+
+
 
 /*last-vehicles*/
 #last-vehicles-link
@@ -854,6 +873,7 @@ li a.active
 #workshop-services-menu {
     padding: 20px;
     width: 560px;
+    
 }
     
     
@@ -954,7 +974,7 @@ li a.active
     padding-left: 23px;
     padding-top: 76px;
     width: 599px;
-    float: left;
+    
     margin-right: 10px;
 }
 
@@ -1193,6 +1213,191 @@ li a.active
       position: relative;
 }
 /*post-sell ENDS*/
+
+
+/*maintanance-prices*/
+
+.maintenance-prices, .maintanance-prices th, .maintanance-prices td
+{
+    
+}
+.maintenance-prices th
+{
+    background-color: #d9d9d9;
+    
+}
+
+#contenido-del-mantenimiento
+{
+    padding-left: 40px;
+}
+
+.maintenance-prices .category-header
+{
+    height: 40px;
+    font-weight: bold;
+    
+    font-size: 1.4em;
+    
+}
+.maintenance-prices .vertical-td
+{
+    
+    background-color: #cdcdcd;
+    padding: 0;
+    margin: 0;     
+    vertical-align: middle;
+}
+
+.maintenance-prices #cambio-vertical
+{
+    background: url('/sites/default/files/images/maintenance-prices/modelosVertical.png') no-repeat scroll 10px center transparent;
+}
+
+.maintenance-prices #inspeccion-vertical
+{
+    background: url('/sites/default/files/images/maintenance-prices/inspeccionVertical.png') no-repeat scroll 10px center transparent;
+    display: block;
+    height: 175px;
+    vertical-align: middle;
+}
+ #maintenance-model-title
+{
+    background: url('/sites/default/files/images/maintenance-prices/modelosVertical.png') no-repeat scroll 10px center transparent;
+    display: block;
+    height: 236px;
+    margin:0;
+    padding:0;
+    vertical-align: middle;
+    width: 23px;
+    
+    
+    
+}
+
+#maintenance-table-last-row
+{
+    background-color: #d9d9d9;
+    font-weight: bold;
+}
+
+#maintenance-bottom-banner
+{
+    background: url('/sites/default/files/images/maintenance-prices/backgroundSprite.gif') ;
+    background-position: 0 99px;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;    
+    height: 96px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+    text-transform: uppercase;
+    width: 923px;
+}
+
+#maintenanace-header
+{
+    background: url('/sites/default/files/images/maintenance-prices/backgroundSprite.gif') ;
+    font-size: 0.9em;
+    font-weight: bold;    
+    height: 36px;
+    padding-left: 10px;
+    padding-top: 19px;
+    text-transform: uppercase;
+    width: 923px;
+    
+    
+}
+
+.maintenance-prices .model-name
+{
+    
+}
+
+/*maintanance-prices ENDS*/
+
+
+/*mintenance-finder*/
+
+#maintenance-finder
+{
+     background-image: url('/sites/default/files/images/maintenanceFinder/maintenanceFinderBackground.gif');
+     color: white;
+     font-weight: bold;
+     float: left;
+     height: 218px;
+     margin-left: 15px;
+     margin-right: 25px;
+     padding-left: 10px;
+     padding-top: 10px;
+     width: 261px;
+}
+
+
+
+#maintenance-finder h2 span
+{
+    font-size: 0.8em;
+    font-weight: normal;
+}
+#maintenance-finder label, #maintenance-finder select
+{
+    float: left;
+   
+}
+
+#maintenance-finder label
+{
+    clear: left;
+    width: 70px;
+    
+}
+
+#maintenance-finder select
+{
+    width: 140px;
+    margin-bottom: 10px;
+}
+
+#maintenance-finder-find-button
+{
+    background-color: #eff3f5;
+    border: 2px white solid;
+    border-radius: 5px;
+    clear: both;
+    color: #344959;
+    display: block;
+    height: 24px;
+    margin-left: 142px;
+    padding-top: 4px;
+    width: 76px;
+    text-align: center;
+    width: 76px;        
+}
+
+
+
+
+#maintenance-finder-find-button span
+{
+    
+}
+
+
+
+
+/*mintenance-finder ENDS*/
+
+
+/*make-appointment*/
+
+#make-appointment
+{
+    
+}
+
+/*make-appointment ENDS*/
 
 /*Vehicle*/
 #vehicle-available-photos-title
@@ -1518,7 +1723,7 @@ label#part-store-part-comment-label
 
 
 
-a.contacts-form-button
+a.form-button
 {
     background-image: url('/sites/default/files/images/common/redButton.png');
     color: white;
@@ -1526,7 +1731,7 @@ a.contacts-form-button
     float: left;
     font-weight: bold;
     height: 19px;
-    padding: 10px 0;
+    padding: 8px 0;
     text-align: center;
     width: 145px;
     
@@ -1606,7 +1811,7 @@ a.contacts-form-button
 input, textarea
 {
     color: #333333;
-    font-size: 1.5em;
+    font-size: 1.1em;
     padding-left: 5px;
 }
 
@@ -1614,3 +1819,26 @@ a
 {
     cursor: pointer;
 }
+
+.hidden
+{
+    display: none;
+}
+
+.visible
+{
+    display: block;
+}
+
+
+#left-side, #right-side
+{
+    float: left;
+}
+
+
+.ui-timepicker-div .ui-widget-header{ margin-bottom: 8px; }
+.ui-timepicker-div dl{ text-align: left; }
+.ui-timepicker-div dl dt{ height: 25px; }
+.ui-timepicker-div dl dd{ margin: -25px 0 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }

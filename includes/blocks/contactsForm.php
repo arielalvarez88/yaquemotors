@@ -42,8 +42,8 @@
             </div>
             
             <div id="contacts-button-container">
-                <a id="contacts-form-clean-button" class="contacts-form-button">Limpiar Formulario</a>
-                <a id="contacts-form-send-button" class="contacts-form-button" href="#">Enviar</a>
+                <a id="contacts-form-clean-button" class="form-button">Limpiar Formulario</a>
+                <a id="contacts-form-send-button" class="form-button" href="#">Enviar</a>
             </div>
             
             

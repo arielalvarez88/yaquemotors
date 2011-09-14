@@ -7,8 +7,12 @@ engine = phptemplate
 
 regions[content_top] = Content top
 regions[header] = Header
-regions[left] = First sidebar
-regions[right] = Second sidebar
+regions[leftSideBar] = Left Side sidebar
+regions[rightSideBar] = Right Side sidebar
+
+regions[left] = Left Side
+regions[right] = Right Side
+
 regions[footer_block] = Footer
 regions[content_bottom] = Content bottom
 
@@ -28,10 +32,14 @@ stylesheets[all][] = css/layout.css
 stylesheets[all][] = css/style.css
 stylesheets[print][] = css/print.css
 stylesheets[all][] = css/yaquemotors.css
+stylesheets[all][] = css/ui-lightness/jquery-ui-1.8.16.custom.css
+
 
 scripts[] = js/jquery-ui-1.8.14.custom.min.js
 scripts[] = js/jquery.cycle.all.js
+scripts[] = js/jquery-ui-timepicker-addon.js
 scripts[] = js/yaquemotors.js
+
 
 ; Compass Support
 ; http://drupal.org/project/compass

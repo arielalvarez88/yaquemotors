@@ -22,6 +22,7 @@
     <body class="<?php print $body_classes; ?> tk-purista-web">
         <div id="skip"><a href="#content"><?php print t('Skip to Content'); ?></a> <a href="#navigation"><?php print t('Skip to Navigation'); ?></a></div>  
         <div id="top-blue-bar"></div>
+        <div id="wrapper">
         <div id="page">
 
             <!-- ______________________ HEADER _______________________ -->
@@ -69,12 +70,28 @@
                 <div id="content">
                     <div id="content-inner" class="inner column center">
 
-<?php if ($content_top): ?>
+                        <?php if ($content_top): ?>
                             <div id="content-top">
                                 <?php print $content_top; ?>
                             </div> <!-- /#content-top -->
-                            <?php endif; ?>
-
+                         <?php endif; ?>
+                            
+                            <?php if($left):?>
+                                <div id="left-side">
+                                    <?php echo $left;?>
+                                </div>
+                            <?php endif;?>
+                            
+                            <?php if($right):?>
+                                <div id="right-side">
+                                    <?php echo $right;?>
+                                </div>
+                            <?php endif;?>
+                            
+                            
+                            <div id="drupal-content">
+                                
+                                <?php if(in_array("authenticated user", array_values($user->roles))):?>
                             <?php if ($breadcrumb || $title || $mission || $messages || $help || $tabs): ?>
                             <div id="content-header">
 
@@ -98,12 +115,16 @@
 
                             </div> <!-- /#content-header -->
                         <?php endif; ?>
+                        
 
+    <?php print $feed_icons; ?>
+                            <?php endif;?>
                         <div id="content-area">
                             <?php print $content; ?>
                         </div> <!-- /#content-area -->
+                        
 
-<?php print $feed_icons; ?>
+                        </div>
 
 <?php if ($content_bottom): ?>
                             <div id="content-bottom">
@@ -116,18 +137,18 @@
 
 
 
-                <?php if ($left): ?>
+                <?php if ($leftSideBar): ?>
                     <div id="sidebar-first" class="column sidebar first">
                         <div id="sidebar-first-inner" class="inner">
-                            <?php print $left; ?>
+                            <?php print $leftSideBar; ?>
                         </div>
                     </div>
                 <?php endif; ?> <!-- /sidebar-left -->
 
-<?php if ($right): ?>
+<?php if ($rightSideBar): ?>
                     <div id="sidebar-second" class="column sidebar second">
                         <div id="sidebar-second-inner" class="inner">
-    <?php print $right; ?>
+    <?php print $rightSideBar; ?>
                         </div>
                     </div>
 <?php endif; ?> <!-- /sidebar-second -->
@@ -173,6 +194,7 @@
                 <p id="footer-copyright">Copyright 2011 El Yaque Motors Todos los derechos reservados.</p>
             </div> <!-- /footer -->
         </div> <!-- /page -->
+    </div> <!-- /wrapper-->
 <?php print $closure; ?>
     </body>
 </html>

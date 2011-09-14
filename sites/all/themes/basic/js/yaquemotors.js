@@ -194,6 +194,12 @@ initializeAjaxForms = function()
             cleanButtonSelector : "#contacts-form-clean-button",
             sendButtonSelector : '#contacts-form-send-button',            
             processingSriptUrl: '/includes/ajax/contactsFormProcessor.php'
+        },
+        appointmentForm: {
+             formSelector : '#make-appointment-text-container',
+            cleanButtonSelector : "#make-appointment-clean-button",
+            sendButtonSelector : '#make-appointment-send-button',            
+            processingSriptUrl: '/includes/ajax/appointmentProcessor.php'
         }
     };
     
@@ -240,6 +246,55 @@ initializFilter = function (){
   var vehiclesAgencyFilters = new Filter('.filter-brand-modifier-button','.filter-category-modifier-button');
 };
 
+maintenanceFinderFindButtonOnClick = function (){
+    
+};
+
+
+maintenanceFinderBrandOnClick = function (event){
+    var button = $('#maintenance-finder-brand');
+    $('.maintenance-finder-model').removeClass('visible');
+    $('.maintenance-finder-model').addClass('hidden');
+    console.log($('#maintenance-finder-model-' + button.val()));
+    $('#maintenance-finder-model-' + button.val()).removeClass('hidden').addClass('visible');
+    
+};
+
+
+maintenanceFinderFindButtonOnClick = function()
+{
+    var brand = $('#maintenance-finder-brand').val();
+    var model = $('.maintenance-finder-model').filter('.visible').val();
+    window.location.href = '/tarifas-de-mantenimiento?marca='  + brand + '&modelo=' + model;
+    
+}
+
+initializeCalendarsUi = function(){
+    $('#appointment-date').datetimepicker({timeText:'Hora: ',hourText:'Hora',minuteText:'Minuto',ampm:true, hourMin: 8, hourMax: 16, monthNames: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],dateNames: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'], dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sa'], currentText: 'Ahora', closeText: 'Listo'});
+    
+};
+initializeOnClickEvents = function(){
+    
+    var buttons = {
+        maintenanceFinderFindButton:{
+            selector: "#maintenance-finder-find-button",
+            onClick: maintenanceFinderFindButtonOnClick
+        },
+        
+        maintenanceFoinderMarcaOption:{
+            selector: "#maintenance-finder-brand option",
+            onClick: maintenanceFinderBrandOnClick
+        }
+        
+    };
+    
+    for(button in buttons)
+    {
+        $(buttons[button].selector).click(buttons[button].onClick);
+    }
+}
+
+
 extendJquery = function (){
     
     $.extend({
@@ -260,15 +315,22 @@ extendJquery = function (){
     });
 };
     
-
+colorRow = function(){
+    var model = $.getUrlVar('modelo');
+    $('tr#'+model).css("background-image","url('/sites/default/files/images/theme/footer/footerGradient.png')");
+    $('tr#'+model).css("color","white");
+};
 $(document).ready(function(){
     
     
     extendJquery();
     initializeSlideshows();
+    initializeOnClickEvents();
     initializeMap();
     initializeAjaxForms();
+    initializeCalendarsUi();
     initializFilter();
+    colorRow();
   
         
 

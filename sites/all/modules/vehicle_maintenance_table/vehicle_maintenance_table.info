@@ -1,0 +1,4 @@
+name = Vehicle Maintenance Table
+description = Generates the table from the vehicle_maintenance_row Content Type
+core = 6.x
+
