@@ -2,8 +2,8 @@
 <div id="parts-store">
 
     <div id="parts-store-left-menu">
-        <a id="parts-store-left-menu-appointment" class="parts-store-left-menu-button"></a>
-        <a id="parts-store-left-menu-offers" class="parts-store-left-menu-button"></a>
+        <a href="/citas" id="parts-store-left-menu-appointment" class="parts-store-left-menu-button"></a>
+        <a  id="parts-store-left-menu-offers" class="parts-store-left-menu-button"></a>
     </div>
     <?php require dirname(__FILE__) . '/bigVerticalDivisor.php'; ?>
     <div id="parts-store-text-container">
@@ -65,7 +65,7 @@
 
             </div>
 
-            <a id="part-store-form-clean" class="form-button">Limiar Formulario</a>
+            <a id="part-store-form-clean" class="form-button">Limpiar Formulario</a>
             <a id="part-store-form-send" class="form-button">Enviar</a>
         </div>
     </div>

@@ -28,7 +28,7 @@
     <a class="contacts-redcorenered-button">Vendedores de Repuestos <img src="<?php echo $paths->images;?>/common/whiteArrow.png"/></a>
     <a class="contacts-redcorenered-button">Vendedores de Repuestos <img src="<?php echo $paths->images;?>/common/whiteArrow.png"/></a>
     
-    <a id="contacts-info-offer" href="#"><img src="<?php echo $paths->images;?>/contacts/offersLink.png"/></a>
+    <a id="contacts-info-offer" href="#"><img src="<?php echo $paths->images;?>/common/offersLink.png"/></a>
 
     
        

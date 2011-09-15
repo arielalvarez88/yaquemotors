@@ -31,7 +31,7 @@ root {
 
 
 /*pre-header */
-#appoiment-text,#global-search
+#appointment-text,#global-search
 {
     float: right;
 }
@@ -40,9 +40,14 @@ root {
     border: 3px solid #e5e5e5;
     height: 23px;
 }
-#appoiment-text
+#appointment-text
 {
+    color: #333333;
+    display: block;
+    font-weight: bold;
+    height: 26px;
     margin-right: 50px;
+    
     position: relative;
     
 }
@@ -80,6 +85,7 @@ root {
     float: left;
     margin-right: 20px;
     font-weight: bold;
+    
 }
 
 #vehicles-agency
@@ -112,6 +118,7 @@ root {
         padding-top: 34px;
         width: 418px;
         position: relative;
+        text-transform: uppercase;
 }
 
 
@@ -521,6 +528,7 @@ li a.active
 {
     width: 61px;
     height: 47px;
+    margin: 5px 5px 0 0;
 }
 /*Slideshow ENDS*/
 
@@ -656,6 +664,7 @@ li a.active
     padding: 15px;
     color: #cccccc;
     position: relative;
+    margin-top: 20px;
 }
 
 #footer-logo
@@ -711,6 +720,29 @@ li a.active
     
 }
 
+#front-page-slideshow-pager
+{
+    position: absolute;
+    top: 350px;
+    left: 50px;
+}
+#front-page-slideshow-pager span
+{
+    display: block;
+    width: 13px;
+    height: 13px;
+    float: left;
+    cursor: pointer;
+     background-image: url('/sites/default/files/images/frontPageSlideshow/unselectedPager.png');
+    
+}
+
+
+#front-page-slideshow-pager span.activeSlide
+{
+     background-image: url('/sites/default/files/images/frontPageSlideshow/selectedPager.png');
+}
+
 .front-page-slides
 {
     width: 960px;
@@ -722,7 +754,7 @@ li a.active
     position: relative;
 }
 
-#front-page-slideshow-next-previous, #front-page-slideshow-view-more
+#front-page-slideshow-pager , #front-page-slideshow-view-more
 {
     position: absolute;
     z-index: 1000;
@@ -857,6 +889,13 @@ li a.active
 #workshop-services-link
 {
     float: left;
+    margin: 0 27px 0 15px;
+}
+
+#workshop-services-link img
+{
+    height: 178px;
+    width: 280px;
 }
 #workshop-services-link p
 {
@@ -1101,6 +1140,7 @@ li a.active
 #vehicles-for-the-company
 {
     float: left;
+    margin: 0 14px;
 }
 #vehicles-for-the-company p
 {
@@ -1134,7 +1174,9 @@ li a.active
 #post-sell
 {
     height: 500px;
+    
     margin-top: 40px;
+    padding: 0 40px;
 }
 #post-sell .post-sell-divisor{
     float: left;
@@ -1156,12 +1198,11 @@ li a.active
 {
     
     
-      
-       background-image: url('/sites/default/files/images/postSell/sprite.jpg');
+     background-image: url('/sites/default/files/images/postSell/sprite.png');
+    background-position: 419px -9px;
     display: block;
-    height: 280px;
-    width: 408px;
-      background-position: 410px 0;
+    height: 292px;
+    width: 420px;
      
 }
 
@@ -1180,16 +1221,18 @@ li a.active
 
 #post-sell-workshop-services
 {
+    margin-right: 60px;
     width: 408px;
-    margin-left: 40px;
+    
 }
 
 #post-sell-workshop-services-photo
 {
-    background-image: url('/sites/default/files/images/postSell/sprite.jpg');
+    background-image: url('/sites/default/files/images/postSell/sprite.png');
+    background-position: -10px -9px;
     display: block;
-    height: 280px;
-    width: 408px;
+    height: 292px;
+    width: 420px;
   
 }
 
@@ -1324,22 +1367,30 @@ li a.active
 {
      background-image: url('/sites/default/files/images/maintenanceFinder/maintenanceFinderBackground.gif');
      color: white;
-     font-weight: bold;
+     
      float: left;
-     height: 218px;
-     margin-left: 15px;
-     margin-right: 25px;
-     padding-left: 10px;
-     padding-top: 10px;
-     width: 261px;
+     font-weight: bold;
+     height: 213px;
+     margin-left: 27px;
+     margin-right: 15px;
+     padding-left: 15px;
+     padding-top: 15px;
+     width: 256px;
 }
 
+#maintenance-finder h2{
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
 
 
 #maintenance-finder h2 span
 {
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: normal;
+    
 }
 #maintenance-finder label, #maintenance-finder select
 {
@@ -1357,7 +1408,7 @@ li a.active
 #maintenance-finder select
 {
     width: 140px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 #maintenance-finder-find-button

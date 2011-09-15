@@ -24,6 +24,8 @@
     <?php
         $viewData['containerId'] = 'workshop-services-warranty-campaign-link';
         $viewData['photoPath'] = $paths->images.'/workshopServicesForm/warrantyCampaign.png';
+        
+        $viewData['hrefPath'] = '/vehiculos-con-garantia' ;
     ?>
     
     <?php require dirname(__FILE__).'/../views/imageLinkView.php';?>

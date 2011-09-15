@@ -6,9 +6,11 @@ initializeSlideshows = function()
                 options:{
                     fx:     'fade', 
                     speed:  'fast', 
-                    timeout: 3000, 
-                    next: '#front-page-slideshow-next',
-                    prev: '#front-page-slideshow-previous',
+                    timeout: 3000,
+                    pager: '#front-page-slideshow-pager',
+                   pagerAnchorBuilder: function(idx, slide){
+                        return '#front-page-slideshow-pager span:eq('+idx+')';
+                    },
                     cleartype: true,
                     cleartypeNoBg: true,
                     pagerEvent:    'click'                   
@@ -17,7 +19,7 @@ initializeSlideshows = function()
             news: {
                 selector: '#news-container',
                 options:{
-                    fx:     'scrollUp', 
+                    fx:     'scrollRight', 
                     speed:  'fast', 
                     timeout: 3000,                 
                     cleartype: true,

@@ -25,6 +25,7 @@ function vehicles_search_block($op='list', $delta=0, $edit=array())
      $block['content'] = '';
      $filters  = array();
      $brand = isset($_GET['marca']) ? $_GET['marca']: 'nissan';
+     $category = isset($_GET['categoria']) ? $_GET['categoria']: 'todas';
      $filters[] = isset($_GET['categoria']) && $_GET['categoria'] != 'todas'? new VehicleTypeFilter($_GET['categoria']) : new NullFilter();
      
      $filters[] = $_GET['marca'] != 'todas' ? new BrandFilter($brand) : new NullFilter();
@@ -50,14 +51,15 @@ function vehicles_search_block($op='list', $delta=0, $edit=array())
       
      $block['content'] .= '<div id="vehicles-agency-search-results">' ;
      
-     if($_GET['marca'] == 'todas')
+     if(!isset($_GET['marca']) || $_GET['marca'] == 'todas')
      {
         $block['content'].= '<div><img src="'.$paths->images.'/vehiclesAgency/allVehicles.png" alt="todas-lasmarcas"/></div>';
      }
      else
      {
           $block['content'] .= '<h2 id="vehicles-agency-search-results-title">' ;
-            $block['content'] .= 'VEHÍCULOS' ;
+          $categoryInPlural = $category == 'automovil' || $category == 'camion' || $category == 'minibus'?  $category.'es' : $category.'s';
+            $block['content'] .= $categoryInPlural;
 
          
             $block['content'] .= '<span class="brand-logo vehicles-agency-search-results-title-brand-logo '.$brand.'" id="vehicles-agency-search-results-title-brand-logo"></span>';

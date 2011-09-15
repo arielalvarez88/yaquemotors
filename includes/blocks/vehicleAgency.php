@@ -21,8 +21,9 @@
             <a  class="filter-brand-modifier-button <?php echo !isset($_GET['marca']) || $_GET['marca']  == 'nissan' || $_GET['marca'] == 'todas'? 'selected-brand' : ''; ?>" id="vehicles-agency-nissan-button" value="nissan"   ></a>
 
 
-            <a  class="filter-brand-modifier-button <?php echo (isset($_GET['marca']) && $_GET['marca'] == 'suzuki') || $_GET['marca'] == 'todas' ? 'selected-brand' : ''; ?>" id="vehicles-agency-suzuki-button" value="suzuki"  ></a>
+            
             <a  class="filter-brand-modifier-button <?php echo (isset($_GET['marca']) && $_GET['marca'] == 'chevrolet') || $_GET['marca'] == 'todas' ? 'selected-brand' : ''; ?> " id="vehicles-agency-chevrolet-button"  value="chevrolet" ></a>
+            <a  class="filter-brand-modifier-button <?php echo (isset($_GET['marca']) && $_GET['marca'] == 'suzuki') || $_GET['marca'] == 'todas' ? 'selected-brand' : ''; ?>" id="vehicles-agency-suzuki-button" value="suzuki"  ></a>
 
 
             
@@ -31,8 +32,8 @@
         </div>
 
 <a class="filter-brand-modifier-button" id="vehicles-agency-all-brands" value="todas" >TODAS LAS MARCAS</a>
-        <a id="vehicles-agency-make-appointment"></a>
-        <a id="vehicles-agency-parts" href="/tienda-de-repuestos"></a>
+        <a href="/citas" id="vehicles-agency-make-appointment"></a>
+        <a href="/tienda-de-repuestos" id="vehicles-agency-parts" href="/tienda-de-repuestos"></a>
     </div>
 
     <?php require dirname(__FILE__).'/bigVerticalDivisor.php';?>

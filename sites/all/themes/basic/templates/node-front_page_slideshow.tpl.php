@@ -1,6 +1,6 @@
 <?php
 $slidesInfo = $node->field_front_page_slides;
-
+$slidesNumber = count($slidesInfo);
 
 
 ?>
@@ -28,9 +28,10 @@ $slidesInfo = $node->field_front_page_slides;
         
 
     </div>
-    <div id="front-page-slideshow-next-previous"> 
-        <img id="front-page-slideshow-next" src="/<?php echo file_directory_path();?>/images/frontPageSlideshow/previousArrow.png"/>
-        <img id="front-page-slideshow-previous" src="/<?php echo file_directory_path();?>/images/frontPageSlideshow/nextArrow.png"/>
+    <div id="front-page-slideshow-pager"> 
+        <?php for($i=0; $i < $slidesNumber; $i++):?>
+            <span class="front-page-slideshow-pager-item"></span>
+        <?php endfor;?>        
     </div>
     
     

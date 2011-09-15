@@ -27,9 +27,9 @@
 
             <!-- ______________________ HEADER _______________________ -->
             <div id="pre-header">
-                <img id="search-icon" alt="foto-lupa-buscar" src="/<?php echo file_directory_path(); ?>/images/theme/searchIcon.png"/>
-                <input id="global-search"type="text" />
-                <p id="appoiment-text">Hacer una cita <img id="top-calendar" alt="foto-calendario" src="/<?php echo file_directory_path(); ?>/images/theme/topCalendar.png"/></p>
+                
+                
+                <a href="/citas" id="appointment-text">Hacer una cita <img id="top-calendar" alt="foto-calendario" src="/<?php echo file_directory_path(); ?>/images/theme/topCalendar.png"/></a>
 
             </div>
             <div id="header">
