@@ -13,6 +13,7 @@ function maintenance_finder_block($op='list', $delta=0, $edit=array()) {
     $block = array();
     if ($op == 'list') {
         $block[0]["info"] = t('Front Page Maintenance Finder Block');
+        $block[1]["info"] = t('Taller de Servicios Maintenance Finder Block');
     } elseif ($op == 'view') {
 
 

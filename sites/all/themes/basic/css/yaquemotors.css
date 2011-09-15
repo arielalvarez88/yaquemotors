@@ -110,6 +110,8 @@ root {
     float: left;
 }
 
+
+
 #vehicles-agency-search-results-title
 {
         background-image: url("/sites/default/files/images/vehiclesAgency/resultsHeader.png");
@@ -119,6 +121,12 @@ root {
         width: 418px;
         position: relative;
         text-transform: uppercase;
+}
+
+#vehicles-agency-search-results-title.all-brands
+{
+            background-image: url("/sites/default/files/images/vehiclesAgency/allVehicles.png");
+            width: 610px;
 }
 
 
@@ -1156,12 +1164,12 @@ li a.active
 {
     background-image: url('/sites/default/files/images/news/news.png');
     float: left;
-    height: 52px;
+    height: 54px;
     left: 545px;
     padding-top: 30px;
     position: absolute;
     top:766px;        
-    width: 411px;
+    width: 413px;
 }
 .news
 {
