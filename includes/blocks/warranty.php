@@ -2,7 +2,10 @@
 <div id="warranty">
     <h2 id="warranty-header" >CAMPA&Ntilde;A DE VEH&Iacute;CULOS CON GARANT&Iacute;A <img src="<?php echo $paths->images;?>/common/whiteArrow.png"/></h2>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices dui a quam vulputate sit amet venenatis nisl tempus. Sed at felis lectus. Pellentesque in mauris risus. Integer justo nulla, dapibus ut tincidunt sit amet, scelerisque tempor lacus. Maecenas auctor dui sed ipsum blandit pretium. Aliquam blandit neque vitae elit aliquam varius cursus dolor bibendum. Fusce consequat tincidunt dui. Nullam et sodales nunc. Fusce sed lectus vel neque cursus suscipit. Nullam eget diam vel urna aliquet pharetra.
+
+
+
+Los  fabricantes de vehículo Nissan, Chevrolet y Suzuki con el objetivo de mejorar la calidad en sus productos realizan Campañas de Servicios para los modelos que lo requieran. Este tipo de trabajo no tiene ningún costo para el cliente. Si el chasis de su vehículo se encuentra entre los vehículos de la campaña actual, favor comunicarse con nosotros y hacer una cita con nuestro taller de servicios para llevar a cabo dicha campaña.
     </p>
         
     <div id="warranty-nissan-logo" class="brand-logo"></div>

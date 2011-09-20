@@ -8,7 +8,7 @@ initializeSlideshows = function()
                     speed:  'fast', 
                     timeout: 3000,
                     pager: '#front-page-slideshow-pager',
-                   pagerAnchorBuilder: function(idx, slide){
+                    pagerAnchorBuilder: function(idx, slide){
                         return '#front-page-slideshow-pager span:eq('+idx+')';
                     },
                     cleartype: true,
@@ -192,13 +192,13 @@ initializeAjaxForms = function()
             processingSriptUrl: '/includes/ajax/partFormProcessor.php'
         },
         contactsForm:  {
-             formSelector : '#contacts-form',
+            formSelector : '#contacts-form',
             cleanButtonSelector : "#contacts-form-clean-button",
             sendButtonSelector : '#contacts-form-send-button',            
             processingSriptUrl: '/includes/ajax/contactsFormProcessor.php'
         },
         appointmentForm: {
-             formSelector : '#make-appointment-text-container',
+            formSelector : '#make-appointment-text-container',
             cleanButtonSelector : "#make-appointment-clean-button",
             sendButtonSelector : '#make-appointment-send-button',            
             processingSriptUrl: '/includes/ajax/appointmentProcessor.php'
@@ -219,23 +219,23 @@ initializeAjaxForms = function()
 
 Filter = function(brandModifierButtonsSelector,categoryModifierButtonsSelector)
 {
-  var initialBrand = $.getUrlVar('marca');
-  var initialCategory = $.getUrlVar('categoria');
+    var initialBrand = $.getUrlVar('marca');
+    var initialCategory = $.getUrlVar('categoria');
   
-  this.brand = initialBrand ? initialBrand  : 'nissan';  
-  this.category = initialCategory ? initialCategory : 'todas';
-  var agencyFilter = this;
+    this.brand = initialBrand ? initialBrand  : 'nissan';  
+    this.category = initialCategory ? initialCategory : 'todas';
+    var agencyFilter = this;
   
-  $(brandModifierButtonsSelector).click(function(){
-      agencyFilter.brand = $(this).attr('value');
-      window.location.href = '/agencia-de-vehiculos?' + 'marca='+ agencyFilter.brand + '&categoria='+ agencyFilter.category;
-  });
+    $(brandModifierButtonsSelector).click(function(){
+        agencyFilter.brand = $(this).attr('value');
+        window.location.href = '/agencia-de-vehiculos?' + 'marca='+ agencyFilter.brand + '&categoria='+ agencyFilter.category;
+    });
   
-$(categoryModifierButtonsSelector).click(function(){
+    $(categoryModifierButtonsSelector).click(function(){
       
-      agencyFilter.category = $(this).attr('value');
-      window.location.href = '/agencia-de-vehiculos?' + 'marca='+ agencyFilter.brand + '&categoria='+ agencyFilter.category;
-  });
+        agencyFilter.category = $(this).attr('value');
+        window.location.href = '/agencia-de-vehiculos?' + 'marca='+ agencyFilter.brand + '&categoria='+ agencyFilter.category;
+    });
   
   
   
@@ -245,12 +245,12 @@ $(categoryModifierButtonsSelector).click(function(){
 
 initializFilter = function (){
   
-  var vehiclesAgencyFilters = new Filter('.filter-brand-modifier-button','.filter-category-modifier-button');
+    var vehiclesAgencyFilters = new Filter('.filter-brand-modifier-button','.filter-category-modifier-button');
 };
 
 maintenanceFinderFindButtonOnClick = function (){
     
-};
+    };
 
 
 maintenanceFinderBrandOnClick = function (event){
@@ -272,10 +272,25 @@ maintenanceFinderFindButtonOnClick = function()
 }
 
 initializeCalendarsUi = function(){
-    $('#appointment-date').datetimepicker({timeText:'Hora: ',hourText:'Hora',minuteText:'Minuto',ampm:true, hourMin: 8, hourMax: 16, monthNames: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],dateNames: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'], dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sa'], currentText: 'Ahora', closeText: 'Listo'});
+    $('#appointment-date').datetimepicker({
+        timeText:'Hora: ',
+        hourText:'Hora',
+        minuteText:'Minuto',
+        ampm:true, 
+        hourMin: 8, 
+        hourMax: 16, 
+        monthNames: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
+        dateNames: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'], 
+        dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sa'], 
+        currentText: 'Ahora', 
+        closeText: 'Listo'
+    });
     
 };
 initializeOnClickEvents = function(){
+    
+    
+    $.singletonSlider('.contacts-slider-title','.contacts-slider-menu');
     
     var buttons = {
         maintenanceFinderFindButton:{
@@ -315,6 +330,37 @@ extendJquery = function (){
             return $.getUrlVars()[name];
         }
     });
+    
+    
+    $.extend(
+    {
+        singletonSlider: function(titlesSelectors,siblingSelectorToSlide)
+        {
+            
+               var titles = $(titlesSelectors);
+               var siblingsToSlide = $(siblingSelectorToSlide);
+               
+                titles.siblings(siblingSelectorToSlide + ':nth(0)').show();
+                titles.click(function(){
+           
+           
+           
+                    siblingsToSlide.slideUp("slow");
+                        
+                    var siblings = $(this).siblings(siblingSelectorToSlide);
+                    if(!siblings.is(":visible"))
+                        siblings.slideDown();
+                
+                });
+       
+            
+        }
+    }
+       
+    );
+    
+    
+    
 };
     
 colorRow = function(){

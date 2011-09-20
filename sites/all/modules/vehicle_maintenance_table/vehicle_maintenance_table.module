@@ -39,6 +39,16 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
      $block['subject'] = 'Vehicle Search Result';
      $block['content'] = '';
      
+     $block['content'] .= '<h2>';
+        $block['content'] .= 'Tarifas de Mantenimiento';        
+     $block['content'] .= '</h2>';
+     
+     $block['content'] .= '<p>';
+        $block['content'] .='Con la intención de que el cliente prepare su presupuesto antes de visitarnos, presentamos las Tarifas de Mantenimientos para los diferentes modelos y sus respectivos kilometrajes/tiempos.  Estos precios incluyen las diferentes inspecciones recomendadas por el fabricante, repuestos originales, técnicos capacitados para nuestras marcas, acceso a información técnica actualizada y la utilización de los equipos y herramientas avanzadas sugeridas por los fabricantes.';
+     $block['content'] .= '</p>';
+             
+             
+             
      $block['content'] .= '<h2 id="maintenanace-header">';
         $block['content'] .= 'Programa de Mantenimiento para Vehículos '.$brand;
      $block['content'] .= '</h2>';

@@ -9,10 +9,10 @@
     <div id="parts-store-text-container">
         <h2>TIENDA DE REPUESTOS</h2>
         <p id="parts-store-text">
-            En nuestra tienda de repuestos tenemos un amplio inventario de piezas originales directamente desde los fabricantes, ofreciendo así la mejor calidad a nuestros clientes.
-            <br/>
-            <br/>
-            Cuando utiliza repuestos originales: no hay que hacer adaptaciones a la pieza ya que fue fabricada con las especificaciones de fabrica por tecnicos expertos, asegurando un mayor tiempo de duración de la misma, lo que lleva a una mayor duración, seguridad, duracion de su vehículo. Todo esto trae un considerable ahorro de dinero a nuestros clientes.
+            
+            Cuando un vehículo utiliza repuestos originales no hay que hacer adaptaciones a la pieza ya que cumple con las especificaciones del fabricante, asegurando una mayor duración, mejor calidad y seguridad, así como un mejor funcionamiento del vehículo. Todo esto trae un considerable ahorro de dinero al cliente.
+En nuestra tienda de repuestos tenemos un amplio inventario de piezas originales para los diferentes modelos que representamos de las marcas Nissan, General Motors y Suzuki. En el caso de las piezas menos comunes en el mercado, disponemos de un sistema especial de pedidos, garantizando al cliente la recepción de la pieza en el menor tiempo posible.
+            
         </p>
 
         <div id="parts-store-form">

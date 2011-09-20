@@ -38,65 +38,28 @@ function maintenance_finder_block($op='list', $delta=0, $edit=array()) {
         foreach ($brandsAndModels as $key => $value) {
             $brandsAndModels[$key] = array_unique($brandsAndModels[$key]);
         }
-
-
-
+        $viewFilePath = '';
+       
+        $viewFilePath = realpath ('./includes/views/frontPageMaintenanceFinder.php');
+       
+        
+        
+        
+        
+        
+        
+        
         $block['subject'] = 'Vehicle Search Result';
         $block['content'] = '';
 
-        $block['content'] .= '<div id="maintenance-finder">';
-        $block['content'] .= '<h2 id="maintenance-finder-header">';
-
-        $block['content'] .= 'TARIFA DE <br/> MANTENIMIENTO <br/>';
-        $block['content'] .= '<span>PARA TU VEHICULO</span>';
-
-        $block['content'] .= '</h2>';
-
-        $block['content'] .= '<form method="get" action="/tarifas-de-mantenimiento">';
-
-        $block['content'] .= '<label for="maintenance-finder-brand">MARCA</label>';
+        ob_start();
+        require $viewFilePath;
         
-        $block['content'] .= '<select name="marca" id="maintenance-finder-brand">';
-            foreach ($brandsAndModels as $brand => $models) 
-            {
-                $selected = $brand == 'nissan' ? 'selected="selected"': '';
-                $block['content'] .= '<option  value="' . $brand . '"'.$selected.' >';
-                $block['content'] .= ucwords($brand);
-                $block['content'] .= '</option>';
-            }
-
-        $block['content'] .= '</select>';
-
-        $block['content'] .= '<label>';
-            $block['content'] .= 'MODELO';
-        $block['content'] .= '</label>';
-        foreach ($brandsAndModels as $brand => $models) 
-        {
-            $visible = $brand == 'nissan' ? ' visible' : ' hidden';
-            $block['content'] .= '<select class="maintenance-finder-model'.$visible.'" name="modelo" id="maintenance-finder-model-' . $brand . '" >';
-            foreach ($models as $model)                 
-            {
-
-                $block['content'] .= '<option value="' . $model . '">';
-                $block['content'] .= ucwords($model);
-                $block['content'] .= '</option>';
-            }
-            $block['content'] .= '</select>';
-        }
-
-        $block['content'] .= '<a id="maintenance-finder-find-button">';
-            $block['content'] .= 'BUSCAR';
-            
-            
-        $block['content'] .= '</a>';
-
-        $block['content'] .= '</form>';
-
+        $view = ob_get_contents();        
+        ob_end_clean();
+        $block['content'] .= $view;
         
-
         
-
-        $block['content'] .= '</div>';
     }
 
     return $block;

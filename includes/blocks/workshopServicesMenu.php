@@ -6,7 +6,9 @@
         <img src="<?php echo $paths->images;?>/common/whiteArrow.png"/>
     </h2>
     <p>
-         El Centro de Servicios el Yaque Motors  cuenta con una nueva estructura interna y un personal especializado formado bajo normas de calidad y seguridad industrial, combinado esto a su vez, con tecnología de punta para ofrecer un mejor servicio.
+         Te damos la bienvenida al Taller de Servicios más completo de la región del Cibao para las marcas de vehículos General Motors, Nissan y Suzuki. Con un espacio de aproximadamente 2,000 m2, equipado con herramientas especiales junto a los computadores de diagnósticos más actualizados del mercado y una comunicación directa con los fabricantes de los vehículos que representamos.  Estamos bien preparados para brindarte la ayuda necesaria con la reparación de tu vehículo.
+Contamos con un personal capacitado, entrenado y certificado por representantes de las fábricas de vehículos General Motors, Nissan y Suzuki. Con la constante capacitación de nuestro personal y la actualización de nuestros equipos y herramientas, buscamos garantizar un servicio de calidad mundial, teniendo como objetivo lograr la satisfacción de nuestros clientes.
+Planifica y coordina tu visita a nuestro taller realizando una cita desde el website o comunicándote con nuestros asesores de servicios. Te aseguramos que no tendrás más preocupaciones con el mantenimiento de tu vehículo después de conocer nuestros servicios.
     </p>
     
         <ul>

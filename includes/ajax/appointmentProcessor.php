@@ -6,6 +6,7 @@ $subject = "Mensaje de Citas";
 $message = "Información del usuario:";
 
 $message .= "\n" . 'Nombre/Empresa: ' . $_POST['appointment-name'];
+$message .= "\n" . 'Empresa: ' . $_POST['appointment-company'];
 $message .= "\n" . 'Teléfono: ' . $_POST['appointment-telephone'];
 $message .= "\n" . 'Email: ' . $_POST['appointment-email'];
 

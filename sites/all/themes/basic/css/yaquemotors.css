@@ -471,6 +471,7 @@ li a.active
 
 #authorized-distributor
 {
+    margin-top: 20px;
     float: left;
 }
 
@@ -491,6 +492,7 @@ li a.active
 {
     background-image: url("/sites/default/files/images/common/redCornerButton.png");
     display: block;
+    font-weight: bold;
     height: 30px;
     text-align: center;
     width: 266px;
@@ -498,6 +500,21 @@ li a.active
     padding: 8px 0;
     color: #333333;
     
+    
+}
+
+.contacts-slider-employee-info
+{
+    margin: 7px 0;
+    border-bottom: 1px solid gray;
+}
+ul.contacts-slider-title
+{
+  list-style: none;  
+}
+#contacts-info ul
+{
+    padding: 0 0 0 15px;
     
 }
 
@@ -806,7 +823,7 @@ li a.active
     top: 371px;
 }
 
-#make-appointment p
+#make-appointment-text-container p
 {
     clear: both;
     height: 20px;
@@ -815,7 +832,8 @@ li a.active
 #make-appointment-text-container
 {
     float: left;
-    margin-left: 20px;
+    margin-left: 61px;
+    margin-right: 61px;
     
 }
 
@@ -830,17 +848,35 @@ li a.active
     width: 200px;
 }
 
-#make-appointment-left-menu-appointment
+#make-appointment-right-menu-appointment
 {
     
    
     height: 86px;
 }
 
-#make-appointment-left-menu
+#make-appointment-right-menu
 {
+    background-image: url('/sites/default/files/images/makeAppointment/appointmentBenefits.png');
     float: left;
-    margin-right: 20px;
+    font-size: 1.1em;
+    height: 322px;   
+    margin-left: 61px;
+    margin-right: 61px;    
+    padding-top: 70px;
+    width: 315px;
+    
+    
+}
+
+#make-appointment-right-menu ul{
+    padding: 0 0 0 25px;
+}
+#make-appointment-right-menu ul li
+{
+    
+    margin-bottom: 10px;
+    list-style: disc;
 }
 
 #make-appointment span#appointment-hour-text
@@ -849,12 +885,7 @@ li a.active
     margin: 0 10px;
 }
 
-.make-appointment-left-menu-button
-{
-    display: block;
-     background-image: url('/sites/default/files/images/common/appointmentOffersSprite.png');
-      width: 233px;
-}
+
 
 #make-appointment-left-menu-offers
 {
@@ -865,7 +896,13 @@ li a.active
 
 #appointment-service
 {
+    
+    clear: both;
+    display: block;
+    height: 200px;
     margin-bottom: 20px;
+    width: 345px;
+    
 }
 
 #make-appointment-send-button, #make-appointment-clean-button
@@ -947,7 +984,7 @@ li a.active
 {
     position: relative;
     top: 6px;
-    left: 39px;
+    left: 45px;
 }
 .workshop-services-menu-item-text, .workshop-services-menu-item-icon
 {
@@ -1016,15 +1053,28 @@ li a.active
 
 /*Work Shop Services Slideshow*/
 #workshop-services-slideshow-container {
-  background-image: url("/sites/default/files/images/workshopServicesSlideshow/slideshowBackground.png");
-    height: 219px;
-    padding-left: 23px;
-    padding-top: 76px;
+    background-color: #d7d7d7;
+    border-radius: 12px;
+    height: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 48px;
     width: 599px;
-    
+    position: relative;
     margin-right: 10px;
 }
-
+.workshop-sevices-slide-bottom-text
+{
+    float: right;
+    font-weight: bold;
+        
+}
+#workshop-services-slideshow-header
+{
+    left: 122px;
+    position: absolute;
+    top: -9px;
+}
 #workshop-sevices-slideshow-pager span.activeSlide
 {
     background-image: url("/sites/default/files/images/workshopServicesSlideshow/selectedNumbers.png");
@@ -1033,7 +1083,7 @@ li a.active
 #workshop-sevices-slideshow-pager
 {
     height: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding-left: 138px;
 }
 
@@ -1168,7 +1218,7 @@ li a.active
     left: 545px;
     padding-top: 30px;
     position: absolute;
-    top:766px;        
+    top:786px;        
     width: 413px;
 }
 .news
@@ -1453,7 +1503,7 @@ li a.active
 
 #make-appointment
 {
-    
+    padding: 0 20px;
 }
 
 /*make-appointment ENDS*/
@@ -1759,6 +1809,15 @@ label#part-store-part-comment-label
    font-size: 1.5em;   
    width: 100px;
   
+}
+
+#contacts-form form
+{
+    width: 405px;
+}
+
+#contacts-direction{
+    margin-bottom: 25px;
 }
 #contacts-form
 {

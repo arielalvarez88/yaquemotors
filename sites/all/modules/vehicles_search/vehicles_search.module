@@ -25,7 +25,7 @@ function vehicles_search_block($op='list', $delta=0, $edit=array())
      $block['content'] = '';
      $filters  = array();
      $brand = isset($_GET['marca']) ? $_GET['marca']: 'nissan';
-     $category = isset($_GET['categoria']) ? $_GET['categoria']: 'todas';
+     $category = isset($_GET['categoria']) ? $_GET['categoria']: 'automovil';
      $filters[] = isset($_GET['categoria']) && $_GET['categoria'] != 'todas'? new VehicleTypeFilter($_GET['categoria']) : new NullFilter();
      
      $filters[] = $_GET['marca'] != 'todas' ? new BrandFilter($brand) : new NullFilter();
@@ -71,12 +71,12 @@ function vehicles_search_block($op='list', $delta=0, $edit=array())
 
 
 
-
+                
                  $block['content'] .= '<a href="'.$vehicleNode->path.'" class="vehicle-search-result">';
-                 $block['content'] .= '<img src="/'.$vehicleNode->field_vehicle_photos[0]['filepath'].'" alt="foto-del-vehiculo" class="vehicle-search-result-photo" />';
+                 $block['content'] .= theme('imagecache','vehicle_search_result',$vehicleNode->field_vehicle_photos[0]['filepath'],'foto-del-vehiculo',$vehicleNode->field_vehicle_model[0]['value'],'');
                  $block['content'] .= '<p class="vehicle-search-result-brand">'.$vehicleNode->field_vehicle_brand[0]['value'].'</p>';
                  $block['content'] .= '<p class="vehicle-search-result-model">'.$vehicleNode->field_vehicle_model[0]['value'].' <span>'.$vehicleNode->field_vehicle_year[0]['value'].'</span> </p>';
-
+                 
 
              $block['content'] .= '</a>';
 
