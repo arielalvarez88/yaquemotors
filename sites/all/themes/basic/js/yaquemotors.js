@@ -302,7 +302,7 @@ initializeCalendarsUi = function(){
 };
 initializeOnClickEvents = function(){
     
-    
+   $("#maintenance-finder-brand").change(maintenanceFinderBrandOnClick);
     $.singletonSlider('.contacts-slider-title','.contacts-slider-menu');
     
   $('#vehicle-upper-menu-cotizar').fancybox({        
@@ -318,11 +318,7 @@ initializeOnClickEvents = function(){
             selector: "#maintenance-finder-find-button",
             onClick: maintenanceFinderFindButtonOnClick
         },
-        
-        maintenanceFoinderMarcaOption:{
-            selector: "#maintenance-finder-brand option",
-            onClick: maintenanceFinderBrandOnClick
-        },
+                
         vehiclePrint: {
             selector: "#vehicle-upper-menu-imprimir",
             onClick: printVehiclePage
