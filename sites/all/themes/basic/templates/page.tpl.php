@@ -190,6 +190,10 @@
                     
                    
                 </div>
+                
+                <a id="makers-logo" href="http://www.5050mkt.com/" target="_blank">
+                    <img alt="5050mkt-logo" src="/<?php echo file_directory_path();?>/images/theme/footer/5050mktLogo.png"/>
+                </a>
                 <p id="footer-copyright">Copyright 2011 El Yaque Motors Todos los derechos reservados.</p>
             </div> <!-- /footer -->
         </div> <!-- /page -->

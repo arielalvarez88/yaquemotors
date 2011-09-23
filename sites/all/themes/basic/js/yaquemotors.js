@@ -406,6 +406,16 @@ colorRow = function(){
     $('tr#'+model).css("background-image","url('/sites/default/files/images/theme/footer/footerGradient.png')");
     $('tr#'+model).css("color","white");
 };
+
+
+roundCorners = function()
+{
+    var selectors = ['#maintenance-finder'];
+    var i = 0;
+    for(i=0; i<selectors.length; i++)
+        $(selectors[i]).corner("tr bl bt 10px");
+}
+
 $(document).ready(function(){
     
     
@@ -416,6 +426,7 @@ $(document).ready(function(){
     initializeAjaxForms();
     initializeCalendarsUi();
     initializFilter();
+    roundCorners();
     colorRow();
   
         

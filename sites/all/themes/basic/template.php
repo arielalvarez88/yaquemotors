@@ -185,6 +185,7 @@ function basic_preprocess_block(&$vars, $hook) {
     $classes[] = basic_id_safe('block-id-' . $vars['block']->bid);
     $classes[] = 'clearfix';
     
+    
     // support for Skinr Module
     if (module_exists('skinr')) {
       $classes[] = $vars['skinr'];

@@ -1,4 +1,4 @@
-<?php $section = $delta == 1? 'class="taller-de-mantenimiento"':'';?>
+<?php $section = $delta == 1? 'class="taller-de-servicios"':'';?>
 <div id="maintenance-finder" <?php echo $section;?>>
 
     <h2 id="maintenance-finder-header">

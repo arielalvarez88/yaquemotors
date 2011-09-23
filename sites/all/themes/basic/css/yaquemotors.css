@@ -103,6 +103,18 @@ root {
 }
 /*pre-header ENDS*/
 
+
+/*warranty-link*/
+#warranty-link
+{
+    clear: both;
+    display: block;
+    margin-top: 15px;
+}
+
+/*warranty ENDS*/
+
+
 /*Vehicle Agency*/
 
 #vehicles-agency-left-side
@@ -879,6 +891,14 @@ ul.contacts-slider-title
     color: #cccccc;
     position: relative;
     margin-top: 20px;
+}
+
+#makers-logo
+{
+    clear: both;
+    display: block;
+    float: right;
+    
 }
 
 #footer-logo
@@ -1704,14 +1724,22 @@ ul.contacts-slider-title
 
 /*mintenance-finder*/
 
+#maintenance-finder.taller-de-servicios
+{
+    margin-bottom: 20px;
+    width: 277px;
+    margin-left: 0;   
+    margin-top: 20px;
+}
+
 #maintenance-finder
 {
      background-image: url('/sites/default/files/images/maintenanceFinder/maintenanceFinderBackground.gif');
+     border-radius: 0 23px 15px 15px;
      color: white;
-     
      float: left;
      font-weight: bold;
-     height: 213px;
+     height: 204px;
      margin-left: 27px;
      margin-right: 15px;
      padding-left: 15px;
