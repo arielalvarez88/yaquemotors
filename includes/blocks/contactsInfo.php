@@ -3,6 +3,7 @@
 
            <div id="contacts-direction">
 
+               
             <h4>Direcci&oacute;n</h4>    
             <p>
                 Av. 27 de Febrero No. 16
@@ -87,7 +88,7 @@
             </p>
             </li>
             <li>
-            <p class="contacts-slider-employee-info">
+            <p class="contacts-slider-employee-info border-less">
                 <span class="bold">Vendedor:</span> Luis Bournigal 
                 <br/>
                 <span class="bold">Extensión:</span> 305
@@ -119,7 +120,7 @@
             </li>
             
             <li>
-            <p class="contacts-slider-employee-info">
+            <p class="contacts-slider-employee-info border-less">
                 <span class="bold">Vendedor:</span> José Marcos Cabrera
                 <br/>
                 <span class="bold">Extensión:</span> 302
@@ -152,7 +153,7 @@
             </li>
             
             <li>
-            <p class="contacts-slider-employee-info">
+            <p class="contacts-slider-employee-info border-less">
                 <span class="bold">Vendedor:</span> Estheban Jiménez
                 <br/>
                 <span class="bold">Extensión:</span> 230

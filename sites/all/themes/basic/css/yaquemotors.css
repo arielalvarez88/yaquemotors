@@ -40,6 +40,8 @@ root {
     border: 3px solid #e5e5e5;
     height: 23px;
 }
+
+
 #appointment-text
 {
     color: #333333;
@@ -47,8 +49,10 @@ root {
     font-weight: bold;
     height: 26px;
     margin-right: 50px;
-    
+    padding-top: 1px;
     position: relative;
+    
+    padding-left: 5px;
     
 }
 #search-icon
@@ -66,6 +70,27 @@ root {
 #pre-header
 {
     position: relative;
+}
+
+#news-link
+{
+    border-right: 1px solid #999999;
+    color: #333333;
+    float: right;    
+    font-weight: bold;
+    height: 16px;
+    
+    margin-right: 3px;
+    margin-top: 1px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+}
+
+#news-link img
+{
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
 }
 
 #top-calendar
@@ -370,10 +395,10 @@ root {
 #warranty-header
 {
     background-image: url("/sites/default/files/images/common/bigRedCornerButton.png");
-    font-size: 1.7em;    
-    height: 43px;
+    font-size: 1.4em;    
+    height: 38px;
     padding-left: 8px;
-    padding-top: 2px;
+    padding-top: 7px;
     position: relative;
     width: 483px;    
     
@@ -412,6 +437,163 @@ root {
 
 
 /*Warranty ENDS*/
+
+
+/*vehicle-cotizar-overlay*/
+
+#vehicle-cotizar-overlay-header
+{
+    background-image: url("/sites/default/files/images/maintenanceForm/formHeader.gif");
+    width: 783px;
+    height: 96px;
+    margin: 0;
+    padding: 0;
+}
+
+
+#vehicle-cotizar-overlay #vehicle-cotizar-overlay-form label, #vehicle-cotizar-overlay #vehicle-cotizar-overlay-form input
+{
+    display: block;
+    clear: both;
+    margin-bottom: 5px;
+}
+
+#vehicle-cotizar-overlay #vehicle-cotizar-overlay-form label
+{
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 180px;
+}
+
+#vehicle-cotizar-overlay #vehicle-cotizar-overlay-form input
+{
+    width: 256px;
+}
+
+#overlay-title
+{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+#overlay-photo
+{
+    display: block;
+    width: 406px;
+    height: 283px;
+}
+#overlay-car-info, #vehicle-cotizar-overlay form
+{
+    float: left;
+}
+
+#vehicle-contizar-overlay-description-title
+{
+    width: 407px;
+    height: auto;
+}
+#vehicle-cotizar-overlay-content
+{
+    background-image: url("/sites/default/files/images/maintenanceForm/overlayBackground.png");
+    height: 635px;
+      padding: 20px 20px 0 20px;
+      
+}
+
+#overlay-car-info ul
+{
+    list-style: none;
+    padding: 0;
+}
+#overlay-car-info
+{
+    margin-left: 28px;
+}
+#vehicle-cotizar-overlay-form-container
+{
+      float: left;
+      margin-right: 28px;
+}
+
+#vehiculo-cotizar-overlay-form-send-button
+{
+   background-color: white;
+    border: 1px solid #BFBFBF;
+    border-radius: 5px 5px 5px 5px;
+    color: #333333;
+    display: block;
+    height: 29px;
+    margin-top: 15px;
+    padding: 3px;
+    text-align: center;
+    width: 70px;
+}
+
+#vehiculo-cotizar-overlay-form-send-button span
+{
+        background-color: #EFF3F5;
+    display: block;
+    font-size: 1.2em;
+    height: 23px;
+    padding: 3px;
+}
+
+/*vehicle-cotizar-overlay ENDS*/
+
+
+/*basic form*/
+
+
+#contacts-form form input, #vehicle-cotizar-overlay form input
+{
+  border: 5px solid #d8d8d8;
+  width: 281px;
+  height: 30px;
+}
+
+
+#contacts-form form input, #contacts-form form textarea,
+#vehicle-cotizar-overlay form input, #vehicle-cotizar-overlay form textarea
+
+{
+    border: 5px solid #d8d8d8;
+    margin-bottom: 10px;
+  width: 281px;
+ 
+}
+#contacts-form form textarea,
+#vehicle-cotizar-overlay form textarea
+{
+    height: 157px;
+    margin-bottom: 20px;
+}
+
+#contacts-form form label,
+#vehicle-cotizar-overlay form label
+{
+   display: block;
+   float: left;
+   font-size: 1.5em;   
+   width: 100px;
+  
+}
+
+#vehicle-cotizar-overlay form
+{
+    width: auto;
+}
+
+#contacts-form form
+{
+    width: 405px;
+}
+
+
+
+
+
+/*basic form ENDS*/
 
 /*header*/
 #header
@@ -506,7 +688,8 @@ li a.active
 .contacts-slider-employee-info
 {
     margin: 7px 0;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 10px;
 }
 ul.contacts-slider-title
 {
@@ -535,6 +718,10 @@ ul.contacts-slider-title
     margin:0;
 }
 
+.contacts-slider-menu
+{
+    list-style: none;
+}
 /*Contactos Info ENDS*/
 
 
@@ -578,14 +765,16 @@ ul.contacts-slider-title
 }
 
 
+#family-tradition-secondary-employees-container
+{
+    text-align: center;
+}
 
  #family-tradition-director {
-    background-image: url("/sites/default/files/images/familyTradition/employeesSprite.png");
-    background-position: -31px -26px;
-    float: left;
-    height: 263px;
     
-    width: 106px;
+    display: block;
+    float: left;
+    
 }
 
 
@@ -600,9 +789,9 @@ ul.contacts-slider-title
 }
 #family-tradition-directors-message
 {
-    margin: 0 5px;
+    
     padding-top: 8px;
-    width: 485px;
+    width: 550px;
     
 }
 
@@ -630,10 +819,10 @@ ul.contacts-slider-title
 }
 .family-tradition-secondary-employees
 {
-    background-image: url('/sites/default/files/images/familyTradition/employeesSprite.png');
-    width: 106px;
-    height: 263px;
-    background-position: -244px -25px;
+    height: 179px;
+    width: 272px;
+    float: none;    
+    
 }
 
 #final-quote
@@ -748,8 +937,8 @@ ul.contacts-slider-title
 #front-page-slideshow-pager
 {
     position: absolute;
-    top: 350px;
-    left: 50px;
+    top: 20px;
+    right: 20px;
 }
 #front-page-slideshow-pager span
 {
@@ -832,10 +1021,13 @@ ul.contacts-slider-title
 #make-appointment-text-container
 {
     float: left;
-    margin-left: 61px;
-    margin-right: 61px;
+    margin-left: 58px;
+    margin-right: 58px;
+    width: 362px;
     
 }
+
+
 
 #make-appointment p span, #make-appointment p input 
 {
@@ -861,8 +1053,8 @@ ul.contacts-slider-title
     float: left;
     font-size: 1.1em;
     height: 322px;   
-    margin-left: 61px;
-    margin-right: 61px;    
+    margin-left: 58px;
+    margin-right: 58px;    
     padding-top: 70px;
     width: 315px;
     
@@ -1208,9 +1400,67 @@ ul.contacts-slider-title
 }
 /*Vehicles for the Company ENDS*/
 
+/*noticas news*/
+#noticias-news-title
+{
+    margin-bottom: 0;
+    
+}
+#noticias-news-photo
+{
+    float: left;
+    margin-right: 20px;
+}
+
+/*noticas news ENDS*/
+
+
+/*noticas-header*/
+
+#noticias-header
+{
+       background-image: url("/sites/default/files/images/common/redCornerButtonWithArrow.png");
+    font-weight: bold;
+    height: 42px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-left: 12px;
+    width: 207px;
+}
+/*noticas-header ENDS*/
+
+/*news-teaser*/
+
+.news-teaser-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+.news-teaser {
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.last .news-teaser
+{
+    border: none;
+}
+.news-teaser-view-more {
+    background-color: #da0000;
+    color: white;
+    display: block;
+    width: 100px;
+    text-align: center;
+    height: 21px;
+    padding: 0 1px;
+}
+
+
+/*news-teaser ENDS*/
 
 /*Front  News*/
-#news-container
+#news-background
 {
     background-image: url('/sites/default/files/images/news/news.png');
     float: left;
@@ -1221,10 +1471,25 @@ ul.contacts-slider-title
     top:786px;        
     width: 413px;
 }
+#news-container
+{
+    
+    height: 49px;
+    left: 48px;
+    position: relative;
+    
+    width: 354px;
+    
+}
+.front-page-news-teaser
+{
+    color: black;
+    text-decoration: none;
+}
+
 .news
 {
-    margin-left: 70px;
-    margin-top: 30px;
+    
 }
 /*Front  News ENDS*/
 
@@ -1252,6 +1517,10 @@ ul.contacts-slider-title
     margin-right: 45px;
 }
 
+#post-sell-introduction
+{
+    margin-bottom: 20px;
+}
 #post-sell-workshop-parts-store-photo
 {
     
@@ -1269,7 +1538,7 @@ ul.contacts-slider-title
       background-image: url('/sites/default/files/images/common/mediumRedCornerButton.png');
     color: #333333;
       display: block;     
-      font-size: 23px;
+      font-size: 1.5em;
       height: 33px;
       padding-left: 20px;
       padding-top: 4px;
@@ -1306,7 +1575,7 @@ ul.contacts-slider-title
     background-image: url('/sites/default/files/images/common/mediumRedCornerButton.png');
     color: #333333;
       display: block;     
-      font-size: 23px;
+      font-size: 1.5em;
       height: 33px;
       padding-left: 20px;
       padding-top: 4px;
@@ -1375,12 +1644,26 @@ ul.contacts-slider-title
     
     
 }
-
+.first-column
+{
+    padding-left: 10px;
+}
 #maintenance-table-last-row
 {
     background-color: #d9d9d9;
     font-weight: bold;
 }
+
+.maintenance-table-contenido-mantenimiento-cell
+{
+    border-bottom: 1px solid #d3d3d3;
+}
+.maintenance-table-vehicle-info
+{
+    border-bottom: 1px solid #d3d3d3;
+}
+
+
 
 #maintenance-bottom-banner
 {
@@ -1434,6 +1717,10 @@ ul.contacts-slider-title
      padding-left: 15px;
      padding-top: 15px;
      width: 256px;
+}
+#maintenance-finder.taller-de-mantenimiento
+{
+    margin-top: 20px;
 }
 
 #maintenance-finder h2{
@@ -1781,7 +2068,20 @@ label#part-store-part-comment-label
 
 /*Parts Store ENDS*/
 
+/*basic-form-view*/
+
+/*basic-form-view*/
+
+
 /*Contacts Form*/
+#contacts-right-content
+{
+    float: left;
+}
+#contacts-localizacion-title
+{
+    clear: both;
+}
 #contacts-form form input
 {
   border: 5px solid #d8d8d8;
@@ -1839,7 +2139,22 @@ label#part-store-part-comment-label
     height: 60px;
 }
 
+#contacts-schedule
+{
+    background-image: url('/sites/default/files/images/contacts/horarioContainer.png');
+    float: left;
+    height: 168px;
+    margin-left: 20px;
+    padding-left: 10px;
+    width: 205px;
+    
+}
 
+#contacts-schedule h2
+{
+    color: white;
+    font-weight: bold;
+}
 
 a.form-button
 {
@@ -1912,6 +2227,11 @@ a.form-button
     display: block;
      background-image: url("/sites/default/files/images/common/redCornerButtonWithArrow.png");
      
+}
+
+.border-less
+{
+    border: none;
 }
 
 /*Useful Classes ENDS*/

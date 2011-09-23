@@ -96,8 +96,8 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
      {
          
              
-        $block['content'] .= '<tr id="'.strtolower($rowNode->field_maintenance_model[0]['value']).'">';     
-              $block['content'] .= '<td class="model-name">';                                             
+        $block['content'] .= '<tr class="maintenance-table-vehicle-info" id="'.strtolower($rowNode->field_maintenance_model[0]['value']).'">';     
+              $block['content'] .= '<td class="model-name first-column">';                                             
                 $block['content'] .= $rowNode->field_maintenance_model[0]['value'];
                 $block['content'] .= '</td>'; 
                       
@@ -132,243 +132,243 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
     </tr>
     
     <tr>
-        <td id="cambio-vertical" class="vertical-td" rowspan="14"> <span id="cambio-vertical-text"></span></td>
-        <td >Aceite de motor</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
+        <td id="cambio-vertical" class="vertical-td " rowspan="14"> <span id="cambio-vertical-text"></span></td>
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">Aceite de motor</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell"  class="maintenance-table-contenido-mantenimiento-cell">x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
     </tr>
     
     
     <tr>        
-        <td >Filtro de Aceite de Motor</td>    
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">Filtro de Aceite de Motor</td>    
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
     </tr>
     
     
     <tr>        
-        <td >Filtro de Combustible</td>    
-        <td></td>
-        <td></td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">Filtro de Combustible</td>    
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
     </tr>
     
     
     <tr>        
-        <td >Filtro de Aire de Motor</td>    
-        <td></td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">Filtro de Aire de Motor</td>    
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
     </tr>
     
     <tr>        
-        <td >Filtro de A/C y/o Fitlro Anti-Polen</td>    
-        <td></td>
-        <td></td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">Filtro de A/C y/o Fitlro Anti-Polen</td>    
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
     </tr>
     
     <tr>        
-        <td >
+        <td  class="first-column maintenance-table-contenido-mantenimiento-cell">
             Bujías <br/>
             40/80/120/160: Convencional<br/>
             100: Punta de Platino o Iridio
         </td>    
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>x</td>
-        <td>x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
     </tr>
     
     <tr>        
-        <td >Refigerante de Motor</td>    
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>x</td>
-        <td></td>
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">Refigerante de Motor </td>    
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
     </tr>
     
     <tr>        
-        <td >L&iacute;quido de Frenos</td>    
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>x</td>
-        <td></td>
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">L&iacute;quido de Frenos</td>    
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
     </tr>
     
     <tr>        
-        <td >
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">
             Aceite de la Transmisi&oacute;<br/>
             40/80/100/120/160: Manual<br/>
             80/120/160: Autom&aacute;
         </td>    
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>x</td>
-        <td></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
     </tr>
     
     
     <tr>        
-        <td>
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">
            Aceite de la Transferencia 
         </td>    
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>x</td>
-        <td></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
     </tr>
     
     <tr>
           
-        <td >
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">
          Aceite del Diferencial
         </td>    
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>x</td>
-        <td></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
     </tr>
     
     <tr>        
-        <td >
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">
          Frenos (Bandas, Discos, Tambores)
         </td>    
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
     </tr>
     
     
     <tr>        
-        <td >
+        <td  class="first-column maintenance-table-contenido-mantenimiento-cell">
          Luces y Señales
         </td>    
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
     </tr>
     
     <tr>        
-        <td >
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">
          Agua Limpiavidrios
         </td>    
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
     </tr>
     
     <tr>      
     
          <td class="vertical-td" rowspan="14"> <span id="inspeccion-vertical"></span></td>
-        <td >
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">
          Cerraduras, Bisagras y Cerrojo Baul
         </td>    
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
     </tr>
     
     <tr>        
-        <td >
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">
          Sistema de Escape
         </td>    
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
     </tr>
     
     
     <tr>        
-        <td >
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">
          Ejes Delanteros y Traseros
         </td>    
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
     </tr>
     
     
     <tr>        
-        <td >
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">
             Correas, Mangueras y Tuber&iacute;as
         </td>    
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
     </tr>
     
     
     <tr>        
-        <td >
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">
             Apretar Soporte de Carrocer&iacute;a
         </td>    
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
     </tr>
     
     
     <tr>        
-        <td >
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">
             Alineaci&oacute;n y Presi&oacute;n de Aire Gomas
         </td>    
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
     </tr>
     
     
     <tr>        
-        <td >
+        <td class="first-column maintenance-table-contenido-mantenimiento-cell">
             Rotaci&oacute;n de Gomas
         </td>    
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
+        <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
     </tr>';
      
      
      $block['content'] .= '<tr id="maintenance-table-last-row">';
-        $block['content'] .= '<td>';
+        $block['content'] .= '<td class="first-column">';
         $block['content'] .= 'Tiempo de trabajo (Horas)';
         $block['content'] .= '</td>';
         
@@ -397,10 +397,10 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
      $block['content'] .= '</table>';
      
      $block['content'] .= '<p id="maintenance-bottom-banner">';
-        $block['content'] .= 'Pricios Incluyen Itbis <br/>';
+        $block['content'] .= 'Precios Incluyen Itbis <br/>';
         $block['content'] .= 'Precios Están Sujetos a Variación sin <br/>';
-        $block['content'] .= 'Previo Aviso <br/>';
-        $block['content'] .= 'No Todos los Modelos Están Incluidos';
+        $block['content'] .= 'Previo Aviso No Todos los Modelos Están Incluidos';
+        
      $block['content'] .= '</p>';
      
      

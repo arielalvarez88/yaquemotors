@@ -167,6 +167,8 @@ simpleFormReciever = function (data)
         alert('Su información fue enviada con éxito');
     else
         alert('Por favor intentelo más tarde');
+    
+    $.fancybox.close();
 };
 
 simpleFormCleaner = function (formSelector)
@@ -202,6 +204,14 @@ initializeAjaxForms = function()
             cleanButtonSelector : "#make-appointment-clean-button",
             sendButtonSelector : '#make-appointment-send-button',            
             processingSriptUrl: '/includes/ajax/appointmentProcessor.php'
+        },
+        cotizarVehiculo: {
+            formSelector : '#vehicle-cotizar-overlay-form',
+            cleanButtonSelector : "#doesnt-exist",
+            sendButtonSelector : '#vehiculo-cotizar-overlay-form-send-button',            
+            processingSriptUrl: '/includes/ajax/cotizarVehiculoFormProcessor.php'
+                      
+
         }
     };
     
@@ -272,25 +282,36 @@ maintenanceFinderFindButtonOnClick = function()
 }
 
 initializeCalendarsUi = function(){
-    $('#appointment-date').datetimepicker({
-        timeText:'Hora: ',
-        hourText:'Hora',
-        minuteText:'Minuto',
-        ampm:true, 
-        hourMin: 8, 
-        hourMax: 16, 
-        monthNames: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
-        dateNames: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'], 
-        dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sa'], 
-        currentText: 'Ahora', 
-        closeText: 'Listo'
-    });
+    var dateInput = $('#appointment-date');
+    
+    if(dateInput.length >= 1)
+        dateInput.datetimepicker({
+            timeText:'Hora: ',
+            hourText:'Hora',
+            minuteText:'Minuto',
+            ampm:true, 
+            hourMin: 8, 
+            hourMax: 16, 
+            monthNames: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
+            dateNames: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'], 
+            dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sa'], 
+            currentText: 'Ahora', 
+            closeText: 'Listo'
+        });
     
 };
 initializeOnClickEvents = function(){
     
     
     $.singletonSlider('.contacts-slider-title','.contacts-slider-menu');
+    
+  $('#vehicle-upper-menu-cotizar').fancybox({        
+        type: 'inline',
+        margin: 0,
+        padding: 0
+    });
+        
+    
     
     var buttons = {
         maintenanceFinderFindButton:{
@@ -301,6 +322,14 @@ initializeOnClickEvents = function(){
         maintenanceFoinderMarcaOption:{
             selector: "#maintenance-finder-brand option",
             onClick: maintenanceFinderBrandOnClick
+        },
+        vehiclePrint: {
+            selector: "#vehicle-upper-menu-imprimir",
+            onClick: printVehiclePage
+        },
+        cotizarButtonInVehicle: {
+            selector: "#vehicle-upper-menu-cotizar",
+            onClick: showCotizarOverlay
         }
         
     };
@@ -310,6 +339,15 @@ initializeOnClickEvents = function(){
         $(buttons[button].selector).click(buttons[button].onClick);
     }
 }
+
+
+showCotizarOverlay = function()
+{
+      
+}
+printVehiclePage = function(){
+    window.print();
+};
 
 
 extendJquery = function (){

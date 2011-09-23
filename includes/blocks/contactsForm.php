@@ -1,11 +1,14 @@
 <?php require dirname(__FILE__) . '/../paths.php'; ?>
 <?php require dirname(__FILE__) . '/bigVerticalDivisor.php'; ?>
 
+<div id="contacts-right-content">
+    
+
 <div id="contacts-form">
 
     <h2 id="contactos-header">Contactos</h2>
 
-    <form>
+    <form id="basic-form">
         <div>
             <label for="contactos-form-nombre" class="">Nombre <span class="required-text">*</span></label>
 
@@ -47,13 +50,27 @@
 
     </form>
     
-    
-    
-  
-    
+	
+
+</div>
+
+<div id="contacts-schedule">
+	<h2>Horario Laboral</h2>
+	<p>
+		<span class="bold">Lunes a Viernes</span>
+		<br/>
+		8:00 AM A 6:00 PM		
+	</p>
+
+	<p>
+		<span class="bold">S&aacute;bados</span>
+		<br/>
+		8:00 AM A 12:00 AM		
+	</p>
+</div>
 
 
-    <h2>Localizaci&oacute;n</h2>
+<h2 id="contacts-localizacion-title">Localizaci&oacute;n</h2>
 
 
 
@@ -70,9 +87,5 @@
         </div>
 
 
-      
-
- 
 
 </div>
-

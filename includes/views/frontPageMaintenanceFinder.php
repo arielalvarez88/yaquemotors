@@ -1,5 +1,5 @@
-
-<div id="maintenance-finder">
+<?php $section = $delta == 1? 'class="taller-de-mantenimiento"':'';?>
+<div id="maintenance-finder" <?php echo $section;?>>
 
     <h2 id="maintenance-finder-header">
 

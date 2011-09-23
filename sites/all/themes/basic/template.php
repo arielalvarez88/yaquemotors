@@ -177,6 +177,7 @@ function basic_preprocess_comment_wrapper(&$vars) {
 function basic_preprocess_block(&$vars, $hook) {
     $block = $vars['block'];
 
+   
     // special block classes
     $classes = array('block');
     $classes[] = basic_id_safe('block-' . $vars['block']->module);

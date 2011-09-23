@@ -19,19 +19,29 @@ function front_page_news_block($op='list', $delta=0, $edit=array())
     elseif ($op == 'view') {
         $block['subject'] = 'Noticias';
         $block['content'] = '';
-        $newsNodesResults = db_query("SELECT nid FROM {node} where type='%s'","front_news");
+        $newsNodesResults = db_query("SELECT nid FROM {node} where type='%s'","news");
 
-         $block['content'].= '<div id="news-container">';
+         $block['content'].= '<div id="news-background">';
+         $block['content'].=    '<div id="news-container">';
          while($result = db_fetch_object($newsNodesResults))
          {
+             
              $newsNode = node_load($result->nid);
-             $newsText = $newsNode->field_front_news_body[0]['value'];
              
-             $newsTeaser = strlen($newsText) > 30 ? substr($newsText,0,30).'...<br/>'.'<a href="'.$newsNode->path.'"></a>' : $newsText;
+             $newsText = trim($newsNode->teaser);
              
-             $block['content'] .=  '<p class="news">'.$newsTeaser.'</p>';
+             
+             if($newsText)
+             {
+               
+                 $block['content'] .=  '<div class="news">'.'<a class="front-page-news-teaser" href="'.$newsNode->path.'">'.$newsText.'</a>'.'</div>'; 
+             }
+             //$newsTeaser = strlen($newsText) > 30 ? substr($newsText,0,30).'...<br/>'.'<a href="'.$newsNode->path.'"></a>' : $newsText;
+             
+             
 
          }
+            $block['content'].='</div>';
          $block['content'].='</div>';
            return $block;
         }

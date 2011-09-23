@@ -6,10 +6,9 @@
             <h3>VEHICULOS</h3>
             <ul>
                 <li><a  class="filter-category-modifier-button"  value="automovil"><span id="vehicles-agency-auto-icon" class="vehicles-agency-icon"></span> AUTOMOVILES ///</a>
-                
-                <li><a class="filter-category-modifier-button" value="camion" id="vehicles-agency-camion-icon" ><span class="vehicles-agency-icon"></span>CAMIONES ///</a></li>
-                <li><a   class="filter-category-modifier-button" value="camioneta" id="vehicles-agency-camioneta-icon" ><span class="vehicles-agency-icon"></span>CAMIONETAS ///</a>
                 <li><a  class="filter-category-modifier-button" value="jeepeta" id="vehicles-agency-jeepeta-icon" ><span class="vehicles-agency-icon"></span>JEEPETAS ///</a>
+                <li><a   class="filter-category-modifier-button" value="camioneta" id="vehicles-agency-camioneta-icon" ><span class="vehicles-agency-icon"></span>CAMIONETAS ///</a>
+                <li><a class="filter-category-modifier-button" value="camion" id="vehicles-agency-camion-icon" ><span class="vehicles-agency-icon"></span>CAMIONES ///</a></li>
                 <li><a  class="filter-category-modifier-button" value="minibus" id="vehicles-agency-mini-icon" ><span class="vehicles-agency-icon"></span>MINIBUSES ///</a>
 
             </ul>

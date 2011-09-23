@@ -2,13 +2,14 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
     <?php
     $footerMenus = array();
-    $footerMenus[] = array("INICIO" => "http://www.google.com", "NOSOTROS" => "http://www.google.com", "VEHÍCULOS" => "http://www.google.com", "POST-VENTA" => "http://www.google.com", "CONTACTOS" => "http://www.google.com");
-    $footerMenus[] = array("TALLER DE SERVICIOS" => "http://www.google.com", "REPUESTOS" => "http://www.google.com", "TARIFAS DE MANTENIMIENTO" => "http://www.google.com", "CITAS" => "http://www.google.com", "FINANCIAMIENTO" => "http://www.google.com");
+    $footerMenus[] = array("INICIO" => "/", "NOSOTROS" => "/nosotros", "VEHÍCULOS" => "/agencia-de-vehiculos", "POST-VENTA" => "/post-venta", "CONTACTOS" => "/contactos");
+    $footerMenus[] = array("TALLER DE SERVICIOS" => "/taller-de-servicios", "REPUESTOS" => "/tienda-de-repuestos", "TARIFAS DE MANTENIMIENTO" => "/tarifas-de-mantenimiento", "CITAS" => "/citas", "FINANCIAMIENTO" => "/financiamiento-disponible");
     ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
     <head>
 
         <title><?php print $head_title; ?></title>
+        
         <script type="text/javascript" src="http://use.typekit.com/fyz8gsz.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         <?php print $head; ?>
@@ -27,9 +28,10 @@
 
             <!-- ______________________ HEADER _______________________ -->
             <div id="pre-header">
+                <a href="/citas" id="appointment-text">Hacer una cita <img id="top-calendar" alt="foto-calendario" src="/<?php echo file_directory_path(); ?>/images/theme/topCalendar.png"/></a>                
                 
+                <a href="/noticias" id="news-link">Novedades<img alt="icono-de-novedades" src="/<?php echo file_directory_path(); ?>/images/common/novedadesIcon.png"/></a>
                 
-                <a href="/citas" id="appointment-text">Hacer una cita <img id="top-calendar" alt="foto-calendario" src="/<?php echo file_directory_path(); ?>/images/theme/topCalendar.png"/></a>
 
             </div>
             <div id="header">
@@ -186,10 +188,7 @@
                     <p class="no-margin">Av. 27 de Febrero No.16, Santiago</p>
                     <p class="footer-spaced-paragraph">Rep&uacute;blica Dominicana</p>
                     
-                    <p class="no-margin">HORARIO LABORAL</p>
-                    <p class="no-margin">LUNES A VIERNES: 8:00 AM A 6:00 PM</p>
-                    <p class="no-margin">S&Aacute;BADOS: 8:00 AM A 12:00 PM</p>
-                    
+                   
                 </div>
                 <p id="footer-copyright">Copyright 2011 El Yaque Motors Todos los derechos reservados.</p>
             </div> <!-- /footer -->
