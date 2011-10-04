@@ -16,7 +16,7 @@ $slidesNumber = count($slidesInfo);
         
        
                   <?php if($slideNode->field_front_page_slide_photo[0]['filepath']):?>
-                    <a class="front-page-slides" href="<?php echo $slideNode->field_page_slide_link[0]['url'];?>">
+                    <a class="front-page-slides" href="<?php echo $slideNode->field_front_page_slide_link[0]['url'];?>">
                         
                         <img src="/<?php echo $slideNode->field_front_page_slide_photo[0]['filepath'];?>" alt="foto-slideshow"/>
                     
