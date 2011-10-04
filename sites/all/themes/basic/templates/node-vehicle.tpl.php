@@ -75,8 +75,7 @@ $version = ucwords($node->field_vehicle_version[0]['value']);
                 <ul>
                     <li><span class="bold">Versi&oacute;n: </span> <?php echo $version; ?></li>
                     <li><span class="bold">Transmisi&oacute;n: </span> <?php echo $transmission; ?></li>
-                    <li><span class="bold">Combustible: </span> <?php echo $gas; ?></li>
-                    <li><span class="bold">Precio: </span> <?php echo $node->field_vehicle_price[0]['value']; ?></li>
+                    <li><span class="bold">Combustible: </span> <?php echo $gas; ?></li>                    
                     <li><span class="bold">Puertas: </span> <?php echo $doors; ?></li>
                     <li><span class="bold">Tracci&oacute;n: </span> <?php echo $traction; ?></li>
                 </ul>
@@ -181,7 +180,7 @@ $version = ucwords($node->field_vehicle_version[0]['value']);
                     <li><span class="bold">Versi&oacute;n: </span> <?php echo $version; ?></li>
                     <li><span class="bold">Transmisi&oacute;n: </span> <?php echo $transmission; ?></li>
                     <li><span class="bold">Combustible: </span> <?php echo $gas; ?></li>
-                    <li><span class="bold">Precio: </span> <?php echo $node->field_vehicle_price[0]['value']; ?></li>
+                    
                     <li><span class="bold">Puertas: </span> <?php echo $doors; ?></li>
                     <li><span class="bold">Tracci&oacute;n: </span> <?php echo $traction; ?></li>
                 </ul>
