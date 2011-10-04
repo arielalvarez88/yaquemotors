@@ -12,11 +12,11 @@ $slidesNumber = count($slidesInfo);
     <div id="front-page-slideshow">
         <?php foreach($slidesInfo as $slideInfo):?>
               <?php $slideNode = node_load($slideInfo['nid']);?>
-              <?php $vehicleNode = node_load($slideNode->field_front_page_slide_vehicle[0]['nid']);?>
-
+              
+        
        
                   <?php if($slideNode->field_front_page_slide_photo[0]['filepath']):?>
-                    <a class="front-page-slides" href="/<?php echo $vehicleNode->path;?>">
+                    <a class="front-page-slides" href="<?php echo $slideNode->field_page_slide_link[0]['url'];?>">
                         
                         <img src="/<?php echo $slideNode->field_front_page_slide_photo[0]['filepath'];?>" alt="foto-slideshow"/>
                     
