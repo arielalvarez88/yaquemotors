@@ -859,6 +859,12 @@ ul.contacts-slider-title
     width: 500px;
     float: left;    
 }
+#historic-review p 
+{
+    margin-bottom: 20px;
+    width: 445px;
+}
+
 
 /*historic-review ENDS*/
 
@@ -1664,19 +1670,28 @@ ul.contacts-slider-title
     
     
 }
-.first-column
-{
-    padding-left: 10px;
-}
+
 #maintenance-table-last-row
 {
     background-color: #d9d9d9;
     font-weight: bold;
 }
+.maintenance-table-vehicle-price, .maintenance-table-contenido-mantenimiento-cell
+{
+    text-align: center;
+}
 
 .maintenance-table-contenido-mantenimiento-cell
 {
     border-bottom: 1px solid #d3d3d3;
+}
+
+.first-column,
+.first-column.maintenance-table-contenido-mantenimiento-cell
+{
+    text-align: left;
+    padding-left: 10px;
+    
 }
 .maintenance-table-vehicle-info
 {

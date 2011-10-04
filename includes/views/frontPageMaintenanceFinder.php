@@ -35,7 +35,7 @@
                 <?php foreach ($models as $model): ?>
 
 
-                    <option value="<?php echo $model; ?>">
+                <option value="<?php echo strtolower($model); ?>">
                         <?php echo ucwords($model); ?>
                     </option>
                 <?php endforeach; ?>

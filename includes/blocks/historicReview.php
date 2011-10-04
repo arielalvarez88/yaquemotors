@@ -3,6 +3,10 @@
     <p>
         En el año 1968, a  los señores Tomás Suárez Tamargo y Giuseppe de Augustino, se les presenta la oportunidad de introducirse en la industria automotriz a través de la comercialización de vehículos. Ese mismo año, ellos deciden constituir la empresa el yaque Motors, ubicándola en un terreno de  3,000 metros cuadrados en la Avenida 27 de Febrero de la ciudad de Santiago de los Caballeros.
 
+        
+        <br/>
+        <br/>
+        
         Desde sus inicios, la empresa es dealer de Santo Domingo Motors Company, representando las marcas de vehículos Nissan y General Motors. Debido al rápido incremento en las ventas, la empresa se ve en la necesidad de ofrecer un servicio           post-venta, y es por esto, que en 1970 deciden abrir un taller de servicios mecánicos. 
 
         <br/>

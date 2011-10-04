@@ -23,15 +23,17 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
      $brand = isset($_GET['marca']) ? $_GET['marca'] : 'nissan';
      
      
-     $query = "SELECT * FROM {node} WHERE type = 'vehicle_maintenance_table_row'";
+     $query = "SELECT * FROM {node} WHERE type = 'vehicle'";
      $results = db_query($query);
      
-     $rowNodes = array();
+     $vehicleNodes = array();
      while($result = db_fetch_object($results))
      {
-         $resultNode = node_load($result->nid);
-         if($resultNode->field_maintenance_brand[0]['value'] == $brand)
-            $rowNodes[] = node_load($result->nid);
+         
+         $vehicleNode = node_load($result->nid);
+         
+         if($vehicleNode->field_vehicle_brand[0]['value'] == $brand)
+            $vehicleNodes []= $vehicleNode;
      }
      
      
@@ -60,7 +62,7 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
      
      $block['content'] .= '<tr>';     
             
-               $block['content'] .= '<th class="vertical-td" rowspan="'.(count($rowNodes)+1).'">';                             
+               $block['content'] .= '<th class="vertical-td" rowspan="'.(count($vehicleNodes)+1).'">';                             
                     $block['content'] .= '<span id="maintenance-model-title"></span>';                                    
                 $block['content'] .= '</th>'; 
             
@@ -92,33 +94,33 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
                
      $i = 0;
      
-     foreach ($rowNodes as $rowNode)
+     foreach ($vehicleNodes as $rowNode)
      {
+        
          
-             
-        $block['content'] .= '<tr class="maintenance-table-vehicle-info" id="'.strtolower($rowNode->field_maintenance_model[0]['value']).'">';     
+        $block['content'] .= '<tr class="maintenance-table-vehicle-info" id="'.strtolower($rowNode->field_vehicle_model[0]['value']).'">';     
               $block['content'] .= '<td class="model-name first-column">';                                             
-                $block['content'] .= $rowNode->field_maintenance_model[0]['value'];
+                $block['content'] .= $rowNode->field_vehicle_model[0]['value'];
                 $block['content'] .= '</td>'; 
                       
             
-            $block['content'] .= '<td>';
+            $block['content'] .= '<td class="maintenance-table-vehicle-price">';
                 $block['content'] .= $rowNode->field_maintenance_price_3_month[0]['value'];
             $block['content'] .= '</td>';
             
-            $block['content'] .= '<td>';
+            $block['content'] .= '<td class="maintenance-table-vehicle-price">';
                 $block['content'] .= $rowNode->field_maintenance_price_6_month[0]['value'];
             $block['content'] .= '</td>';
             
-            $block['content'] .= '<td>';
+            $block['content'] .= '<td class="maintenance-table-vehicle-price">';
                 $block['content'] .= $rowNode->field_maintenance_price_12_month[0]['value'];
             $block['content'] .= '</td>';
             
-            $block['content'] .= '<td>';
+            $block['content'] .= '<td class="maintenance-table-vehicle-price">';
                 $block['content'] .= $rowNode->field_maintenance_price_24_month[0]['value'];
             $block['content'] .= '</td>';
             
-            $block['content'] .= '<td>';
+            $block['content'] .= '<td class="maintenance-table-vehicle-price">';
                 $block['content'] .= $rowNode->field_maintenance_price_60_month[0]['value'];
             $block['content'] .= '</td>';
         $block['content'] .= '</tr>';     
@@ -398,8 +400,8 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
      
      $block['content'] .= '<p id="maintenance-bottom-banner">';
         $block['content'] .= 'Precios Incluyen Itbis <br/>';
-        $block['content'] .= 'Precios Están Sujetos a Variación sin <br/>';
-        $block['content'] .= 'Previo Aviso No Todos los Modelos Están Incluidos';
+        $block['content'] .= 'Precios Están Sujetos a Variación sin Previo Aviso<br/>';
+        $block['content'] .= 'No Todos los Modelos Están Incluidos';
         
      $block['content'] .= '</p>';
      
