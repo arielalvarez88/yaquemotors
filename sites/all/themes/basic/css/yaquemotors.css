@@ -861,7 +861,8 @@ ul.contacts-slider-title
 #historic-review
 {
     width: 500px;
-    float: left;    
+    float: left;
+    padding-left: 20px;
 }
 #historic-review p 
 {
