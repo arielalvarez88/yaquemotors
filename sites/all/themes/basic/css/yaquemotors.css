@@ -1683,6 +1683,12 @@ ul.contacts-slider-title
     
 }
 
+.maintenance-table-selected-vehicle
+{
+    background-image: url("/sites/default/files/images/theme/footer/footerGradient.png"); 
+    color: white;
+}
+
 #maintenance-table-last-row
 {
     background-color: #d9d9d9;

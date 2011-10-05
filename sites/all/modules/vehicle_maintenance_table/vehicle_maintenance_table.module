@@ -20,7 +20,7 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
         $block[0]["info"] = t('Vehicles Maintenance Table Block');
     }
  elseif($op == 'view') {
-     $brand = isset($_GET['marca']) ? $_GET['marca'] : 'nissan';
+     $brand = isset($_GET['marca']) ? urldecode($_GET['marca']) : 'nissan';
      
      
      $query = "SELECT * FROM {node} WHERE type = 'vehicle'";
@@ -37,6 +37,7 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
      }
      
      
+     $recivedUrlModel = urldecode($_GET['modelo']);
      
      $block['subject'] = 'Vehicle Search Result';
      $block['content'] = '';
@@ -96,9 +97,9 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
      
      foreach ($vehicleNodes as $rowNode)
      {
-        
          
-        $block['content'] .= '<tr class="maintenance-table-vehicle-info" id="'.strtolower($rowNode->field_vehicle_model[0]['value']).'">';     
+        $selcetedClass = strtolower($rowNode->field_vehicle_model[0]['value']) == $recivedUrlModel? ' maintenance-table-selected-vehicle' : '';
+        $block['content'] .= '<tr class="maintenance-table-vehicle-info'.$selcetedClass.'">';     
               $block['content'] .= '<td class="model-name first-column">';                                             
                 $block['content'] .= $rowNode->field_vehicle_model[0]['value'];
                 $block['content'] .= '</td>'; 

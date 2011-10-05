@@ -92,7 +92,7 @@ $version = ucwords($node->field_vehicle_version[0]['value']);
     </div>
 
     <a href="/financiamiento-disponible" id="vehicle-financing" class="financing-post-sell-buttons"></a>
-    <a href="/tarifas-de-mantenimiento?marca=<?php echo strtolower($brand);?>&modelo=<?php echo strtolower($model);?>" id="vehicle-post-sell" class="financing-post-sell-buttons"></a>
+    <a href="/tarifas-de-mantenimiento?marca=<?php echo urlencode(strtolower($brand));?>&modelo=<?php echo urlencode(strtolower($model));?>" id="vehicle-post-sell" class="financing-post-sell-buttons"></a>
 
     <div  style="display: none;">
         <div  id="vehicle-cotizar-overlay">

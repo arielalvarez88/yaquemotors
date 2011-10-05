@@ -397,11 +397,7 @@ extendJquery = function (){
     
 };
     
-colorRow = function(){
-    var model = $.getUrlVar('modelo');
-    $('tr#'+model).css("background-image","url('/sites/default/files/images/theme/footer/footerGradient.png')");
-    $('tr#'+model).css("color","white");
-};
+
 
 
 roundCorners = function()
@@ -423,7 +419,7 @@ $(document).ready(function(){
     initializeCalendarsUi();
     initializFilter();
     roundCorners();
-    colorRow();
+    
   
         
 
