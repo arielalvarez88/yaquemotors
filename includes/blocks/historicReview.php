@@ -1,3 +1,4 @@
+
 <div id="historic-review">
     <h2>Rese&ntilde;a Hist&oacute;rica</h2>
     <p>
@@ -20,4 +21,6 @@
         Actualmente, el yaque motors comercializa las marcas Nissan, Chevrolet y Suzuki, y cuenta con el taller de servicios más capacitado de la región en las marcas mencionadas. En nuestras instalaciones, contamos con una sala de exhibición de vehículos y con un taller de mecánica equipado con las últimas herramientas del mercado, logrando una capacidad de servir a 40 vehículos diarios.
 
     </p>
+    
+    
 </div>

@@ -756,7 +756,10 @@ ul.contacts-slider-title
     width: 438px;
     height: 192px;
 }
-
+#slideshow-pager
+{
+    margin-bottom: 45px;
+}
 .slideshow-pager-picture
 {
     width: 61px;
@@ -860,7 +863,7 @@ ul.contacts-slider-title
 
 #historic-review
 {
-    width: 500px;
+    width: 460px;
     float: left;
     padding-left: 20px;
 }
