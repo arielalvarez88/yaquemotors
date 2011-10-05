@@ -1,6 +1,6 @@
 <?php require dirname(__FILE__).'/../paths.php'; ?>
 <div id="family-tradition">
-    <a>
+    <a id="family-tradition-header">
         TRADIC&Oacute;N FAMILIAR
     </a>
 
