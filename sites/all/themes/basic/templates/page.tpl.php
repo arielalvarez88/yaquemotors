@@ -91,6 +91,12 @@
                             <?php endif;?>
                             
                             
+<?php if ($content_bottom): ?>
+                            <div id="content-bottom">
+    <?php print $content_bottom; ?>
+                            </div><!-- /#content-bottom -->
+                <?php endif; ?>
+                            
                             <div id="drupal-content">
                                 
                                 <?php if(in_array("authenticated user", array_values($user->roles))):?>
@@ -128,11 +134,6 @@
 
                         </div>
 
-<?php if ($content_bottom): ?>
-                            <div id="content-bottom">
-    <?php print $content_bottom; ?>
-                            </div><!-- /#content-bottom -->
-                <?php endif; ?>
 
                     </div>
                 </div> <!-- /content-inner /content -->

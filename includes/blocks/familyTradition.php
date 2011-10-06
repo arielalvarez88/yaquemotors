@@ -29,9 +29,8 @@
 
           <?php require dirname(__FILE__).'/bigHorizontalDivisor.php';?>
         <div id="family-tradition-secondary-employees-container">
-            <img class="family-tradition-secondary-employees" src="<?php echo $paths->images;?>/familyTradition/director.png" alt="foto-del-director"/>
-            <img class="family-tradition-secondary-employees" src="<?php echo $paths->images;?>/familyTradition/director.png" alt="foto-del-director"/>
-            <img class="family-tradition-secondary-employees" src="<?php echo $paths->images;?>/familyTradition/director.png" alt="foto-del-director"/>
+            <img  src="<?php echo $paths->images;?>/familyTradition/employeesSprite.png" alt="foto-del-director"/>
+            
         </div>
         <?php require dirname(__FILE__) . '/bigHorizontalDivisor.php'; ?>
         

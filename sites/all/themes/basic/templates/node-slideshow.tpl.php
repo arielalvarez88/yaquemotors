@@ -10,7 +10,6 @@
             <img class="slideshow-pager-picture" src="/<?php echo $slide['filepath']; ?>"/>
         <?php endforeach; ?>
     </div>
-    
-    <img src="/<?php echo file_directory_path();?>/images/nosotros/misionVision.png" alt="mision-vision"/>
+  
 
 </div>

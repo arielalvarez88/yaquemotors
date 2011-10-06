@@ -411,6 +411,10 @@ root {
 
 /*Vehicle Agency ENDS*/
 
+
+
+
+
 /*Warranty*/
 
 #warranty-header
@@ -854,13 +858,6 @@ ul.contacts-slider-title
 }
 /*Family Tradition ENDS*/
 
-
-/*Slideshow*/
-#slideshow-container
-{
-    float: left;
-}
-/*Slideshow ENDS*/
 
 
 /*historic-review*/
@@ -1422,6 +1419,55 @@ ul.contacts-slider-title
 }
 
 /*workshop-services-form ENDS*/
+
+
+/* mision-vision*/
+#mision-vision
+{
+    width: 475px;
+    height: 198px;
+}
+#mision-vision-original, #mision-vision-valores
+{
+    background-image: url('/sites/default/files/images/misionVision/misionVision.png');
+    display: block;
+    float: left;
+    
+}
+#mision-vision-original-mision
+{
+       display: block;
+    line-height: 14px;
+    margin-bottom: 42px;
+}
+
+#mision-vision-original-vision
+{
+    
+       display: block;
+    line-height: 14px;
+    margin-bottom: 33px;
+}
+
+#mision-vision-original
+{
+    font-size: 0.9em;
+    height: 142px;
+    padding: 54px 25px 0 19px;
+    width: 246px;
+}
+
+#mision-vision-valores
+{
+     background-position: 183px 0;
+    height: 140px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 57px 0 0 24px;
+    width: 159px;
+}
+
+/* mision-vision ENDS*/
 
 /*Vehicles for the Company*/
 
