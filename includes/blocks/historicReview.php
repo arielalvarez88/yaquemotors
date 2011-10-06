@@ -1,7 +1,7 @@
 
 <div id="historic-review">
     <h2>Rese&ntilde;a Hist&oacute;rica</h2>
-    <p>
+    <p class="tk-ratio">
         En el año 1968, a los señores Tomás Suárez Tamargo y Giuseppe de Augustino se les presenta la oportunidad de introducirse en la industria automotriz a través de la comercialización de vehículos en la República Dominicana. Para ese mismo año, deciden fundar la empresa el yaque Motors, ubicándola en un terreno de 3,000 metros cuadrados en la Avenida 27 de Febrero de la ciudad de Santiago de los Caballeros. 
 
         
@@ -13,11 +13,6 @@
         <br/>
         <br/>
         
-        Para el 1992, se inaugura el Departamento de Repuestos, ofreciendo la venta de repuestos, gomas, baterías y aceites. Luego de 30 años de haber fundado la empresa, el señor De Agustino decide vender sus acciones al Sr. Tomás Suárez, momento en el que la empresa se convierte en una empresa familiar.
-        
-        <br/>
-        <br/>
-
         Para el 1992, se inaugura el Departamento de Repuestos, ofreciendo la venta de repuestos, gomas, baterías y aceites. Luego de 30 años de haber fundado la empresa, el señor De Agustino decide vender sus acciones al Sr. Tomás Suárez, momento en el que la empresa se convierte en una empresa familiar.
 
     </p>

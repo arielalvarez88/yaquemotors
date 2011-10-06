@@ -173,10 +173,12 @@ $version = ucwords($node->field_vehicle_version[0]['value']);
             <div id="overlay-car-info">
                 <img id="overlay-photo" alt="foto-del-vehiculo" src="/<?php echo $node->field_vehicle_photos[0]['filepath'];?>"/>
                 
-                <p><span class="bold">Estado</span>: <?php echo $state; ?> <span class="bold">A&ntilde;o:</span> <?php echo $year; ?></p>
+                
                 
                 
                 <ul>
+                    <li><span class="bold">Estado</span>: <?php echo $state; ?></li>
+                    <li><span class="bold">A&ntilde;o:</span> <?php echo $year; ?></li>
                     <li><span class="bold">Versi&oacute;n: </span> <?php echo $version; ?></li>
                     <li><span class="bold">Transmisi&oacute;n: </span> <?php echo $transmission; ?></li>
                     <li><span class="bold">Combustible: </span> <?php echo $gas; ?></li>

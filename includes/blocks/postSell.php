@@ -3,8 +3,8 @@
     
     
     <h1>POST-VENTA</h1>
-    <p id="post-sell-introduction">
-        Bienvenidos a nuestra área de post-venta! Conoce un poco mejor de nuestros servicios de Taller y obtén información sobre piezas originales para las marcas Nissan, Chevrolet y Suzuki.
+    <p id="post-sell-introduction" class="tk-ratio">
+        &iexcl;Bienvenidos a nuestra área de post-venta! Conoce mejor nuestros servicios de Taller y obtén información sobre piezas originales para las marcas Nissan, Chevrolet y Suzuki.
     </p>
     <div id="post-sell-workshop-services">
         <a id="post-sell-workshop-services-title" href="/taller-de-servicios">TALLER DE SERVICIOS<img class="post-sell-white-arrow" src="<?php echo $paths->images;?>/common/whiteArrow.png"/></a>

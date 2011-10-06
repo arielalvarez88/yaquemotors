@@ -6,10 +6,10 @@
         <img src="<?php echo $paths->images;?>/common/whiteArrow.png"/>
     </h2>
     <p>
-         Para el 1992, se inaugura el Departamento de Repuestos, ofreciendo la venta de repuestos, gomas, baterías y aceites. Luego de 30 años de haber fundado la empresa, el señor De Agustino decide vender sus acciones al Sr. Tomás Suárez, momento en el que la empresa se convierte en una empresa familiar.
+         Te damos la bienvenida al Taller de Servicios más completo de la región del Cibao para las marcas de vehículos General Motors, Nissan y Suzuki. Con un espacio de aproximadamente 2,000 m2, equipado con herramientas especiales junto a los computadores de diagnósticos más actualizados del mercado y una comunicación directa con los fabricantes de los vehículos que representamos. 
          <br/>
          <br/>
-         Contamos con un personal capacitado, entrenado y certificado por los representantes de las fábricas de vehículos General Motors, Nissan y Suzuki. Con la constante capacitación de nuestro personal y la actualización de nuestros equipos y herramientas, buscamos garantizar un servicio de calidad mundial, teniendo como objetivo lograr la satisfacción de nuestros clientes. 
+         Te damos la bienvenida al Taller de Servicios más completo de la región del Cibao para las marcas de vehículos General Motors, Nissan y Suzuki. Con un espacio de aproximadamente 2,000 m2, equipado con herramientas especiales junto a los computadores de diagnósticos más actualizados del mercado y una comunicación directa con los fabricantes de los vehículos que representamos. 
     </p>
     
         <ul>

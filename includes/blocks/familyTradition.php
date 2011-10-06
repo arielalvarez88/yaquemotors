@@ -15,7 +15,7 @@
     <div id="family-tradition-directors-message">
         
         
-        <p id="family-tradition-directors-message-text">
+        <p id="family-tradition-directors-message-text" class="tk-ratio">
             Desde nuestros inicios en 1971,  hace más de 40 años, el yaque Motors se ha caracterizado por ofrecer productos y servicios de calidad mundial. Es nuestro compromiso el de continuar trabajando día a día en la mejora de nuestra empresa, con la finalidad de lograr satisfacer las necesidades de todos  nuestros clientes.
             <br/>
             <br/>

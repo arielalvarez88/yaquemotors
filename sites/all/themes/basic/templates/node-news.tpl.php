@@ -11,7 +11,7 @@
     <?php if($node->field_news_subtitle[0]['value']):?>
         <p id="noticias-news-subtitle"><?php echo $node->field_news_subtitle[0]['value'];?></p>
     <?php endif;?>
-     <div id="noticias-news-body">
+     <div id="noticias-news-body" class="tk-ratio">
          
          <?php if($node->field_news_photo[0]['filepath']):?>
          

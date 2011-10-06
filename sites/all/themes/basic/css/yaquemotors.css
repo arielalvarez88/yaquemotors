@@ -430,6 +430,11 @@ root {
     
 }
 
+#warranty-header p 
+{
+    margin: 0 10px;
+}
+
 #warranty a img{
     margin: 0 5px;
 }
@@ -485,8 +490,8 @@ root {
 
 #vehicle-cotizar-overlay #vehicle-cotizar-overlay-form label
 {
-    font-size: 1.4em;
-    font-weight: bold;
+    font-size: 1.2em;
+    
     width: 180px;
 }
 
@@ -515,8 +520,11 @@ root {
 
 #vehicle-contizar-overlay-description-title
 {
-    width: 407px;
+    
     height: auto;
+    margin-top: 20px;
+    width: 407px;
+    
 }
 #vehicle-cotizar-overlay-content
 {
@@ -1182,12 +1190,21 @@ ul.contacts-slider-title
 /*Work Shop Services Menu*/
 
 #workshop-services-menu {
-    padding: 20px;
+  margin-bottom: 400px;
+    margin-right: 46px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
     width: 560px;
     
 }
     
+#workshop-services-menu p
+{
     
+    font-family: ratio, purista-web;
+    margin-bottom: 40px;
+}
 #workshop-services-menu-header
 {
     background-image: url('/sites/default/files/images/common/redCornerButton.png');
@@ -1280,15 +1297,17 @@ ul.contacts-slider-title
 
 /*Work Shop Services Slideshow*/
 #workshop-services-slideshow-container {
-    background-color: #d7d7d7;
-    border-radius: 12px;
+ background-color: #D7D7D7;
+    border-radius: 12px 12px 12px 12px;
+    display: block;
     height: 300px;
+    margin: 10px 67px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 48px;
-    width: 599px;
-    position: relative;
-    margin-right: 10px;
+    position: absolute;
+    top: 652px;
+    width: 800px;
 }
 .workshop-sevices-slide-bottom-text
 {
@@ -1298,7 +1317,8 @@ ul.contacts-slider-title
 }
 #workshop-services-slideshow-header
 {
-    left: 122px;
+     display: block;
+    left: 213px;
     position: absolute;
     top: -9px;
 }
@@ -1309,9 +1329,9 @@ ul.contacts-slider-title
 
 #workshop-sevices-slideshow-pager
 {
-    height: 30px;
-    margin-bottom: 10px;
-    padding-left: 138px;
+     height: 30px;
+    margin-bottom: 25px;
+    padding-left: 235px;
 }
 
 
@@ -1526,6 +1546,11 @@ ul.contacts-slider-title
     padding-left: 20px;
 }
 
+#news-teaser-text
+{
+    font-family: ratio, purista-web;
+}
+
 .last .news-teaser
 {
     border: none;
@@ -1671,6 +1696,10 @@ ul.contacts-slider-title
 
 /*maintanance-prices*/
 
+.maintenance-prices td, .maintenance-prices th {
+    border: 1px solid #d3d3d3;
+}
+
 .maintenance-prices, .maintanance-prices th, .maintanance-prices td
 {
     
@@ -1806,9 +1835,9 @@ ul.contacts-slider-title
 #maintenance-finder.taller-de-servicios
 {
     margin-bottom: 20px;
+    margin-left: 0;
+    margin-top: 86px;
     width: 277px;
-    margin-left: 0;   
-    margin-top: 20px;
 }
 
 #maintenance-finder
@@ -2096,6 +2125,7 @@ ul.contacts-slider-title
 #parts-store-text
 {
     margin-bottom: 25px;
+    font-family: ratio, purista-web;
 }
 
 #parts-store-text-container
@@ -2143,13 +2173,9 @@ margin-bottom: 20px;
 #parts-store-part-info label
 {
     float: left;
-
     display: block;
-    
-    font-size: 1.3em;
-    font-weight: bold;
+    font-size: 1.1dem;
     margin-right: 8px;
-    
     width: 90px;
 }
 
@@ -2225,6 +2251,7 @@ label#part-store-part-comment-label
 
 #contacts-direction{
     margin-bottom: 25px;
+    padding-left: 10px;
 }
 #contacts-form
 {
@@ -2382,8 +2409,15 @@ a
 }
 
 
+.centralize-text
+{
+    text-align: center;
+}
+
+
 .ui-timepicker-div .ui-widget-header{ margin-bottom: 8px; }
 .ui-timepicker-div dl{ text-align: left; }
 .ui-timepicker-div dl dt{ height: 25px; }
 .ui-timepicker-div dl dd{ margin: -25px 0 10px 65px; }
 .ui-timepicker-div td { font-size: 90%; }
+

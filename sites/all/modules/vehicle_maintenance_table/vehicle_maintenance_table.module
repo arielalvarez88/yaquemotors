@@ -375,23 +375,23 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
         $block['content'] .= 'Tiempo de trabajo (Horas)';
         $block['content'] .= '</td>';
         
-        $block['content'] .= '<td>';
+        $block['content'] .= '<td class="centralize-text">';
         $block['content'] .= '0.5';
         $block['content'] .= '</td>';
         
-        $block['content'] .= '<td>';
+        $block['content'] .= '<td class="centralize-text">';
         $block['content'] .= '1';
         $block['content'] .= '</td>';
         
-        $block['content'] .= '<td>';
+        $block['content'] .= '<td class="centralize-text">';
         $block['content'] .= '1.5';
         $block['content'] .= '</td>';
         
-        $block['content'] .= '<td>';
+        $block['content'] .= '<td class="centralize-text">';
         $block['content'] .= '3.5';
         $block['content'] .= '</td>';
         
-        $block['content'] .= '<td>';
+        $block['content'] .= '<td class="centralize-text">';
         $block['content'] .= '1.5';
         $block['content'] .= '</td>';
         

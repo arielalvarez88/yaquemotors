@@ -1,15 +1,6 @@
 <?php require dirname(__FILE__).'/../paths.php';?>
 <div id="make-appointment">
    
-    
-    <h2>
-        CITAS
-    </h2>
-    
-    <p>
-        Los  fabricantes de vehículo Nissan, Chevrolet y Suzuki con el objetivo de mejorar la calidad en sus productos realizan Campañas de Servicios para los modelos que lo requieran. Este tipo de trabajo no tiene ningún costo para el cliente. Si el chasis de su vehículo se encuentra entre los vehículos de la campaña actual, favor comunicarse con nosotros y hacer una cita con nuestro taller de servicios para llevar a cabo dicha campaña.
-    </p>
-   
     <div id="make-appointment-text-container">
         <h2>Formulario de Citas</h2>
         <p><span>Nombre del Cliente </span> <input id="appointment-name" type="text"/></p>
