@@ -1294,7 +1294,24 @@ ul.contacts-slider-title
 
 /*Work Shop Services Menu ENDS*/
 
+/*offer-teaser*/
+.offer-teaser
+{
+    text-align: center;    
+}
 
+.offer-teaser-flyer
+{
+    display: none;
+  
+}
+
+.offer-teaser-image
+{
+    cursor: pointer;
+}
+
+/*offer-teaser ENDS*/
 /*Work Shop Services Slideshow*/
 #workshop-services-slideshow-container {
  background-color: #D7D7D7;

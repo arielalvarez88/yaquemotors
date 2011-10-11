@@ -304,6 +304,8 @@ initializeOnClickEvents = function(){
     
    $("#maintenance-finder-brand").change(maintenanceFinderBrandOnClick);
     $.singletonSlider('.contacts-slider-title','.contacts-slider-menu');
+    $.singletonSlider('.offer-teaser-image','.offer-teaser-text');
+    
     
   $('#vehicle-upper-menu-cotizar').fancybox({        
         type: 'inline',
