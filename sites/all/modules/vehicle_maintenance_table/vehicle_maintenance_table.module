@@ -135,7 +135,7 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
     </tr>
     
     <tr>
-        <td id="cambio-vertical" class="vertical-td " rowspan="14"> <span id="cambio-vertical-text"></span></td>
+        <td id="cambio-vertical" class="vertical-td " rowspan="11"> <span id="cambio-vertical-text"></span></td>
         <td class="first-column maintenance-table-contenido-mantenimiento-cell">Aceite de motor</td>
         <td class="maintenance-table-contenido-mantenimiento-cell"  class="maintenance-table-contenido-mantenimiento-cell">x</td>
         <td class="maintenance-table-contenido-mantenimiento-cell" >x</td>
@@ -216,7 +216,7 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
     
     <tr>        
         <td class="first-column maintenance-table-contenido-mantenimiento-cell">
-            Aceite de la Transmisi&oacute;<br/>
+            Aceite de la Transmisi&oacute;n<br/>
             40/80/100/120/160: Manual<br/>
             80/120/160: Autom&aacute;
         </td>    
@@ -251,7 +251,8 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
         <td class="maintenance-table-contenido-mantenimiento-cell" ></td>
     </tr>
     
-    <tr>        
+    <tr>
+    <td class="vertical-td" rowspan="17"> <span id="inspeccion-vertical"></span></td>
         <td class="first-column maintenance-table-contenido-mantenimiento-cell">
          Frenos (Bandas, Discos, Tambores)
         </td>    
@@ -287,7 +288,7 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
     
     <tr>      
     
-         <td class="vertical-td" rowspan="14"> <span id="inspeccion-vertical"></span></td>
+         
         <td class="first-column maintenance-table-contenido-mantenimiento-cell">
          Cerraduras, Bisagras y Cerrojo Baul
         </td>    
@@ -376,10 +377,6 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
         $block['content'] .= '</td>';
         
         $block['content'] .= '<td class="centralize-text">';
-        $block['content'] .= '0.5';
-        $block['content'] .= '</td>';
-        
-        $block['content'] .= '<td class="centralize-text">';
         $block['content'] .= '1';
         $block['content'] .= '</td>';
         
@@ -388,11 +385,15 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
         $block['content'] .= '</td>';
         
         $block['content'] .= '<td class="centralize-text">';
-        $block['content'] .= '3.5';
+        $block['content'] .= '2';
         $block['content'] .= '</td>';
         
         $block['content'] .= '<td class="centralize-text">';
-        $block['content'] .= '1.5';
+        $block['content'] .= '4';
+        $block['content'] .= '</td>';
+        
+        $block['content'] .= '<td class="centralize-text">';
+        $block['content'] .= '2';
         $block['content'] .= '</td>';
         
         

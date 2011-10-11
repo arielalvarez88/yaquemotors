@@ -1,7 +1,7 @@
 <?php require dirname(__FILE__).'/../paths.php'; ?>
 <div id="family-tradition">
     <a id="family-tradition-header">
-        TRADIC&Oacute;N FAMILIAR
+        TRADICI&Oacute;N FAMILIAR
     </a>
 
     <?php require dirname(__FILE__) . '/bigHorizontalDivisor.php'; ?>

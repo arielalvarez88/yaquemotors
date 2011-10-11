@@ -30,7 +30,7 @@
         
         <p><span>Kilometraje Actual</span> <input id="appointment-kilometers" type="text"/></p>
         
-        <p><span>Servicio Solicitado (Quejas)</span> </p>
+        <p><span>Servicio Solicitado</span> </p>
         <textarea id="appointment-service" type="text"></textarea>
                 
         

@@ -48,7 +48,7 @@ initializeSlideshows = function()
                 options:{
                     fx:     'scrollUp', 
                     speed:  'fast', 
-                    timeout: 3000,                 
+                    timeout: 20000,                 
                     cleartype: true,
                     cleartypeNoBg: true,
                     pagerEvent:    'click',
@@ -420,6 +420,7 @@ $(document).ready(function(){
     initializeAjaxForms();
     initializeCalendarsUi();
     initializFilter();
+    showEditLinksOnHover
     roundCorners();
     
   

@@ -41,14 +41,14 @@
             <li id="workshop-services-menu-item-reparacion" class="workshop-services-menu-item">
                 
                 <span class="workshop-services-menu-item-icon"></span>            
-                <span class="workshop-services-menu-item-text">TODAS LAS CATEGORIAS</span>
+                <span class="workshop-services-menu-item-text">REPARACIÓN MECÁNICA</span>
             </li>
             
             <li id="workshop-services-menu-item-todas" class="workshop-services-menu-item">
                 
                 
                 <span class="workshop-services-menu-item-icon"></span>            
-                <span class="workshop-services-menu-item-text">Alineación Y BALANCEO</span>
+                <span class="workshop-services-menu-item-text">TODAS LAS CATEGORÍAS</span>
             </li>
             
             

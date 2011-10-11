@@ -19,11 +19,11 @@
                 F. 809.582.5932
                 
                 <ul>
-                    <li><span class="bold">Ventas, Ext: </span> 205</li>
+                    <li><span class="bold">Ventas, Ext: </span> 227</li>
                     
-                    <li><span class="bold">Repuestos, Ext: </span> 205</li>
+                    <li><span class="bold">Repuestos, Ext: </span> 228</li>
                     
-                    <li><span class="bold">Taller, Ext: </span> 205</li>
+                    <li><span class="bold">Taller, Ext: </span> 235</li>
                     
                 </ul>
                 
@@ -60,7 +60,7 @@
                 <br/>
                 <span class="bold">Extensión:</span> 226
                 <br/>
-                <span class="bold">Celular:</span> 829.5200.2367
+                <span class="bold">Celular:</span> 829.520.2367
                 <br/>
                 <span class="bold">Email:</span> m.alvarez@elyaquemotors.com
             </p>
@@ -95,7 +95,7 @@
                 <br/>
                 <span class="bold">Celular:</span> 829.520.2369
                 <br/>
-                <span class="bold">Email:</span> r.reyes@elyaquemotors.com
+                <span class="bold">Email:</span> l.bournigal@elyaquemotors.com
             </p>
             </li>
             
@@ -106,28 +106,29 @@
         
     <div class="contacts-slider-employee-division">
     <a class=" contacts-slider-title contacts-redcorenered-button">Asesores de Servicio<img src="<?php echo $paths->images;?>/common/whiteArrow.png"/></a>
-       <ul class="contacts-slider-menu hidden">
-        <li>
-            <p class="contacts-slider-employee-info">
-                <span class="bold">Vendedor:</span> Luis Tejada
-                <br/>
-                <span class="bold">Extensión:</span> 301
-                <br/>
-                <span class="bold">Celular:</span> 809.979.8252
-                <br/>
-                <span class="bold">Email:</span> l.tejada@elyaquemotors.com
-            </p>
-            </li>
+       <ul class="contacts-slider-menu hidden">    
             
             <li>
             <p class="contacts-slider-employee-info border-less">
-                <span class="bold">Vendedor:</span> José Marcos Cabrera
+                <span class="bold">Asesor:</span> José Marcos Cabrera
                 <br/>
                 <span class="bold">Extensión:</span> 302
                 <br/>
                 <span class="bold">Celular:</span> 809.979.8252
                 <br/>
-                <span class="bold">Email:</span> m.alvarez@elyaquemotors.com
+                <span class="bold">Email:</span> j.cabrera@elyaquemotors.com
+            </p>
+            </li>
+            
+              <li>
+            <p class="contacts-slider-employee-info border-less">
+                <span class="bold">Asesor:</span> Elvin Jiménez
+                <br/>
+                <span class="bold">Extensión:</span> 303
+                <br/>
+                <span class="bold">Celular:</span> 809.979.8252
+                <br/>
+                <span class="bold">Email:</span> e.jimenez@elyaquemotors.com
             </p>
             </li>
             <li>
