@@ -3,7 +3,7 @@
 
     <div id="parts-store-left-menu">
         <a href="/citas" id="parts-store-left-menu-appointment" class="parts-store-left-menu-button"></a>
-        <a  id="parts-store-left-menu-offers" class="parts-store-left-menu-button"></a>
+        <a href="/ofertas" id="parts-store-left-menu-offers" class="parts-store-left-menu-button"></a>
     </div>
     <?php require dirname(__FILE__) . '/bigVerticalDivisor.php'; ?>
     <div id="parts-store-text-container">

@@ -31,7 +31,7 @@
         </div>
 
 <a class="filter-brand-modifier-button" id="vehicles-agency-all-brands" value="todas" >TODAS LAS MARCAS</a>
-        <a href="/citas" id="vehicles-agency-make-appointment"></a>
+        <a href="/ofertas" id="vehicles-agency-offers"></a>
         <a href="/tienda-de-repuestos" id="vehicles-agency-parts" href="/tienda-de-repuestos"></a>
     </div>
 

@@ -374,13 +374,19 @@ root {
         
 }
 
-#vehicles-agency-make-appointment
+#vehicles-agency-offers
 {
-    background-image: url('/sites/default/files/images/common/appointmentOffersSprite.png');
-    display: block;
-    width: 233px;
-    height: 85px;
+    
+    
+    
+    
     margin: 10px 0;
+    
+        display: block;
+     background-image: url('/sites/default/files/images/common/appointmentOffersSprite.png');
+     background-position: 0 128px;
+    height: 124px;
+      width: 233px;
     
 }
 
@@ -1088,6 +1094,7 @@ ul.contacts-slider-title
     
    
     height: 86px;
+    margin-bottom: 20px;
 }
 
 #make-appointment-right-menu
@@ -2117,6 +2124,7 @@ ul.contacts-slider-title
 {
     display: block;
      background-image: url('/sites/default/files/images/common/appointmentOffersSprite.png');
+     
       width: 233px;
 }
 
@@ -2126,6 +2134,7 @@ ul.contacts-slider-title
     
    
     height: 86px;
+    margin-bottom: 20px;
 }
 #parts-store-left-menu-offers
 {
