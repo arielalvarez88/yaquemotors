@@ -1,10 +1,10 @@
 <?php
 
 //$emails['parts'] = "centroservicios@elyaquemotors.com";
-//$emails['parts'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>' . "\r\n" . "CC: j.guillen@elyaquemotoros.com";
+//$emails['partsHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>' . "\r\n" . "CC: j.guillen@elyaquemotoros.com";
 
 $emails['parts'] = "arielalvarez88@hotmail.com";
-$emails['parts'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>' . "\r\n" . "Cc: arielalvarez88@gmail.com";
+$emails['partsHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>' . "\r\n" . "Cc: arielalvarez88@gmail.com";
 
 //$emails['appointments'] = "centroservicios@elyaquemotors.com";
 //$emails['appointmentsHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>' . "\r\n" . "CC: jm.suarez@elyaquemotors.com";
