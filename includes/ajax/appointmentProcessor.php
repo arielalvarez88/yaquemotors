@@ -10,7 +10,7 @@ $message .= "\n" . 'Empresa: ' . $_POST['appointment-company'];
 $message .= "\n" . 'Teléfono: ' . $_POST['appointment-telephone'];
 $message .= "\n" . 'Email: ' . $_POST['appointment-email'];
 
-$message .= "\n\n Información de la cita:";
+$message .= "\n\n Información de la cita: \n";
 
 $message .= "\n" . 'Fecha de la cita(Mes/Día/Año): ' . $_POST['appointment-date'];
 
