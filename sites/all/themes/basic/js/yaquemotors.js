@@ -312,6 +312,12 @@ initializeOnClickEvents = function(){
         margin: 0,
         padding: 0
     });
+    
+    $('.offer-teaser a').fancybox({        
+        type: 'image',
+        margin: 0,
+        padding: 0
+    });
         
     
     
@@ -420,7 +426,7 @@ $(document).ready(function(){
     initializeAjaxForms();
     initializeCalendarsUi();
     initializFilter();
-    showEditLinksOnHover
+    
     roundCorners();
     
   

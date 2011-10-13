@@ -1302,8 +1302,9 @@ ul.contacts-slider-title
 /*Work Shop Services Menu ENDS*/
 
 /*offer-teaser*/
-.offer-teaser
+.offer-teaser a
 {
+    display: block;
     text-align: center;    
 }
 
@@ -1313,10 +1314,7 @@ ul.contacts-slider-title
   
 }
 
-.offer-teaser-image
-{
-    cursor: pointer;
-}
+
 
 /*offer-teaser ENDS*/
 /*Work Shop Services Slideshow*/
