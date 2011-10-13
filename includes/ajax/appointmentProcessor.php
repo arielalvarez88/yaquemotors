@@ -30,7 +30,7 @@ $success = mail($emails['appointments'], $subject, $message,$emails['appointment
 
     $response = new stdClass();
     $response->success = $success;
-    echo json_encode($success);
+    echo json_encode($response);
 
 
 ?>

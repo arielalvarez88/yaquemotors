@@ -26,7 +26,7 @@ $success = mail($emails['parts'], $subject, $message,$emails['partsHeaders']);
 
     $response = new stdClass();
     $response->success = $success;
-    echo json_encode($success);
+    echo json_encode($response);
 
 
 

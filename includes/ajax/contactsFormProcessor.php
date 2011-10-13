@@ -22,7 +22,7 @@ $success = mail($emails['contacts'], $subject, $message,$emails['contactsHeader'
 
     $response = new stdClass();
     $response->success = $success;
-    echo json_encode($success);
+    echo json_encode($response);
 
 
 

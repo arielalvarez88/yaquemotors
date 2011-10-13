@@ -33,8 +33,7 @@
             <h4>E-mail</h4>    
             <p>
                 centroservicios@elyaquemotors.com
-                <br/>
-                <br/>
+                <br/>                
                 ventas@elyaquemotors.com
             </p>
 
