@@ -3,7 +3,7 @@
 require dirname(__FILE__).'/../formEmails.php';
 $subject = "Tienda de Piezas";
 
-$message = "Información del usuario:";
+$message = "Información del usuario: \n";
 
 $message .= "\n" . 'Nombre: ' . $_POST['part-store-username'];
 $message .= "\n" . 'Apellido: ' . $_POST['part-store-lastname'];

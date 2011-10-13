@@ -3,7 +3,7 @@
 require dirname(__FILE__).'/../formEmails.php';
 $subject = "Mensaje de Cotizar Vehículos";
 
-$message = "Información del usuario:";
+$message = "Información del usuario: \n";
 
 $message .= "\n" . 'Nombre: ' . $_POST['vehicle-cotizar-client-name'];
 $message .= "\n" . 'Empresa: ' . $_POST['vehicle-cotizar-client-company'];
@@ -16,7 +16,7 @@ $message .= "\n" . 'Teléfono: ' . $_POST['vehicle-cotizar-client-tel'];
 
 
 
-$message .= "\n Información del vehículo: ";
+$message .= "\n Información del vehículo: \n";
 
 $message .= "\n Marca: " . $_POST['vehicle-cotizar-vehicle-brand'];
 $message .= "\n Modelo: " . $_POST['vehicle-cotizar-vehicle-model'];

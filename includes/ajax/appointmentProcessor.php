@@ -3,7 +3,7 @@
 require dirname(__FILE__).'/../formEmails.php';
 $subject = "Mensaje de Citas";
 
-$message = "Información del usuario:";
+$message = "Información del usuario: \n";
 
 $message .= "\n" . 'Nombre/Empresa: ' . $_POST['appointment-name'];
 $message .= "\n" . 'Empresa: ' . $_POST['appointment-company'];

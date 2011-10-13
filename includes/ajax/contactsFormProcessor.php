@@ -3,7 +3,7 @@
 require dirname(__FILE__).'/../formEmails.php';
 $subject = "Mensaje de Contactos";
 
-$message = "Información del usuario:";
+$message = "Información del usuario: \n";
 
 $message .= "\n" . 'Nombre: ' . $_POST['contactos-form-nombre'];
 $message .= "\n" . 'Teléfono: ' . $_POST['contactos-form-tel'];
