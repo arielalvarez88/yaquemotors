@@ -15,10 +15,13 @@ $emails['appointmentsHeaders'] = 'From: www.elyaquemotoros.com' . "\r\n" . "CC: 
 //$emails['contacts'] = "ventas@elyaquemotors.com";
 //$emails['contactsHeaders'] = 'From: www.elyaquemotoros.com';
 
-$emails['contacts'] = "ventas@elyaquemotors.com";
+$emails['contacts'] = "arielalvarez88@hotmail.com";
 $emails['contactsHeaders'] = 'From: www.elyaquemotoros.com';
 
-$emails['cotizar'] = "centroservicios@elyaquemotoros.com";
+//$emails['cotizar'] = "centroservicios@elyaquemotoros.com";
+//$emails['cotizarHeaders'] = "arielalvarez88@hotmail.com";
+
+$emails['cotizar'] = "arielalvarez88@hotmail.com";
 $emails['cotizarHeaders'] = "arielalvarez88@hotmail.com";
 
 

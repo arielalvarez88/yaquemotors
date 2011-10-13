@@ -120,11 +120,13 @@ setSimpleFormBehavior = function(formSelector,sendButtonSelector,cleanButtonSele
 
     
     
-    $(cleanButtonSelector).click(function(){
+    $(cleanButtonSelector).click(function(event){
+        event.preventDefault();
         simpleFormCleaner(formSelector);
             
     });
-    $(sendButtonSelector).click(function(){
+    $(sendButtonSelector).click(function(event){
+        event.preventDefault();
         var formDataToJason = new SimpleFormDataToJson(formSelector);
         var formInfoInJason = formDataToJason.getDataInJason();
         simpleFormSender(processingScriptUrl,formInfoInJason,simpleFormReciever);   
