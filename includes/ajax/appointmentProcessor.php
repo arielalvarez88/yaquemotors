@@ -10,11 +10,11 @@ $message .= "\n" . 'Empresa: ' . $_POST['appointment-company'];
 $message .= "\n" . 'Teléfono: ' . $_POST['appointment-telephone'];
 $message .= "\n" . 'Email: ' . $_POST['appointment-email'];
 
-$message = "Información de la cita:";
+$message = "\n\n Información de la cita:";
 
 $message .= "\n" . 'Fecha de la cita(Mes/Día/Año): ' . $_POST['appointment-date'];
 
-$message = "Información del vehículo:";
+$message = "Información del veh&iacute;culo:";
 
 $message .= "\n" . 'Marca:' . $_POST['appointment-brand'];
 $message .= "\n" . 'Modelo:' . $_POST['appointment-model'];

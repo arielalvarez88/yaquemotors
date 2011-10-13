@@ -1,7 +1,7 @@
 <?php
 
 require dirname(__FILE__).'/../formEmails.php';
-$subject = "Mensaje de Cotizar Vehículos";
+$subject = "Mensaje de Cotizar Veh&iacute;culos";
 
 $message = "Información del usuario: \n";
 
@@ -16,7 +16,7 @@ $message .= "\n" . 'Teléfono: ' . $_POST['vehicle-cotizar-client-tel'];
 
 
 
-$message .= "\n Información del vehículo: \n";
+$message .= "\n\n Información del vehículo: \n";
 
 $message .= "\n Marca: " . $_POST['vehicle-cotizar-vehicle-brand'];
 $message .= "\n Modelo: " . $_POST['vehicle-cotizar-vehicle-model'];
