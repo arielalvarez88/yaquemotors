@@ -1,7 +1,7 @@
 <?php
 
 require dirname(__FILE__).'/../formEmails.php';
-$subject = "Mensaje de Cotizar Veh&iacute;culos";
+$subject = "Mensaje de Cotizar Vehículos";
 
 $message = "Información del usuario: \n";
 
@@ -29,7 +29,7 @@ $message .= "\n Combustible: " . $_POST['vehicle-cotizar-vehicle-gas'];
 $message .= "\n Puertas: " . $_POST['vehicle-cotizar-vehicle-doors'];
 $message .= "\n" . 'Color: ' . $_POST['vehicle-cotizar-vehicle-color'];
 
-$success = mail($emails['cotizar'], $subject, $message,$emails['cotizarHeaders']);
+$success = mail($emails['cotizar'], utf8_encode( stripcslashes($subject)), utf8_encode(stripcslashes($message)),$emails['cotizarHeaders']);
         
 
     $response = new stdClass();
