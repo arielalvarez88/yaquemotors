@@ -21,7 +21,7 @@ $message .= "\n" . "Color: " . $_POST['part-store-part-color'];
 $message .= "\n" . "Pieza a contizar: " . $_POST['part-store-part-piece'];
 
 
-$success = mail($emails['parts'], $subject, $message,$emails['partsHeaders']);
+$success = mail($emails['parts'], utf8_decode($subject), utf8_decode($message),$emails['partsHeaders']);
         
 
     $response = new stdClass();
