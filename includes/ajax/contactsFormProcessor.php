@@ -17,7 +17,7 @@ $message .= "\n" . $_POST['contacts-form-message'];
 
 
 
-$success = mail($emails['contacts'], $subject, $message,$emails['contactsHeader']);
+$success = mail($emails['contacts'], $subject, $message,$emails['contactsHeaders']);
         
 
     $response = new stdClass();
