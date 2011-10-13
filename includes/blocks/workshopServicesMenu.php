@@ -13,18 +13,20 @@
     </p>
     
         <ul>
-            
-            <li id="workshop-services-menu-item-alineacion" class="workshop-services-menu-item">
+               <li id="workshop-services-menu-item-reparacion" class="workshop-services-menu-item">
                 
                 <span class="workshop-services-menu-item-icon"></span>            
-                <span class="workshop-services-menu-item-text">ALINEACI&Oacute;N Y BALANCEO</span>
+                <span class="workshop-services-menu-item-text">REPARACIÓN MECÁNICA</span>
             </li>
             
-            <li id="workshop-services-menu-item-desabolladura" class="workshop-services-menu-item">
+            <li id="workshop-services-menu-item-todas" class="workshop-services-menu-item">
+                
                 
                 <span class="workshop-services-menu-item-icon"></span>            
-                <span class="workshop-services-menu-item-text">DESABOLLADURA Y PINTURA</span>
+                <span class="workshop-services-menu-item-text">MANTENIMIENTO</span>
             </li>
+            
+   
             
             <li id="workshop-services-menu-item-diagnostico" class="workshop-services-menu-item">
                 
@@ -38,19 +40,18 @@
                 <span class="workshop-services-menu-item-text">AIRE ACONDICIONADO</span>
             </li>
             
-            <li id="workshop-services-menu-item-reparacion" class="workshop-services-menu-item">
+                  
+            <li id="workshop-services-menu-item-alineacion" class="workshop-services-menu-item">
                 
                 <span class="workshop-services-menu-item-icon"></span>            
-                <span class="workshop-services-menu-item-text">REPARACIÓN MECÁNICA</span>
+                <span class="workshop-services-menu-item-text">ALINEACI&Oacute;N Y BALANCEO</span>
             </li>
             
-            <li id="workshop-services-menu-item-todas" class="workshop-services-menu-item">
-                
+            <li id="workshop-services-menu-item-desabolladura" class="workshop-services-menu-item">
                 
                 <span class="workshop-services-menu-item-icon"></span>            
-                <span class="workshop-services-menu-item-text">TODAS LAS CATEGORÍAS</span>
+                <span class="workshop-services-menu-item-text">DESABOLLADURA Y PINTURA</span>
             </li>
-            
             
             
         </ul>        

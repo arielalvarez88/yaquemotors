@@ -52,7 +52,7 @@
         </div>
         
         <div class="workshop-sevices-slideshow-slide">
-            <h2>4. Autoriazaci&oacute;n del Cliente</h2>
+            <h2>4. Autorizaci&oacute;n del Cliente</h2>
             <p class="tk-ratio">
                 Al finalizar el diagnóstico, el Asesor contacta al cliente para informar de los puntos adicionales de reparación encontrados, y así, pedir autorización para este trabajo adicional. 
                 <br/>

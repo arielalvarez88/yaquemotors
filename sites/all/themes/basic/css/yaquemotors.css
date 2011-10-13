@@ -1480,6 +1480,7 @@ ul.contacts-slider-title
 /* mision-vision*/
 #mision-vision
 {
+    font-size: 1.2em;
     width: 475px;
     height: 198px;
 }
@@ -1493,8 +1494,8 @@ ul.contacts-slider-title
 #mision-vision-original-mision
 {
        display: block;
-    line-height: 14px;
-    margin-bottom: 42px;
+    line-height: 12px;
+    margin-bottom: 35px;
 }
 
 #mision-vision-original-vision
@@ -1509,7 +1510,7 @@ ul.contacts-slider-title
 {
     font-size: 0.9em;
     height: 142px;
-    padding: 54px 25px 0 19px;
+    padding: 50px 25px 0 19px;
     width: 246px;
 }
 

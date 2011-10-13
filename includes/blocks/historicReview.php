@@ -14,7 +14,11 @@
         <br/>
         
         Para el 1992, se inaugura el Departamento de Repuestos, ofreciendo la venta de repuestos, gomas, baterías y aceites. Luego de 30 años de haber fundado la empresa, el señor De Agustino decide vender sus acciones al Sr. Tomás Suárez, momento en el que la empresa se convierte en una empresa familiar.
-
+        
+        <br/>
+        <br/>
+        
+        Actualmente, el yaque motors comercializa las marcas Nissan, Chevrolet y Suzuki, y cuenta con el taller de servicios más capacitado de la región en las marcas mencionadas. En nuestras instalaciones, contamos con una sala de exhibición de vehículos y con un taller de mecánica equipado con las últimas herramientas del mercado, logrando una capacidad de servir a 40 vehículos diarios.
     </p>
     
     

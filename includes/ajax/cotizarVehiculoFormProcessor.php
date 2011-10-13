@@ -29,7 +29,7 @@ $message .= "\n Combustible: " . $_POST['vehicle-cotizar-vehicle-gas'];
 $message .= "\n Puertas: " . $_POST['vehicle-cotizar-vehicle-doors'];
 $message .= "\n" . 'Color: ' . $_POST['vehicle-cotizar-vehicle-color'];
 
-$success = mail($emails['partsForm'], $subject, $message);
+$success = mail($emails['cotizar'], $subject, $message,$emails['cotizarheaders']);
         
 
     $response = new stdClass();

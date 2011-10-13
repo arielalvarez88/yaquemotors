@@ -30,7 +30,7 @@
         
         <p><span>Kilometraje Actual</span> <input id="appointment-kilometers" type="text"/></p>
         
-        <p><span>Servicio Solicitado</span> </p>
+        <p><span>Servicio(s) Solicitado(s)</span> </p>
         <textarea id="appointment-service" type="text"></textarea>
                 
         
@@ -56,7 +56,7 @@
             </li>
             
             <li>
-                No hace filas ni espera para la recepci&oacute;.
+                No hace filas ni espera para la recepci&oacute;n.
             </li>
             
             <li>

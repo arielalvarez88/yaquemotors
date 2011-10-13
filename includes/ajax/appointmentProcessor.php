@@ -25,7 +25,7 @@ $message .= "\n" . 'Kilometers:' . $_POST['appointment-kilometers'];
 $message .= "\n" . 'Servicio Solicitado:' . $_POST['appointment-service'];
 
 
-$success = mail($emails['partsForm'], $subject, $message);
+$success = mail($emails['appointments'], $subject, $message,$emails['appointmentsHeaders']);
         
 
     $response = new stdClass();

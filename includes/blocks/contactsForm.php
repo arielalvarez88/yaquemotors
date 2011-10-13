@@ -65,7 +65,7 @@
 	<p>
 		<span class="bold">S&aacute;bados</span>
 		<br/>
-		8:00 AM A 12:00 AM		
+		8:00 AM A 12:00 PM		
 	</p>
 </div>
 
