@@ -158,6 +158,12 @@ root {
         width: 418px;
         position: relative;
         text-transform: uppercase;
+        
+}
+
+.company-vehicles-title
+{
+    font-size: 1.6em;
 }
 
 #vehicles-agency-search-results-title.all-brands
@@ -1307,6 +1313,13 @@ ul.contacts-slider-title
     display: block;
     text-align: center;    
 }
+
+.offer-teaser h3
+{
+    color: #333333;
+    margin: 10px 0;
+}
+
 
 .offer-teaser-flyer
 {
