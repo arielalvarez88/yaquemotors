@@ -12,7 +12,7 @@ $message .= "\n" . 'Teléfono: ' . $_POST['part-store-tel'];
 $message .= "\n" . 'Email: ' . $_POST['part-store-email'];
 
 
-$message .= "\n" . "Información de la pieza: ";
+$message .= "\n\n" . "Información de la pieza: \n";
 $message .= "\n" . "Marca: " . $_POST['part-store-part-brand'];
 $message .= "\n" . "Modelo: " . $_POST['part-store-part-model'];
 $message .= "\n" . "Año: " . $_POST['part-store-part-year'];
