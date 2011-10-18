@@ -48,7 +48,7 @@
             </li>
             
             <li>
-                Conocimiento de la disponibilidad del taller y de los tepuestos para el tervicio.
+                Conocimiento de la disponibilidad del taller y de los repuestos para el servicio.
             </li>
             
             <li>
