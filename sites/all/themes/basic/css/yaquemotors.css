@@ -11,6 +11,11 @@
    Syntax recommendation http://www.w3.org/TR/REC-CSS2/
 */
 
+body
+{
+    /*background: url("/sites/default/files/images/common/pageBackground2.png") no-repeat;*/
+}
+
 root { 
     display: block;
 }
@@ -2000,6 +2005,12 @@ ul.contacts-slider-title
     height: 45px;
     
 }
+
+#vehicle-slideshow-pager
+{
+    width: 408px;
+}
+
 #vehicle-slideshow-container
 {
     float: left;
@@ -2124,10 +2135,10 @@ ul.contacts-slider-title
 
 .vehicle-slideshow-pager-item
 {
-    display: block;
-    width: 77px;
     height: 54px;
-    float: left;
+    margin-right: 22px;
+    width: 77px;
+    
 }
 
 /*Vehicle ENDS*/

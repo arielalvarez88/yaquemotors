@@ -59,17 +59,17 @@ initializeSlideshows = function()
                 }            
             },
             vehicleSlideshow: {
-                selector: '#vehicle-shlideshow',
+                selector: '#vehicle-slideshow',
                 options:{
                     fx:     'scrollUp', 
                     speed:  'fast', 
-                    timeout: 3000,                 
+                    timeout: 0,                 
                     cleartype: true,
                     cleartypeNoBg: true,
                     pagerEvent:    'click',
                     pager: '#vehicle-slideshow-pager',
                     pagerAnchorBuilder: function(idx, slide){
-                        return '#workshop-sevices-slideshow-pager span:eq('+idx+')';
+                        return '.vehicle-slideshow-pager-item:eq('+idx+')';
                     }
                 }            
             }
