@@ -26,7 +26,7 @@ $version = ucwords($node->field_vehicle_version[0]['value']);
             <div id="vehicle-slideshow">
                 <?php foreach ($node->field_vehicle_photos as $photo): ?>
                     <?php if ($photo): ?>
-                        <img alt="Foto del veh&iacute;culo" class="vehicle-slideshow-big-slide" src="/<?php echo $photo['filepath']; ?>"/>
+                        <?php echo theme('imagecache', 'vehicles_slides', $photo['filepath'], 'foto-del-vehiculo', $vehicleNode->field_vehicle_model[0]['value'], array("class"=> "vehicle-slideshow-big-slide"));?>
                     <?php endif; ?>
                 <?php endforeach; ?>
             </div>
@@ -36,7 +36,8 @@ $version = ucwords($node->field_vehicle_version[0]['value']);
             <div id="vehicle-slideshow-pager">
                 <?php foreach ($node->field_vehicle_photos as $photo): ?>
                     <?php if ($photo): ?>
-                        <img alt="Foto del veh&iacute;culo" class="vehicle-slideshow-pager-item" src="/<?php echo $photo['filepath']; ?>"/>
+                <?php echo theme('imagecache', 'vehicles_pager_slides', $photo['filepath'], 'foto-del-vehiculo', $vehicleNode->field_vehicle_model[0]['value'], array("class"=> "vehicle-slideshow-pager-item"));?>
+                       
                     <?php endif; ?>
                 <?php endforeach; ?>
             </div>                                    
