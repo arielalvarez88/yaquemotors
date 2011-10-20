@@ -174,7 +174,7 @@ $version = ucwords($node->field_vehicle_version[0]['value']);
                 <img id="overlay-photo" alt="foto-del-vehiculo" src="/<?php echo $node->field_vehicle_photos[0]['filepath'];?>"/>
                 
                 
-                
+                <img id="vehicle-contizar-overlay-description-title" alt="Fotos-de-Vehiculos" src="/<?php echo file_directory_path(); ?>/images/vehicle/description.png"/>
                 
                 <ul>
                     <li><span class="bold">Estado</span>: <?php echo $state; ?></li>
@@ -186,18 +186,6 @@ $version = ucwords($node->field_vehicle_version[0]['value']);
                     <li><span class="bold">Puertas: </span> <?php echo $doors; ?></li>
                     <li><span class="bold">Tracci&oacute;n: </span> <?php echo $traction; ?></li>
                 </ul>
-                <img id="vehicle-contizar-overlay-description-title" alt="Fotos-de-Vehiculos" src="/<?php echo file_directory_path(); ?>/images/vehicle/description.png"/>
-                <?php if ($node->field_vehicle_description[0]['value']): ?>
-
-                    <?php echo $node->field_vehicle_description[0]['value']; ?>
-
-                <?php endif; ?>
-
-                
-
-                    
-                    
-
                 
                 
             </div>

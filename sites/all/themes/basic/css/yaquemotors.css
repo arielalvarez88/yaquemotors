@@ -556,6 +556,7 @@ root {
 {
     list-style: none;
     padding: 0;
+    width: 407px;
 }
 #overlay-car-info
 {
@@ -2049,12 +2050,6 @@ ul.contacts-slider-title
     height: 50px;
 }
 
-#vehicle-description
-{
-    float: left;
-    margin-left: 16px;
-}
-
 
 .financing-post-sell-buttons
 {
@@ -2080,6 +2075,9 @@ ul.contacts-slider-title
 #vehicle-description
 {
     padding-left: 5px;
+    float: left;
+    margin-left: 16px;
+    width: 510px;
 }
 
 #vehicle-description-bottom ul
