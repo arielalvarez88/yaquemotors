@@ -8,6 +8,7 @@ $traction = ucwords($node->field_vehicle_traction[0]['value']);
 $state = ucwords($node->field_vehicle_state[0]['value']);
 $year = ucwords($node->field_vehicle_year[0]['value']);
 $version = ucwords($node->field_vehicle_version[0]['value']);
+$interiorColor = ucwords($node->field_vehicle_interior_color[0]['value']);
 
 ?>
 <div id="vehicle">
@@ -79,6 +80,7 @@ $version = ucwords($node->field_vehicle_version[0]['value']);
                     <li><span class="bold">Combustible: </span> <?php echo $gas; ?></li>                    
                     <li><span class="bold">Puertas: </span> <?php echo $doors; ?></li>
                     <li><span class="bold">Tracci&oacute;n: </span> <?php echo $traction; ?></li>
+                    <li><span class="bold">Color del interior: </span> <?php echo $interiorColor; ?></li>
                 </ul>
             </div>
             <img id="vehicle-available-description-title" alt="Fotos-de-Vehiculos" src="/<?php echo file_directory_path(); ?>/images/vehicle/description.png"/>
@@ -186,6 +188,7 @@ $version = ucwords($node->field_vehicle_version[0]['value']);
                     
                     <li><span class="bold">Puertas: </span> <?php echo $doors; ?></li>
                     <li><span class="bold">Tracci&oacute;n: </span> <?php echo $traction; ?></li>
+                    <li><span class="bold">Color del interior: </span> <?php echo $interiorColor; ?></li>
                 </ul>
                 
                 
