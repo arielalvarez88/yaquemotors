@@ -90,7 +90,7 @@
                 El trabajo no termina al entregar el vehículo. Nuestro personal realiza una llamada de seguimiento antes de los 4 días de realizado el servicio al vehículo, en la cual se hacen varias preguntas con la  intención de conocer cualquier inquietud que tenga el cliente, y así, poder dar solución de la manera más rápida posible.
                  <br/>
                  <br/>
-            <span class="workshop-sevices-slide-bottom-text">Tiempo: 4 minnutos.</span>
+            <span class="workshop-sevices-slide-bottom-text">Tiempo: 4 minutos.</span>
             </p>
            
         </div>
