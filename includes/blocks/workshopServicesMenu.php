@@ -9,7 +9,7 @@
          Te damos la bienvenida al Taller de Servicios más completo de la región del Cibao para las marcas de vehículos General Motors, Nissan y Suzuki. Con un espacio de aproximadamente 2,000 m2, equipado con herramientas especiales junto a los computadores de diagnósticos más actualizados del mercado y una comunicación directa con los fabricantes de los vehículos que representamos. 
          <br/>
          <br/>
-         Te damos la bienvenida al Taller de Servicios más completo de la región del Cibao para las marcas de vehículos General Motors, Nissan y Suzuki. Con un espacio de aproximadamente 2,000 m2, equipado con herramientas especiales junto a los computadores de diagnósticos más actualizados del mercado y una comunicación directa con los fabricantes de los vehículos que representamos. 
+         Contamos con un personal capacitado, entrenado y certificado por los representantes de las fábricas de vehículos General Motors, Nissan y Suzuki. Con la constante capacitación de nuestro personal y la actualización de nuestros equipos y herramientas, buscamos garantizar un servicio de calidad mundial, teniendo como objetivo lograr la satisfacción de nuestros clientes.
     </p>
     
         <ul>
