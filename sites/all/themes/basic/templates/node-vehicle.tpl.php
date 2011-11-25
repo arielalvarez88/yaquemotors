@@ -54,7 +54,6 @@ $interiorColor = ucwords($node->field_vehicle_interior_color[0]['value']);
                     <?php foreach ($node->field_vehicle_colors as $color): ?>
                         <?php if ($color): ?>
                             <span class="vehicle-color-sample" style="background-color: <?php echo $color['value']; ?>;">
-
                             </span>
                         <?php endif; ?>
                     <?php endforeach; ?>
@@ -75,12 +74,37 @@ $interiorColor = ucwords($node->field_vehicle_interior_color[0]['value']);
 
             <div id="vehicle-description-bottom">
                 <ul>
+                      <?php if($state):?>
+                    <li><span class="bold">Estado</span>: <?php echo $state; ?></li>
+                    <?php endif;?>
+                    
+                    <?php if($year):?>
+                    <li><span class="bold">A&ntilde;o:</span> <?php echo $year; ?></li>
+                    <?php endif;?>
+                    
+                    <?php if($version):?>
                     <li><span class="bold">Versi&oacute;n: </span> <?php echo $version; ?></li>
+                    <?php endif;?>
+                    
+                    <?php if($transmission):?>
                     <li><span class="bold">Transmisi&oacute;n: </span> <?php echo $transmission; ?></li>
-                    <li><span class="bold">Combustible: </span> <?php echo $gas; ?></li>                    
+                    <?php endif;?>
+                    
+                    <?php if($gas):?>
+                    <li><span class="bold">Combustible: </span> <?php echo $gas; ?></li>
+                    <?php endif;?>
+                    
+                    <?php if($doors):?>
                     <li><span class="bold">Puertas: </span> <?php echo $doors; ?></li>
+                    <?php endif;?>
+                    
+                    <?php if($traction):?>
                     <li><span class="bold">Tracci&oacute;n: </span> <?php echo $traction; ?></li>
+                    <?php endif;?>
+                    
+                    <?php if($interiorColor):?>
                     <li><span class="bold">Color del interior: </span> <?php echo $interiorColor; ?></li>
+                    <?php endif;?>
                 </ul>
             </div>
             <img id="vehicle-available-description-title" alt="Fotos-de-Vehiculos" src="/<?php echo file_directory_path(); ?>/images/vehicle/description.png"/>
@@ -180,15 +204,37 @@ $interiorColor = ucwords($node->field_vehicle_interior_color[0]['value']);
                 <img id="vehicle-contizar-overlay-description-title" alt="Fotos-de-Vehiculos" src="/<?php echo file_directory_path(); ?>/images/vehicle/description.png"/>
                 
                 <ul>
+                    <?php if($state):?>
                     <li><span class="bold">Estado</span>: <?php echo $state; ?></li>
-                    <li><span class="bold">A&ntilde;o:</span> <?php echo $year; ?></li>
-                    <li><span class="bold">Versi&oacute;n: </span> <?php echo $version; ?></li>
-                    <li><span class="bold">Transmisi&oacute;n: </span> <?php echo $transmission; ?></li>
-                    <li><span class="bold">Combustible: </span> <?php echo $gas; ?></li>
+                    <?php endif;?>
                     
+                    <?php if($year):?>
+                    <li><span class="bold">A&ntilde;o:</span> <?php echo $year; ?></li>
+                    <?php endif;?>
+                    
+                    <?php if($version):?>
+                    <li><span class="bold">Versi&oacute;n: </span> <?php echo $version; ?></li>
+                    <?php endif;?>
+                    
+                    <?php if($transmission):?>
+                    <li><span class="bold">Transmisi&oacute;n: </span> <?php echo $transmission; ?></li>
+                    <?php endif;?>
+                    
+                    <?php if($gas):?>
+                    <li><span class="bold">Combustible: </span> <?php echo $gas; ?></li>
+                    <?php endif;?>
+                    
+                    <?php if($doors):?>
                     <li><span class="bold">Puertas: </span> <?php echo $doors; ?></li>
+                    <?php endif;?>
+                    
+                    <?php if($traction):?>
                     <li><span class="bold">Tracci&oacute;n: </span> <?php echo $traction; ?></li>
+                    <?php endif;?>
+                    
+                    <?php if($interiorColor):?>
                     <li><span class="bold">Color del interior: </span> <?php echo $interiorColor; ?></li>
+                    <?php endif;?>
                 </ul>
                 
                 
