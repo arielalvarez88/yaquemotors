@@ -22,8 +22,7 @@ class CompanyVehiclesFilter implements IFilter
         
         $fieldName = $this->fieldName;
         $field = $node->$fieldName;
-        
-        return $field[0]['value'] == 'camioneta' || $field[0]['value'] == 'camion' || 'minibus';
+        return $field[0]['value'] == 'camioneta' || $field[0]['value'] == 'camion' || $field[0]['value'] == 'minibus';
     }
 }
 ?>

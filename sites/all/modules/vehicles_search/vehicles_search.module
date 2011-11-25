@@ -21,9 +21,8 @@ function vehicles_search_block($op='list', $delta=0, $edit=array()) {
         $filters = array();
         $brand = isset($_GET['marca']) ? $_GET['marca'] : 'nissan';
         $category = isset($_GET['categoria']) ? $_GET['categoria'] : 'automovil';
-        if ($category == 'vehiculos para la empresa') {
-            
-            $filters[] = new CompanyVehiclesFilter($category);
+        if ($category == 'vehiculos para la empresa') {            
+            $filters[] = new CompanyVehiclesFilter();
         } else {
             
             $filters[] = $category != 'todas' ? new VehicleTypeFilter($category) : new NullFilter();
