@@ -146,6 +146,12 @@ root {
     
 }
 
+.vehicle-search-result img {
+    display: block;
+    width: 269px;
+    height: 172px;
+    margin-bottom: 10px;
+}
 
 #vehicles-agency-search-results
 {

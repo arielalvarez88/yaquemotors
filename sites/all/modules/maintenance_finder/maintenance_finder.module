@@ -37,7 +37,11 @@ function maintenance_finder_block($op='list', $delta=0, $edit=array()) {
 
         foreach ($brandsAndModels as $key => $value) {
             $brandsAndModels[$key] = array_unique($brandsAndModels[$key]);
+            
+            sort($brandsAndModels[$key]);
         }
+        
+        
         $viewFilePath = '';
        
         $viewFilePath = realpath ('./includes/views/frontPageMaintenanceFinder.php');

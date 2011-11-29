@@ -35,8 +35,8 @@ for($i=0; $i < $chevroletNumberOfFiles; $i++)
 
 for($i=0; $i < $suzukiNumberOfFiles; $i++)
 {
-    $filesAndTextPerBrand['suzuki']['texts'][] = $nissanFilesAndTexts['field_warran_text_field'][$i]['value']; 
-    $filesAndTextPerBrand['suzuki']['files'][] = $nissanFilesAndTexts['field_warran_file_field'][$i]['filepath']; 
+    $filesAndTextPerBrand['suzuki']['texts'][] = $suzukiFilesAndTexts['field_warran_text_field'][$i]['value']; 
+    $filesAndTextPerBrand['suzuki']['files'][] = $suzukiFilesAndTexts['field_warran_file_field'][$i]['filepath']; 
     
 }
 
