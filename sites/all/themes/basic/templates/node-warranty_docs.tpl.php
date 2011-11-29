@@ -66,7 +66,7 @@ for($i=0; $i < $suzukiNumberOfFiles; $i++)
                     
                     <?php for($i=0; $i<$numberOfFilesInBrand; $i++):?>
 
-                        <li><?php echo $filesAndTexts['texts'][$i];?><a href="/<?php echo $filesAndTexts['files'][$i];?>"><img src="<?php echo $paths->images;?>/common/excelIcon.png"/>Descargar</a></li>
+                        <li><span><?php echo $filesAndTexts['texts'][$i];?></span><a href="/<?php echo $filesAndTexts['files'][$i];?>"><img src="<?php echo $paths->images;?>/common/excelIcon.png"/>Descargar</a></li>
                         
                     <?php endfor;?>
                 </ul>
