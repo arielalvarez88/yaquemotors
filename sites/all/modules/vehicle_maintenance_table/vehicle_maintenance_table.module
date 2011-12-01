@@ -23,7 +23,7 @@ function vehicle_maintenance_table_block($op='list', $delta=0, $edit=array())
      $brand = isset($_GET['marca']) ? urldecode($_GET['marca']) : 'nissan';
      
      
-     $query = "SELECT * FROM {node} WHERE type = 'vehicle'";
+     $query = "SELECT * FROM node n INNER JOIN content_type_vehicle v on n.nid = v.nid  WHERE type = 'vehicle'  ORDER BY v.field_vehicle_model_value";
      $results = db_query($query);
      
      $vehicleNodes = array();
