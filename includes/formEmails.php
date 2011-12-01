@@ -13,8 +13,10 @@ $emails['contactsHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.c
 
 
 
-$emails['cotizar'] = "centroservicios@elyaquemotoros.com";
-$emails['cotizarHeaders'] = "From: Web - elyaquemotors <noreply@elyaquemotors.com>";
+$emails['cotizar'] = "ventas@elyaquemotors.com"; 
+$emails['cotizarHeaders'] = "From: Web - elyaquemotors <noreply@elyaquemotors.com> \r\n Cc: jl.suarez@elyaquemotors.com";
+
+
 
 
 ?>

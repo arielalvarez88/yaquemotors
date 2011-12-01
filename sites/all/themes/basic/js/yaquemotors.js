@@ -125,7 +125,10 @@ setSimpleFormBehavior = function(formSelector,sendButtonSelector,cleanButtonSele
         simpleFormCleaner(formSelector);
             
     });
-    $(sendButtonSelector).click(function(event){
+    
+    var sendButton = $(sendButtonSelector);
+    sendButton.unbind("click");
+    sendButton.click(function(event){
         event.preventDefault();
         var formDataToJason = new SimpleFormDataToJson(formSelector);
         var formInfoInJason = formDataToJason.getDataInJason();
@@ -431,7 +434,4 @@ $(document).ready(function(){
     
     roundCorners();
     
-  
-        
-
 });
