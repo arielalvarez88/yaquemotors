@@ -140,7 +140,7 @@ setSimpleFormBehavior = function(formSelector,sendButtonSelector,cleanButtonSele
 SimpleFormDataToJson = function(formSelector)
 {
     this.form = $(formSelector);
-    this.inputsAndTextAreas = this.form.find("input, textarea");
+    this.inputsAndTextAreas = this.form.find("input, textarea, select");
     
     this.getDataInJason = function(){
         var jsonData = {};

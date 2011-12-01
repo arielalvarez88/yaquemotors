@@ -34,7 +34,7 @@
             <p>
                 centroservicios@elyaquemotors.com
                 <br/>                
-                ventas@elyaquemotors.com
+                vehiculos@elyaquemotors.com
             </p>
 
         </div>

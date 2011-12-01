@@ -13,7 +13,7 @@
         
         <p>
             <span>Marca del Veh&iacute;culo</span> 
-            <select id="appointment-brand">
+            <select name ="appointment-brand" id="appointment-brand">
                 <option value="Nissan">Nissan</option>
                 <option value="Suzuki">Suzuki</option>
                 <option value="Chevrolet">Chevrolet</option>
