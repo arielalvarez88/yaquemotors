@@ -1,3 +1,5 @@
+<?php require realpath('./includes/classes/Html_helper.php');?>
+
 <?php if($teaser):?>
 
 <h2><?php echo $title;?></h2>
@@ -5,7 +7,7 @@
 
 
 
-<?php echo $content;?>
+<?php echo Html_helper::truncate(trim($node->content['body']['#value']), 30, '...');?>
 
 <?php else:?>
  

@@ -1,6 +1,7 @@
 <?php
 require dirname(__FILE__).'/../../../../includes/paths.php';
 
+
 function front_page_news_perm() {
     return array('view_front_page_news');
 }

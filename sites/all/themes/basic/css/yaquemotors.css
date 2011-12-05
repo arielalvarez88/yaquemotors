@@ -1575,6 +1575,7 @@ ul.contacts-slider-title
 {
     float: left;
     margin-right: 20px;
+    max-width: 960px;
 }
 
 /*noticas news ENDS*/
