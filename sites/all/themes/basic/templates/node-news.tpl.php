@@ -1,4 +1,4 @@
-<?php require realpath('./includes/classes/Html_helper.php');?>
+
 
 <?php if($teaser):?>
 

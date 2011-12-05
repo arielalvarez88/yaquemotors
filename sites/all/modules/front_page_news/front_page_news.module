@@ -1,6 +1,6 @@
 <?php
 require dirname(__FILE__).'/../../../../includes/paths.php';
-
+require realpath('./includes/classes/Html_helper.php');
 
 function front_page_news_perm() {
     return array('view_front_page_news');
@@ -29,7 +29,7 @@ function front_page_news_block($op='list', $delta=0, $edit=array())
              
              $newsNode = node_load($result->nid);
              
-             $newsText = trim($newsNode->teaser);
+             $newsText = $newsNode->field_news_front_title[0]['value'];
              
              
              
