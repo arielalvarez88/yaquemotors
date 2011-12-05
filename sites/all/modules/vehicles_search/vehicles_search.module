@@ -32,7 +32,7 @@ function vehicles_search_block($op='list', $delta=0, $edit=array()) {
 
         $filters[] = $_GET['marca'] != 'todas' ? new BrandFilter($brand) : new NullFilter();
 
-        $query = "SELECT * FROM {node} WHERE type = 'vehicle'";
+        $query = "SELECT * FROM (SELECT nid from node WHERE type = 'vehicle') n INNER JOIN content_type_vehicle ct on n.nid = ct.nid ORDER BY ct.field_vehicle_model_value";
         $queryResults = db_query($query);
         $unfilteredNodes = array();
 
