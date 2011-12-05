@@ -25,8 +25,10 @@
          <?php endif;?>
             
          
-         <?php if($node->content['body']['#value']):?>
-            <?php echo trim($node->content['body']['#value']);?>
+         <?php if($node->field_news_body[0]['value']):?>
+            <?php echo trim($node->field_news_body[0]['value']);?>
+            
+            
          <?php endif;?>
             
      </div>        
