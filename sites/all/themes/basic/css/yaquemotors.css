@@ -1349,6 +1349,9 @@ ul.contacts-slider-title
   
 }
 
+.offer-teaser img {
+    max-width: 960px;
+}
 
 
 /*offer-teaser ENDS*/
