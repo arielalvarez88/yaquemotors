@@ -35,6 +35,7 @@ function front_page_news_block($op='list', $delta=0, $edit=array())
              {
                
                  $block['content'] .=  '<div class="news">'.'<a class="front-page-news-teaser" href="'.$newsNode->path.'">'.$newsText.'</a>'.'</div>'; 
+                 
              }
              //$newsTeaser = strlen($newsText) > 30 ? substr($newsText,0,30).'...<br/>'.'<a href="'.$newsNode->path.'"></a>' : $newsText;
              
