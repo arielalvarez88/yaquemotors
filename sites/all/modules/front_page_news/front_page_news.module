@@ -31,6 +31,7 @@ function front_page_news_block($op='list', $delta=0, $edit=array())
              $newsText = trim($newsNode->teaser);
              
              
+             
              if($newsText)
              {
                
