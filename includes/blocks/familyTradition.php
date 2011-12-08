@@ -1,13 +1,13 @@
 <?php require dirname(__FILE__).'/../paths.php'; ?>
 <div id="family-tradition">
     <a id="family-tradition-header">
-        TRADICI&Oacute;N FAMILIAR
+        MENSAJE DEL PRESIDENTE
     </a>
 
     <?php require dirname(__FILE__) . '/bigHorizontalDivisor.php'; ?>
     <div id="family-tradition-employees">
         
-        <img id="family-tradition-director" src="<?php echo $paths->images;?>/familyTradition/director.png" alt="foto-del-director"/>
+        
             
         
     

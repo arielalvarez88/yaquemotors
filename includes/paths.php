@@ -11,6 +11,9 @@
  * @author ariel
  */
 
+
+
+$paths->webpage = 'http://local.yaquemotors.com';
 $paths->images = '/sites/default/files/images';
 $paths->files = '/sites/default/files';
 

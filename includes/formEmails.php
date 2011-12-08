@@ -11,10 +11,15 @@ $emails['appointmentsHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemoto
 $emails['contacts'] = "vehiculos@elyaquemotors.com";
 $emails['contactsHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>';
 
-
-
 $emails['cotizar'] = "vehiculos@elyaquemotors"; 
 $emails['cotizarHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>' . "\r\n" . "Cc: jl.suarez@elyaquemotors.com";
+
+$emails['cotizar'] = "vehiculos@elyaquemotors"; 
+$emails['cotizarHeaders'] = 'MIME-Version: 1.0' . "\r\n";
+$emails['cotizarHeaders'] .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+$emails['cotizarHeaders'] .= 'From: Web - elyaquemotors <noreply@elyaquemotors.com>' . "\r\n" . "Cc: jl.suarez@elyaquemotors.com";
+
 
 
 

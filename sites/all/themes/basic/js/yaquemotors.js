@@ -126,7 +126,9 @@ setSimpleFormBehavior = function(formSelector,sendButtonSelector,cleanButtonSele
             
     });
     
-    var sendButton = $(sendButtonSelector);
+    if(sendButtonSelector)
+        {
+            var sendButton = $(sendButtonSelector);
     sendButton.unbind("click");
     sendButton.click(function(event){
         event.preventDefault();
@@ -134,6 +136,8 @@ setSimpleFormBehavior = function(formSelector,sendButtonSelector,cleanButtonSele
         var formInfoInJason = formDataToJason.getDataInJason();
         simpleFormSender(processingScriptUrl,formInfoInJason,simpleFormReciever);   
     });
+        }
+    
           
 };
 
@@ -217,7 +221,16 @@ initializeAjaxForms = function()
             processingSriptUrl: '/includes/ajax/cotizarVehiculoFormProcessor.php'
                       
 
+        },
+        answerEmailForm: {
+            formSelector : '#answer-email',
+            cleanButtonSelector : "#answer-email-form-clean-button",
+            sendButtonSelector : '',            
+            processingSriptUrl: '/includes/ajax/answerEmailProcessor.php'
+                      
+
         }
+        
     };
     
    
@@ -307,12 +320,12 @@ initializeCalendarsUi = function(){
 };
 initializeOnClickEvents = function(){
     
-   $("#maintenance-finder-brand").change(maintenanceFinderBrandOnClick);
+    $("#maintenance-finder-brand").change(maintenanceFinderBrandOnClick);
     $.singletonSlider('.contacts-slider-title','.contacts-slider-menu');
     $.singletonSlider('.offer-teaser-image','.offer-teaser-text');
     
     
-  $('#vehicle-upper-menu-cotizar').fancybox({        
+    $('#vehicle-upper-menu-cotizar').fancybox({        
         type: 'inline',
         margin: 0,
         padding: 0
@@ -353,7 +366,7 @@ initializeOnClickEvents = function(){
 showCotizarOverlay = function()
 {
       
-}
+    }
 printVehiclePage = function(){
     window.print();
 };
@@ -384,21 +397,21 @@ extendJquery = function (){
         singletonSlider: function(titlesSelectors,siblingSelectorToSlide)
         {
             
-               var titles = $(titlesSelectors);
-               var siblingsToSlide = $(siblingSelectorToSlide);
+            var titles = $(titlesSelectors);
+            var siblingsToSlide = $(siblingSelectorToSlide);
                
-                titles.siblings(siblingSelectorToSlide + ':nth(0)').show();
-                titles.click(function(){
+            titles.siblings(siblingSelectorToSlide + ':nth(0)').show();
+            titles.click(function(){
            
            
            
-                    siblingsToSlide.slideUp("slow");
+                siblingsToSlide.slideUp("slow");
                         
-                    var siblings = $(this).siblings(siblingSelectorToSlide);
-                    if(!siblings.is(":visible"))
-                        siblings.slideDown();
+                var siblings = $(this).siblings(siblingSelectorToSlide);
+                if(!siblings.is(":visible"))
+                    siblings.slideDown();
                 
-                });
+            });
        
             
         }
@@ -421,6 +434,37 @@ roundCorners = function()
         $(selectors[i]).corner("tr bl bt 10px");
 }
 
+
+initializeWysiwyg = function()
+{
+    
+ 
+ 
+            
+            tinyMCE.init({
+                mode : "specific_textareas",
+                editor_selector: 'wysiwyg',
+                
+                
+                theme : "advanced",
+        plugins : "emotions,spellchecker,advhr,insertdatetime,preview", 
+                
+        // Theme options - button# indicated the row# only
+        theme_advanced_buttons1 : "newdocument,|,bold,italic,underline,|,justifyleft,justifycenter,justifyright,fontselect,fontsizeselect,formatselect",
+        theme_advanced_buttons2 : "cut,copy,paste,|,bullist,numlist,|,outdent,indent,|,undo,redo,|,link,unlink,anchor,image,|,code,preview,|,forecolor,backcolor",
+        theme_advanced_buttons3 : "insertdate,inserttime,|,spellchecker,advhr,,removeformat,|,sub,sup,|,charmap,emotions",      
+        theme_advanced_toolbar_location : "top",
+        theme_advanced_toolbar_align : "left",
+        theme_advanced_statusbar_location : "bottom",
+        theme_advanced_resizing : true
+
+            });
+     
+        
+    
+        
+}
+
 $(document).ready(function(){
     
     
@@ -431,7 +475,11 @@ $(document).ready(function(){
     initializeAjaxForms();
     initializeCalendarsUi();
     initializFilter();
-    
+    initializeWysiwyg();    
     roundCorners();
+    
+    
+
+    
     
 });
