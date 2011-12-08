@@ -2,7 +2,9 @@
 
 require dirname(__FILE__).'/../formEmails.php';
 $subject = "Tienda de Piezas";
+$clientSubject = "Solicitud de pieza";
 
+$clientMessage = "Usted ha solicitado una pieza con la siguiente información: \n";
 $message = "Información del usuario: \n";
 
 $message .= "\n" . 'Nombre: ' . $_POST['part-store-username'];
@@ -20,9 +22,12 @@ $message .= "\n" . "Chasis: " . $_POST['part-store-part-chasis'];
 $message .= "\n" . "Color: " . $_POST['part-store-part-color'];
 $message .= "\n" . "Pieza a contizar: " . $_POST['part-store-part-piece'];
 
+$clientMessage .= $message;
+
+$clientMessage .= ".\n Le responderemos lo antes posible.";
 
 $success = mail($emails['parts'], utf8_decode($subject), utf8_decode($message),$emails['partsHeaders']);
-        
+ $clientSuccess = mail($_POST['part-store-email'], utf8_decode($clientSubject), utf8_decode($clientMessage),$emails['partsClientHeaders']);
 
     $response = new stdClass();
     $response->success = $success;

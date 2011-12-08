@@ -3,6 +3,11 @@
 require dirname(__FILE__).'/../formEmails.php';
 $subject = "Mensaje de Cotizar Vehículos";
 
+$clientSubject = "Cotización de vehículo";
+
+
+$clientMessage = "Usted ha solicitado una cotización a El Yaque Motors con los siguientes datos: \n";
+
 $message = "Información del usuario: \n";
 
 $message .= "\n" . 'Nombre: ' . $_POST['vehicle-cotizar-client-name'];
@@ -29,7 +34,14 @@ $message .= "\n Combustible: " . $_POST['vehicle-cotizar-vehicle-gas'];
 $message .= "\n Puertas: " . $_POST['vehicle-cotizar-vehicle-doors'];
 $message .= "\n" . 'Color: ' . $_POST['vehicle-cotizar-vehicle-color'];
 
+
+$clientMessage .= $message;
+$clientMessage .= ".\n Le responderemos lo antes posible."; 
+
 $success = mail($emails['cotizar'], utf8_decode( $subject), utf8_decode($message),$emails['cotizarHeaders']);
+
+$clientSuccess = mail($_POST['vehicle-cotizar-client-email'], utf8_decode( $clientSubject), utf8_decode($clientMessage),$emails['cotizarClientHeaders']);
+
         
 
     $response = new stdClass();

@@ -143,8 +143,8 @@ if (isset($_POST['client-name'])) {
         </div>
 
         <div id="answer-email-template-prices">
-            <p><span class="bold">US${$_POST['us-price']}</span></p>
-            <p><span class="bold">DR${$_POST['dr-price']}</span></p>
+            <p><span class="bold">US\${$_POST['us-price']}</span></p>
+            <p><span class="bold">DR\${$_POST['dr-price']}</span></p>
         </div>
         </div>
         

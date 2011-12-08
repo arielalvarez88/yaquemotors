@@ -1,8 +1,14 @@
 <?php
 
 require dirname(__FILE__).'/../formEmails.php';
-$subject = "Mensaje de Contactos";
 
+
+$subject = "Mensaje de Contactos";
+$clientSubject = "Mensaje enviado a través de la sección de contactos";
+
+
+
+$clientMessage = "Usted ha enviado enviado un mensaje con la siguiente información a través de nuestra página: \n";
 $message = "Información del usuario: \n";
 
 $message .= "\n" . 'Nombre: ' . $_POST['contactos-form-nombre'];
@@ -15,9 +21,13 @@ $message .= "\n Mensaje: ";
 
 $message .= "\n" . $_POST['contacts-form-message'];
 
+$clientMessage .= $messages;
 
+$clientMessage .= ".\n Le responderemos lo antes posible.";
 
 $success = mail($emails['contacts'], $subject, $message,$emails['contactsHeaders']);
+
+$clientSuccess = mail($_POST['contactos-form-email'], $clientSubject, $clientMessage,$emails['contactsClientHeaders']);
         
 
     $response = new stdClass();

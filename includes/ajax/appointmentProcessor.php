@@ -1,9 +1,17 @@
 <?php
 
 require dirname(__FILE__).'/../formEmails.php';
+
+$clientSubject = "Solicitud de cita con El Yaque Motors.";
 $subject = "Mensaje de Citas";
 
+
+
+
+
+$clientMessage = "Usted ha silicitado una cita: \n" ;
 $message = "Información del usuario: \n";
+
 
 $message .= "\n" . 'Nombre/Empresa: ' . $_POST['appointment-name'];
 $message .= "\n" . 'Empresa: ' . $_POST['appointment-company'];
@@ -26,6 +34,11 @@ $message .= "\n" . 'Servicio Solicitado: ' . $_POST['appointment-service'];
 
 
 $success = mail($emails['appointments'], utf8_decode($subject), utf8_decode($message),$emails['appointmentsHeaders']);
+
+$clientMessage .= $message;
+$clientMessage .= ".\n Le responderemos lo antes posible.";
+
+$clientSuccess = mail($_POST['appointment-email'], utf8_decode($clientSubject), $clientMessage($message),$emails['appointmentsClientHeaders']);
         
 
     $response = new stdClass();
