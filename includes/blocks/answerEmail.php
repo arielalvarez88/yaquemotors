@@ -156,7 +156,7 @@ EOD;
             
 $success = mail($_POST['client-email'], "Respuesta Cotización", $html, $emails['cotizarResponseHeaders']);
 
-var_dump($emails['cotizarResponseHeaders']);
+
 
 
 if($success)
