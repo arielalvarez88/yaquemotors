@@ -24,7 +24,7 @@ if (isset($_POST['client-name'])) {
         
        <div id="answer-email-template" style="background: none repeat scroll 0 0 white; width: 960px;">
     <img alt="yaque-logo" src="{$paths->webpage}/sites/default/files/images/answerEmail/smallLogo.png" style=" float: right;"/>
-    
+   
     <div id="answer-email-template-content" style=" background: url('{$paths->webpage}/sites/default/files/images/answerEmail/bigLogo.png') no-repeat scroll 60px 463px transparent; border-left: 7px solid #13182C; clear: both; padding-left: 135px; padding-right: 90px; padding-top: 10px; clear: both; min-height: 735px;">
         <div id="answer-email-template-date" style="text-align: right; margin-bottom: 60px; text-align: right;">{$_POST['date']}</div>
         <div id="answer-email-template-client-name" style="font-weight: bold;">
@@ -34,6 +34,9 @@ if (isset($_POST['client-name'])) {
         </br>
         {$_POST['greetings']}
         </br>
+        
+        <p> <span style="font-weight: bold;"> Modelo: </span> <span style="color: blue;  text-decoration: underline; font-weight: bold;"> {$_POST['model']}</span></p>
+        
         {$_POST['message']}
 
         
@@ -57,9 +60,17 @@ if (isset($_POST['client-name'])) {
             diferencia que se produzca a consecuencia de la fluctuaci&oacute;n de la tasa de cambio, al momento del pago total del veh&iacute;culo.
         </p>
 
+            <div style="margin-top: 130px; float:left;">
+                <p>Saludos cordiales,</p>
+                <p style="font-weight: bold; margin-bottom: 5px;">{$_POST['signature']}</p>
+                <p style="margin-top: 0px;">Ejecutivo de ventas.</p>                
+            </div>
+            
+            <div style="margin-top: 100px; float: left; margin-left: 100px;"> <img src="{$paths->webpage}/sites/default/files/images/answerEmail/seal.png" style="width:189px;"/></div>
+        
     </div>
 
-    <div id="answer-email-template-footer" style="color: #7A7C7F; font-size: 0.5em; padding: 35px; color: #7A7C7F; font-size: 0.8em; padding: 35px;">
+    <div id="answer-email-template-footer" style="color: #7A7C7F; font-size: 0.5em; padding: 35px; color: #7A7C7F; font-size: 0.8em; padding: 35px; clear: both;">
         
         <p><span class="bold">T. </span> 809.582.4724</p>
         <p><span class="bold">F. </span> 809.241.1400 </p>
@@ -77,18 +88,13 @@ if (isset($_POST['client-name'])) {
 EOD;
 
 
-            
-$success = mail($_POST['client-email'], "Respuesta Cotización", $html, $emails['cotizarResponseHeaders']);
+
+    $success = mail($_POST['client-email'], "Respuesta Cotización", $html, $emails['cotizarResponseHeaders']);
 
 
-if($success)
-{
-    echo '<h2 class="info-message">Email enviado con exito.</h2>';
-}
-
-
-
-    
+    if ($success) {
+        echo '<h2 class="info-message">Email enviado con exito.</h2>';
+    }
 }
 ?>
 
@@ -103,11 +109,11 @@ if($success)
 <form id="answer-email-wrapper" method="post" action="/responder-email">
     <div id="answer-email">
 
-        
+
         <label for="answer-email-client-name">Email del cliente:</label>
         <input id="answer-email-client-email" type="text" name="client-email"/>
-        
-        
+
+
         <label for="answer-email-date">Fecha:</label>
         <input id="answer-email-date" type="text" name="date"/>
 
