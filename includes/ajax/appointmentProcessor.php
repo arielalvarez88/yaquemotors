@@ -9,7 +9,7 @@ $subject = "Mensaje de Citas";
 
 
 
-$clientMessage = "Gracias por contactar al Yaque Motors. \n Usted ha silicitado una cita: \n\n" ;
+$clientMessage = "Gracias por contactar a El Yaque Motors. \n Usted ha solicitado una cita: \n\n" ;
 $message = "Información del usuario: \n";
 
 

@@ -87,11 +87,14 @@ if (isset($_POST['client-name'])) {
 </html>
 EOD;
 
-    $success = mail($_POST['client-email'], "Respuesta Cotización", $html, $emails['cotizarResponseHeaders']);
+    $success = mail($_POST['client-email'], utf8_decode("Respuesta Cotización"), $html, $emails['cotizarResponseHeaders']);
 
 
     if ($success) {
         echo '<h2 class="info-message">Email enviado con exito.</h2>';
+    }
+ else {
+                echo '<h2 class="error-message">Error, revise que la dirección de correo electrónico sea correcta..</h2>';
     }
 }
 ?>
@@ -109,15 +112,15 @@ EOD;
 
 
         <label for="answer-email-client-name">Email del cliente:</label>
-        <input id="answer-email-client-email" type="text" name="client-email"/>
+        <input id="answer-email-client-email" type="text" name="client-email" <?php echo isset ($_POST['client-email']) ? 'value="'.$_POST['client-name'].'"' : ''?>/>
 
 
         <label for="answer-email-date">Fecha:</label>
-        <input id="answer-email-date" type="text" name="date"/>
+        <input id="answer-email-date" type="text" name="date" <?php echo isset ($_POST['date']) ? 'value="'.$_POST['date'].'"' : ''?>/>
 
         <label  id="answer-email-client-name-label"for="answer-email-client-name">Nombre del cliente:</label>
-        <textarea id="answer-email-client-name" type="text" name="client-name" class="wysiwyg">
-
+        <textarea id="answer-email-client-name" type="text" name="client-name" class="wysiwyg" >
+            
         </textarea>
 
         <label for="answer-email-greetings" id="answer-email-model-greetings-label">Saludo incial:</label>
@@ -127,17 +130,17 @@ EOD;
 
 
         <label for="answer-email-model">Modelo:</label>
-        <input id="answer-email-model" type="text" name="model"/>
+        <input id="answer-email-model" type="text" name="model" <?php echo isset ($_POST['model']) ? 'value="'.$_POST['model'].'"' : ''?>/>
 
         
         <label id="answer-email-message-label" for="answer-email-message">Mensaje:</label>
         <textarea id="answer-email-message" name="message" class="wysiwyg"></textarea>
 
         <label for="answer-email-dr-price">Precio RD$:</label>
-        <input id="answer-email-dr-price" type="text" name="dr-price"/>
+        <input id="answer-email-dr-price" type="text" name="dr-price" <?php echo isset ($_POST['dr-price']) ? 'value="'.$_POST['dr-price'].'"' : ''?>/>
 
         <label for="answer-email-us-price">Precio US$:</label>
-        <input id="answer-email-us-price" type="text" name="us-price"/>
+        <input id="answer-email-us-price" type="text" name="us-price" <?php echo isset ($_POST['us-price']) ? 'value="'.$_POST['us-price'].'"' : ''?>/>
 
         <label id="answer-email-signature-label" for="answer-email-firma">Firma:</label>
         <textarea id="answer-email-signature" type="text" name="signature" class="wysiwyg">

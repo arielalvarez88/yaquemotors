@@ -4,7 +4,7 @@ require dirname(__FILE__).'/../formEmails.php';
 $subject = "Tienda de Piezas";
 $clientSubject = "Solicitud de pieza";
 
-$clientMessage = "Gracias por contactar al Yaque Motors.\n Usted ha solicitado una pieza con la siguiente información: \n\n";
+$clientMessage = "Gracias por contactar a El Yaque Motors.\n Usted ha solicitado una pieza con la siguiente información: \n\n";
 $message = "Información del usuario: \n";
 
 $message .= "\n" . 'Nombre: ' . $_POST['part-store-username'];

@@ -8,7 +8,7 @@ $clientSubject = "Mensaje enviado a través de la sección de contactos";
 
 
 
-$clientMessage = "Gracias por contactar al Yaque Motors.\n Usted ha enviado enviado un mensaje con la siguiente información a través de nuestra página: \n\n";
+$clientMessage = "Gracias por contactar a El Yaque Motors.\n Usted ha enviado un mensaje con la siguiente información a través de nuestra página: \n\n";
 $message = "Información del usuario: \n";
 
 $message .= "\n" . 'Nombre: ' . $_POST['contactos-form-nombre'];

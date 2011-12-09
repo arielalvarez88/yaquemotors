@@ -6,7 +6,7 @@ $subject = "Mensaje de Cotizar Vehículos";
 $clientSubject = "Cotización de vehículo";
 
 
-$clientMessage = "Gracias por contactar al Yaque Motors.\n Usted ha solicitado una cotización a El Yaque Motors con los siguientes datos: \n\n";
+$clientMessage = "Gracias por contactar a El Yaque Motors.\n Usted ha solicitado una cotización a El Yaque Motors con los siguientes datos: \n\n";
 
 $message = "Información del usuario: \n";
 
