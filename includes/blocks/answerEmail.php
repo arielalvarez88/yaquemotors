@@ -13,7 +13,7 @@ if (isset($_POST['client-name'])) {
     $emailer = new Email_helper();
 
     $html = <<<EOD
-    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <html>
   <head>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     
@@ -149,7 +149,7 @@ if (isset($_POST['client-name'])) {
 EOD;
 
             
-$success = mail($_POST['client-email'], "Respuesta Cotización", "hola");
+$success = mail($_POST['client-email'], "Respuesta Cotización", $html, $emails['cotizarResponseHeaders']);
 
 
 if($success)
