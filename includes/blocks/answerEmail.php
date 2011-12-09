@@ -113,14 +113,16 @@ if (isset($_POST['client-name'])) {
 
         
         <div id="answer-email-template-prices-container">
+        
             <div id="answer-email-template-price-text">
-            <span class="bold">Precio:</span>
-        </div>
+                <span class="bold">Precio:</span>
+            </div>
 
         <div id="answer-email-template-prices">
             <p><span class="bold">US\${$_POST['us-price']}</span></p>
             <p><span class="bold">DR\${$_POST['dr-price']}</span></p>
         </div>
+        
         </div>
         
 
@@ -143,6 +145,7 @@ if (isset($_POST['client-name'])) {
 
         <p>www.elyaquemotors.com</p>
 
+    </div>
     </div>
     </body>
 </html>
