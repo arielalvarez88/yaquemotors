@@ -19,6 +19,9 @@ $emails['cotizarHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.co
 $emails['cotizarClientHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>' . "\r\n" . "Cc: jl.suarez@elyaquemotors.com";
 
 
+$emails['cotizarResponseHeaders'] = 'Content-type: text/html; charset=iso-8859-1' . "\r\n" . "\r\n" . 'From: Web - elyaquemotors <noreply@elyaquemotors.com>' . "\r\n" . "Cc: jl.suarez@elyaquemotors.com";
+
+
 
 
 
