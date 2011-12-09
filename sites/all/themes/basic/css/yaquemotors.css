@@ -981,7 +981,8 @@ ul.contacts-slider-title
     margin-bottom: 80px;
 }
 
-#answer-email label#answer-email-model-greetings-label, #answer-email label#answer-email-message-label
+#answer-email label#answer-email-model-greetings-label, #answer-email label#answer-email-message-label,
+#answer-email label#answer-email-client-name-label, #answer-email label#answer-email-signature-label
 {
     float: none;
 }

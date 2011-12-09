@@ -62,7 +62,7 @@ if (isset($_POST['client-name'])) {
 
             <div style="margin-top: 130px; float:left;">
                 <p>Saludos cordiales,</p>
-                <p style="font-weight: bold; margin-bottom: 5px;">{$_POST['signature']}</p>
+                <div style="font-weight: bold; margin-bottom: 5px;">{$_POST['signature']}</div>
                 <p style="margin-top: 0px;">Ejecutivo de ventas.</p>                
             </div>
             
@@ -87,7 +87,8 @@ if (isset($_POST['client-name'])) {
 </html>
 EOD;
 
-       
+       echo $html;
+       die;
 
     $success = mail($_POST['client-email'], "Respuesta Cotización", $html, $emails['cotizarResponseHeaders']);
 
@@ -117,16 +118,21 @@ EOD;
         <label for="answer-email-date">Fecha:</label>
         <input id="answer-email-date" type="text" name="date"/>
 
-        <label for="answer-email-client-name">Nombre del cliente:</label>
-        <input id="answer-email-client-name" type="text" name="client-name"/>
+        <label  id="answer-email-client-name-label"for="answer-email-client-name">Nombre del cliente:</label>
+        <textarea id="answer-email-client-name" type="text" name="client-name" class="wysiwyg">
+
+        </textarea>
 
         <label for="answer-email-greetings" id="answer-email-model-greetings-label">Saludo incial:</label>
-        <textarea id="answer-email-model-greetings" type="text" name="greetings" class="wysiwyg"></textarea>
+        <textarea id="answer-email-model-greetings" type="text" name="greetings" class="wysiwyg">
+
+        </textarea>
 
 
         <label for="answer-email-model">Modelo:</label>
         <input id="answer-email-model" type="text" name="model"/>
 
+        
         <label id="answer-email-message-label" for="answer-email-message">Mensaje:</label>
         <textarea id="answer-email-message" name="message" class="wysiwyg"></textarea>
 
@@ -136,8 +142,10 @@ EOD;
         <label for="answer-email-us-price">Precio US$:</label>
         <input id="answer-email-us-price" type="text" name="us-price"/>
 
-        <label for="answer-email-firma">Firma:</label>
-        <input id="answer-email-us-price" type="text" name="signature"/>
+        <label id="answer-email-signature-label" for="answer-email-firma">Firma:</label>
+        <textarea id="answer-email-signature" type="text" name="signature" class="wysiwyg">
+
+        </textarea>
 
         <input id="answer-email-form-send-button" name="submit" class="form-button" type="image" src="/sites/default/files/images/common/sendButton.png"/>
         <a id="answer-email-form-clean-button" class="form-button">Limpiar Formulario</a>
