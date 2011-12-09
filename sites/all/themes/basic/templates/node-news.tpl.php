@@ -13,7 +13,7 @@
  
 
 
-<h2 id="noticias-news-title"><?php echo $node->title;?></h2>
+<h2 id="noticias-news-title"> Aqui  <?php echo $node->title;?></h2>
     <?php if($node->field_news_subtitle[0]['value']):?>
         <p id="noticias-news-subtitle"><?php echo $node->field_news_subtitle[0]['value'];?></p>
     <?php endif;?>
