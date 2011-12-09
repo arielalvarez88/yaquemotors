@@ -19,40 +19,7 @@ if (isset($_POST['client-name'])) {
     
     
         <style type="text/css">
-        #answer-email
-{
-    padding-left: 30px;
-}
-#answer-email textarea {
-    clear: both;
-    display: block;
-    width: 353px;
-    height: 170px;
-}
-#answer-email .form-button {
-    float: right;
-    margin: 4px;
-    border:none;
-}
 
-#answer-email input, #answer-email textarea {
-    margin-bottom: 15px;
-    border: 3px solid #D8D8D8;
-}
-#answer-email {
-    width: 380px;
-}
-#answer-email label, #answer-email input {
-    display: block;
-    float: left;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 10px 0;
-}
-#answer-email label {
-    width: 171px;
-    margin-bottom: 15px;
-}
     
     #answer-email-template-content {
     background: url("/sites/default/files/images/answerEmail/bigLogo.png") no-repeat scroll 60px 1363px transparent;
@@ -125,7 +92,15 @@ if (isset($_POST['client-name'])) {
        <div id="answer-email-template">
     <img alt="yaque-logo" src="{$paths->webpage}/sites/default/files/images/answerEmail/smallLogo.png"/>
     
-    <div id="answer-email-template-content">
+    <div id="answer-email-template-content" style=" background: url("/sites/default/files/images/answerEmail/bigLogo.png") no-repeat scroll 60px 1363px transparent;
+    border-left: 24px solid #13182C;
+    clear: both;
+    font-size: xx-large;
+    height: 2406px;
+    line-height: 37px;
+    padding-left: 400px;
+    padding-right: 300px;
+    padding-top: 100px;">
         <div id="answer-email-template-date">{$_POST['date']}</div>
         <div id="answer-email-template-client-name">
         {$_POST['client-name']}
