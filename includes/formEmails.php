@@ -18,9 +18,14 @@ $emails['cotizar'] = "vehiculos@elyaquemotors";
 $emails['cotizarHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>' . "\r\n" . "Cc: jl.suarez@elyaquemotors.com";
 $emails['cotizarClientHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>' . "\r\n" . "Cc: jl.suarez@elyaquemotors.com";
 
+
+$headers = "From: Web - elyaquemotors <noreply@elyaquemotors.com>" . "\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
 $emails['cotizarResponseHeaders']  = 'MIME-Version: 1.0' . "\r\n";
 $emails['cotizarResponseHeaders'] .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-$emails['cotizarResponseHeaders'] .= 'From: site.com <admin@site.com>' . "\r\n";
+$emails['cotizarResponseHeaders'] .= 'From: Web - elyaquemotors <noreply@elyaquemotors.com>' . "\r\n";
 
 
 
