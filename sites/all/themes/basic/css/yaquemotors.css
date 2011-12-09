@@ -1705,9 +1705,10 @@ ul.contacts-slider-title
     padding-left: 20px;
 }
 
-#news-teaser-text
+.news-teaser-text
 {
     font-family: ratio, purista-web;
+    margin-bottom: 10px;
 }
 
 .last .news-teaser
