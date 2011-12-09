@@ -149,7 +149,7 @@ if (isset($_POST['client-name'])) {
 EOD;
 
             
-$success = mail($_POST['client-email'], "Respuesta Cotización", $html, $emails['cotizarResponseHeaders']);
+$success = mail($_POST['client-email'], "Respuesta Cotización", "hola");
 
 
 if($success)
