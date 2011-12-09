@@ -40,15 +40,15 @@ if (isset($_POST['client-name'])) {
         {$_POST['message']}
 
         
-        <div id="answer-email-template-prices-container" style="height: 80px; margin-bottom: 80px">
+        <div id="answer-email-template-prices-container" style="height: 80px; margin-bottom: 80px; margin-top: 30px;">
         
-            <div id="answer-email-template-price-text" style="float: left; margin-right: 30px;">
-                <span class="bold">Precio:</span>
+            <div id="answer-email-template-price-text" style="float: left; margin-right: 30px; margin-bottom: 20px;">
+                <span style="font-weight: bold;">Precio:</span>
             </div>
 
         <div id="answer-email-template-prices" style="float: left; margin-right: 30px;">
-            <p><span class="bold">US\${$_POST['us-price']}</span></p>
-            <p><span class="bold">DR\${$_POST['dr-price']}</span></p>
+            <p style="margin:0;"><span style="font-weight: bold; margin:0;">US\${$_POST['us-price']}</span></p>
+            <p style="margin:0;"><span style="font-weight: bold; margin:0;">DR\${$_POST['dr-price']}</span></p>
         </div>
         
         </div>
@@ -72,14 +72,14 @@ if (isset($_POST['client-name'])) {
 
     <div id="answer-email-template-footer" style="color: #7A7C7F; font-size: 0.5em; padding: 35px; color: #7A7C7F; font-size: 0.8em; padding: 35px; clear: both;">
         
-        <p><span class="bold">T. </span> 809.582.4724</p>
-        <p><span class="bold">F. </span> 809.241.1400 </p>
+        <p style="margin: 0;"><span class="bold">T. </span> 809.582.4724</p>
+        <p style="margin: 0;"><span class="bold">F. </span> 809.241.1400 </p>
 
-        <p>Ave. 27 Febrero No. 16,</p>
-        <p>Apartado 526, Santiago,</p>
-        <p>Rep&uacute;blica Dominicana</p>
+        <p style="margin: 0;">Ave. 27 Febrero No. 16,</p>
+        <p style="margin: 0;">Apartado 526, Santiago,</p>
+        <p style="margin: 0;">Rep&uacute;blica Dominicana</p>
 
-        <p>www.elyaquemotors.com</p>
+        <p style="margin: 0;">www.elyaquemotors.com</p>
 
     </div>
     </div>
@@ -87,7 +87,7 @@ if (isset($_POST['client-name'])) {
 </html>
 EOD;
 
-
+       
 
     $success = mail($_POST['client-email'], "Respuesta Cotización", $html, $emails['cotizarResponseHeaders']);
 
