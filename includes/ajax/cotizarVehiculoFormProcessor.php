@@ -6,7 +6,7 @@ $subject = "Mensaje de Cotizar Vehículos";
 $clientSubject = "Cotización de vehículo";
 
 
-$clientMessage = "Usted ha solicitado una cotización a El Yaque Motors con los siguientes datos: \n";
+$clientMessage = "Gracias por contactar al Yaque Motors.\n Usted ha solicitado una cotización a El Yaque Motors con los siguientes datos: \n\n";
 
 $message = "Información del usuario: \n";
 
@@ -36,7 +36,7 @@ $message .= "\n" . 'Color: ' . $_POST['vehicle-cotizar-vehicle-color'];
 
 
 $clientMessage .= $message;
-$clientMessage .= ".\n Le responderemos lo antes posible."; 
+$clientMessage .= ".\n\n Le responderemos lo antes posible."; 
 
 $success = mail($emails['cotizar'], utf8_decode( $subject), utf8_decode($message),$emails['cotizarHeaders']);
 

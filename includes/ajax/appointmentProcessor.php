@@ -9,7 +9,7 @@ $subject = "Mensaje de Citas";
 
 
 
-$clientMessage = "Usted ha silicitado una cita: \n" ;
+$clientMessage = "Gracias por contactar al Yaque Motors. \n Usted ha silicitado una cita: \n\n" ;
 $message = "Información del usuario: \n";
 
 
@@ -36,7 +36,7 @@ $message .= "\n" . 'Servicio Solicitado: ' . $_POST['appointment-service'];
 $success = mail($emails['appointments'], utf8_decode($subject), utf8_decode($message),$emails['appointmentsHeaders']);
 
 $clientMessage .= $message;
-$clientMessage .= ".\n Le responderemos lo antes posible.";
+$clientMessage .= "\n\n Le responderemos lo antes posible.";
 
 $clientSuccess = mail($_POST['appointment-email'], utf8_decode($clientSubject), utf8_decode($clientMessage),$emails['appointmentsClientHeaders']);
         
