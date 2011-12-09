@@ -102,7 +102,7 @@ if (isset($_POST['client-name'])) {
     padding-left: 400px;
     padding-right: 300px;
     padding-top: 100px;">
-        <div id="answer-email-template-date">{$_POST['date']}</div>
+        <div id="answer-email-template-date" style="text-align:right;">{$_POST['date']}</div>
         <div id="answer-email-template-client-name">
         {$_POST['client-name']}
         </div>
