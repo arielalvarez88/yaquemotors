@@ -112,7 +112,7 @@ EOD;
 
 
         <label for="answer-email-client-name">Email del cliente:</label>
-        <input id="answer-email-client-email" type="text" name="client-email" <?php echo isset ($_POST['client-email']) ? 'value="'.$_POST['client-name'].'"' : ''?>/>
+        <input id="answer-email-client-email" type="text" name="client-email" <?php echo isset ($_POST['client-email']) ? 'value="'.$_POST['client-email'].'"' : ''?>/>
 
 
         <label for="answer-email-date">Fecha:</label>
