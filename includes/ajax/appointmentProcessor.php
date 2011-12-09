@@ -38,7 +38,7 @@ $success = mail($emails['appointments'], utf8_decode($subject), utf8_decode($mes
 $clientMessage .= $message;
 $clientMessage .= ".\n Le responderemos lo antes posible.";
 
-$clientSuccess = mail($_POST['appointment-email'], utf8_decode($clientSubject), $clientMessage($message),$emails['appointmentsClientHeaders']);
+$clientSuccess = mail($_POST['appointment-email'], utf8_decode($clientSubject), utf8_decode($clientMessage),$emails['appointmentsClientHeaders']);
         
 
     $response = new stdClass();
