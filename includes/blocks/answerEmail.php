@@ -35,42 +35,42 @@ if (isset($_POST['client-name'])) {
         {$_POST['greetings']}
         </br>
         
-        <p> <span style="font-weight: bold;"> Modelo: </span> <span style="color: blue;  text-decoration: underline; font-weight: bold;"> {$_POST['model']}</span></p>
+        
         
         {$_POST['message']}
 
         
-        <div id="answer-email-template-prices-container" style="height: 80px; margin-bottom: 80px; margin-top: 30px;">
+        <div id="answer-email-template-prices-container" style="height: 80px; margin-bottom: 10px; margin-top: 30px;">
         
-            <div id="answer-email-template-price-text" style="float: left; margin-right: 30px; margin-bottom: 20px;">
-                <span style="font-weight: bold;">Precio:</span>
+            <div id="answer-email-template-price-text" style="float: left; margin-right: 5px; margin-bottom: 20px;">
+                <span style="font-weight: bold;">PRECIO DE OFERTA ___________________________</span>
             </div>
 
         <div id="answer-email-template-prices" style="float: left; margin-right: 30px;">
-            <p style="margin:0;"><span style="font-weight: bold; margin:0;">US\${$_POST['us-price']}</span></p>
-            <p style="margin:0;"><span style="font-weight: bold; margin:0;">DR\${$_POST['dr-price']}</span></p>
+            <p style="margin:0;"><span style="font-weight: bold; margin:0;">US \${$_POST['us-price']}</span></p>
+            <p style="margin:0;"><span style="font-weight: bold; margin:0;">RD \${$_POST['dr-price']}</span></p>
         </div>
         
         </div>
         
-
-        <p id="answer-email-template-warning" style="clear:both;">
+         <p style="margin:0;">Placa y endoso: {$_POST['placa-endoso']}</p>
+        <p id="answer-email-template-warning" style="clear:both; margin: 0;">
             Nota: Le reiteramos que la venta y cotizaci&oacute;n del veh&iacute;culo ha sido pactada en d&oacute;lares a la tasa
             del d&iacute;a pero, ser&aacute; de exclusiva responsabilidad del comprador asumir cualquier
             diferencia que se produzca a consecuencia de la fluctuaci&oacute;n de la tasa de cambio, al momento del pago total del veh&iacute;culo.
         </p>
 
-            <div style="margin-top: 130px; float:left;">
+            <div style="margin-top: 55px; float:left;">
                 <p>Saludos cordiales,</p>
                 <div style="font-weight: bold; margin-bottom: 5px;">{$_POST['signature']}</div>
                 <p style="margin-top: 0px;">Ejecutivo de ventas.</p>                
             </div>
             
-            <div style="margin-top: 100px; float: left; margin-left: 100px;"> <img src="{$paths->webpage}/sites/default/files/images/answerEmail/seal.png" style="width:189px;"/></div>
+            <div style="margin-top: 55px; float: left; margin-left: 100px;"> <img src="{$paths->webpage}/sites/default/files/images/answerEmail/seal.png" style="width:189px;"/></div>
         
     </div>
 
-    <div id="answer-email-template-footer" style="color: #7A7C7F; font-size: 0.5em; padding: 35px; color: #7A7C7F; font-size: 0.8em; padding: 35px; clear: both;">
+    <div id="answer-email-template-footer" style="color: #7A7C7F; font-size: 1em; padding: 35px; color: #7A7C7F; padding: 35px; clear: both;">
         
         <p style="margin: 0;"><span class="bold">T. </span> 809.582.4724</p>
         <p style="margin: 0;"><span class="bold">F. </span> 809.241.1400 </p>
@@ -89,13 +89,14 @@ EOD;
 
     $success = mail($_POST['client-email'], utf8_decode("Respuesta Cotización"), $html, $emails['cotizarResponseHeaders']);
 
-
     if ($success) {
         echo '<h2 class="info-message">Email enviado con exito.</h2>';
     }
  else {
                 echo '<h2 class="error-message">Error, revise que la dirección de correo electrónico sea correcta..</h2>';
     }
+    
+
 }
 ?>
 
@@ -129,8 +130,8 @@ EOD;
         </textarea>
 
 
-        <label for="answer-email-model">Modelo:</label>
-        <input id="answer-email-model" type="text" name="model" <?php echo isset ($_POST['model']) ? 'value="'.$_POST['model'].'"' : ''?>/>
+        <label for="answer-email-model">Placa y endoso:</label>
+        <input id="answer-email-model" type="text" name="placa-endoso" <?php echo isset ($_POST['placa-endoso']) ? 'value="'.$_POST['placa-endoso'].'"' : ''?>/>
 
         
         <label id="answer-email-message-label" for="answer-email-message">Mensaje:</label>
