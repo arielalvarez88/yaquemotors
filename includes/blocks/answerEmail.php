@@ -6,7 +6,7 @@
 require dirname(__FILE__) . '/../paths.php';
 require dirname(__FILE__) . '/../classes/email_helper.php';
 require dirname(__FILE__) . '/../formEmails.php';
-require dirname(__FILE__) . '/../classes/dompdf/dompdf_config.inc.php';
+
 require dirname(__FILE__) . '/../classes/tcpdf/tcpdf.php';
 
 
