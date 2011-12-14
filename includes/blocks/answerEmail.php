@@ -103,7 +103,7 @@ EOD;
             
 
     $success = mail($_POST['client-email'], utf8_decode("Respuesta Cotización"), $html_with_link, $emails['cotizarResponseHeaders']);
-    echo $html_with_link;
+
 
     if ($success) {
         echo '<h2 class="info-message">Email enviado con exito.</h2>';
