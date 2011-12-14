@@ -92,7 +92,7 @@ EOD;
             
             $html_with_link = $html;
 $html_with_link .= <<<EOD
-            <a href="{$cotizacionHref}">Version Descargable</a></body></html>
+            <a href="{$cotizacionHref}">Version Imprimible</a></body></html>
 EOD;
             
 
