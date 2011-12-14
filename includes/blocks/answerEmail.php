@@ -92,7 +92,7 @@ EOD;
             
             $html_with_link = $html;
 $html_with_link .= <<<EOD
-            <a href="{$cotizacionHref}">Versi&oacute;n Imprimible</a></body></html>
+            <a href="{$cotizacionHref}">Versi&oacute;n para imprimir</a></body></html>
 EOD;
             
 
@@ -162,7 +162,6 @@ EOD;
         
         <label for="answer-email-dr-price">Precio RD$:</label>
         <input id="answer-email-dr-price" type="text" name="dr-price" <?php echo isset ($_POST['dr-price']) ? 'value="'.$_POST['dr-price'].'"' : ''?>/>
-
 
         <label id="answer-email-signature-label" for="answer-email-firma">Firma:</label>
         <textarea id="answer-email-signature" type="text" name="signature" class="wysiwyg">
