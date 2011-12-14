@@ -11,6 +11,11 @@ require dirname(__FILE__) . '/../classes/tcpdf/tcpdf.php';
 
 
 if (isset($_POST['client-name'])) {
+    
+    $cotizacionFileName = rand(0, 100000000) . '' . time() . '.html';
+    $cotizacionHref =  $paths->webpage."./sites/default/files/cotizaciones".'/'.$cotizacionFileName;
+    $cotizacionFullPath =realpath("./sites/default/files/cotizaciones").'/'.$cotizacionFileName;
+    
     $emailer = new Email_helper();
 
     $html = <<<EOD
@@ -82,12 +87,23 @@ if (isset($_POST['client-name'])) {
         <p style="margin: 0;">www.elyaquemotors.com</p>
 
     </div>
-    </div>
-    </body>
-</html>
+    </div>        
 EOD;
+            
+            $html_with_link = $html;
+$html_with_link .= <<<EOD
+            <a href="{$cotizacionHref}">Version Descargable</a></body></html>
+EOD;
+            
 
-    $success = mail($_POST['client-email'], utf8_decode("Respuesta Cotización"), $html, $emails['cotizarResponseHeaders']);
+            $html .= '</body></html>';
+            
+            file_put_contents($cotizacionFullPath, $html);
+            
+            
+
+    $success = mail($_POST['client-email'], utf8_decode("Respuesta Cotización"), $html_with_link, $emails['cotizarResponseHeaders']);
+    echo $html_with_link;
 
     if ($success) {
         echo '<h2 class="info-message">Email enviado con exito.</h2>';
@@ -98,6 +114,10 @@ EOD;
     
 
 }
+
+
+
+
 ?>
 
 
