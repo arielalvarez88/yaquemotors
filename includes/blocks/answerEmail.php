@@ -157,11 +157,12 @@ EOD;
         <label id="answer-email-message-label" for="answer-email-message">Mensaje:</label>
         <textarea id="answer-email-message" name="message" class="wysiwyg"></textarea>
 
+        <label for="answer-email-us-price">Precio US$:</label>
+        <input id="answer-email-us-price" type="text" name="us-price" <?php echo isset ($_POST['us-price']) ? 'value="'.$_POST['us-price'].'"' : ''?>/>
+        
         <label for="answer-email-dr-price">Precio RD$:</label>
         <input id="answer-email-dr-price" type="text" name="dr-price" <?php echo isset ($_POST['dr-price']) ? 'value="'.$_POST['dr-price'].'"' : ''?>/>
 
-        <label for="answer-email-us-price">Precio US$:</label>
-        <input id="answer-email-us-price" type="text" name="us-price" <?php echo isset ($_POST['us-price']) ? 'value="'.$_POST['us-price'].'"' : ''?>/>
 
         <label id="answer-email-signature-label" for="answer-email-firma">Firma:</label>
         <textarea id="answer-email-signature" type="text" name="signature" class="wysiwyg">
