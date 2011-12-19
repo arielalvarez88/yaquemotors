@@ -1306,11 +1306,7 @@ ul.contacts-slider-title
     margin: 0 27px 0 15px;
 }
 
-#workshop-services-link img
-{
-    
-    width: 280px;
-}
+
 #workshop-services-link p
 {
     width: 288px;
@@ -1739,7 +1735,7 @@ ul.contacts-slider-title
     left: 545px;
     padding-top: 30px;
     position: absolute;
-    top:786px;        
+    top:793px;        
     width: 413px;
 }
 #news-container
