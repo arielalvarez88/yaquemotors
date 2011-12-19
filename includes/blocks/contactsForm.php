@@ -29,7 +29,7 @@
         </div>
 
         <div>
-            <label for="contactos-form-empresa" class="">Telefono</label>
+            <label for="contactos-form-empresa" class="">Tel&eacute;fono</label>
 
             <input type="text" id="contactos-form-tel"/>
         </div>

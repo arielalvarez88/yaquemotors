@@ -182,7 +182,7 @@
 
                 <?php endif; ?>
                 <div id="footer-address">
-                    <h3 id="footer-contactos-header">Contactanos</h3>
+                    <h3 id="footer-contactos-header">Cont&aacute;ctanos</h3>
                     
                     <p class="no-margin"><span class="bold">T.</span> 809.582.4724</p>
                     <p class="footer-spaced-paragraph"><span class="bold">F.</span> 809.582.5932</p>
