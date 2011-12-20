@@ -25,7 +25,7 @@ $clientMessage .= $message;
 
 $clientMessage .= ".\n\n Le responderemos lo antes posible.";
 
-$success = mail($emails['contacts'], $subject, $message,$emails['contactsHeaders']);
+$success = mail($emails['contacts'], $subject, utf8_decode($message),$emails['contactsHeaders']);
 
 $clientSuccess = mail($_POST['contactos-form-email'], $clientSubject, $clientMessage,$emails['contactsClientHeaders']);
         
