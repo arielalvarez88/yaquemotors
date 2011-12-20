@@ -14,7 +14,7 @@ $emails['contacts'] = "vehiculos@elyaquemotors.com";
 $emails['contactsHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>';
 $emails['contactsClientHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>';
 
-$emails['cotizar'] = "vehiculos@elyaquemotors"; 
+$emails['cotizar'] = "vehiculos@elyaquemotors.com"; 
 $emails['cotizarHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>' . "\r\n" . "Cc: jl.suarez@elyaquemotors.com";
 $emails['cotizarClientHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>' . "\r\n" . "Cc: jl.suarez@elyaquemotors.com";
 
