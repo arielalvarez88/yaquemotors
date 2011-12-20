@@ -22,6 +22,8 @@ $message .= "\n" . "Chasis: " . $_POST['part-store-part-chasis'];
 $message .= "\n" . "Color: " . $_POST['part-store-part-color'];
 $message .= "\n" . "Pieza a cotizar: " . $_POST['part-store-part-piece'];
 
+$message .= "\n\n Comentario:" . $_POST['part-store-part-comment'];
+
 $clientMessage .= $message;
 
 $clientMessage .= ".\n\n Le responderemos lo antes posible.";
