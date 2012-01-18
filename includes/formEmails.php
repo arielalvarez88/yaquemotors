@@ -1,7 +1,7 @@
 <?php
 
 $emails['parts'] = "centroservicios@elyaquemotors.com";
-$emails['partsHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>' . "\r\n" . "Cc: j.guillen@elyaquemotoros.com";
+$emails['partsHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>' . "\r\n" . "Cc: j.guillen@elyaquemotors.com";
 $emails['partsClientHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquemotors.com>';
 
 
@@ -27,13 +27,6 @@ $emails['cotizarResponseHeaders'] = 'From: Web - elyaquemotors <noreply@elyaquem
 $emails['cotizarResponseHeaders'] .= 'MIME-Version: 1.0' . "\r\n";
 $emails['cotizarResponseHeaders'] .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 $emails['cotizarResponseHeaders'] .= "Cc: jl.suarez@elyaquemotors.com";
-
-
-
-
-
-
-
 
 
 
