@@ -6,7 +6,7 @@ $gas = ucwords($node->field_vehicle_gas[0]['value']);
 $doors = ucwords($node->field_vehicle_doors[0]['value']);
 $traction = ucwords($node->field_vehicle_traction[0]['value']);
 $state = ucwords($node->field_vehicle_state[0]['value']);
-$year = ucwords($node->field_vehicle_year[0]['value']);
+
 $version = ucwords($node->field_vehicle_version[0]['value']);
 $interiorColor = ucwords($node->field_vehicle_interior_color[0]['value']);
 
@@ -64,10 +64,7 @@ $interiorColor = ucwords($node->field_vehicle_interior_color[0]['value']);
                     <p><?php echo $state; ?></p>
                 </div>
 
-                <div id="vehicle-year">
-                    <h3>A&ntilde;o</h3>
-                    <p><?php echo $year; ?></p>
-                </div>
+               
 
 
             </div>
@@ -77,10 +74,7 @@ $interiorColor = ucwords($node->field_vehicle_interior_color[0]['value']);
                       <?php if($state):?>
                     <li><span class="bold">Estado</span>: <?php echo $state; ?></li>
                     <?php endif;?>
-                    
-                    <?php if($year):?>
-                    <li><span class="bold">A&ntilde;o:</span> <?php echo $year; ?></li>
-                    <?php endif;?>
+            
                     
                     <?php if($version):?>
                     <li><span class="bold">Versi&oacute;n: </span> <?php echo $version; ?></li>
@@ -208,9 +202,7 @@ $interiorColor = ucwords($node->field_vehicle_interior_color[0]['value']);
                     <li><span class="bold">Estado</span>: <?php echo $state; ?></li>
                     <?php endif;?>
                     
-                    <?php if($year):?>
-                    <li><span class="bold">A&ntilde;o:</span> <?php echo $year; ?></li>
-                    <?php endif;?>
+                  
                     
                     <?php if($version):?>
                     <li><span class="bold">Versi&oacute;n: </span> <?php echo $version; ?></li>
