@@ -1,6 +1,8 @@
 <?php require dirname(__FILE__).'/../paths.php';?>
 <div id="make-appointment">
    
+    <p id="make-appointment-text">Planifica y coordina tu visita a nuestro taller realizando una cita desde el website o comunicándote con nuestros asesores de servicios. Te aseguramos que no tendrás más preocupaciones con el mantenimiento de tu vehículo después de conocer nuestros servicios.</p>
+       
     <div id="make-appointment-text-container">
         <h2>Formulario de Citas</h2>
         <p><span>Nombre del Cliente </span> <input id="appointment-name" type="text"/></p>

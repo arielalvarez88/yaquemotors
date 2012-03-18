@@ -42,10 +42,11 @@
 
             <!-- ______________________ HEADER _______________________ -->
             <div id="pre-header">
+                
                 <a href="/citas" id="appointment-text">Hacer una cita <img id="top-calendar" alt="foto-calendario" src="/<?php echo file_directory_path(); ?>/images/theme/topCalendar.png"/></a>                
                 
                 <a href="/noticias" id="news-link">Novedades<img alt="icono-de-novedades" src="/<?php echo file_directory_path(); ?>/images/common/novedadesIcon.png"/></a>
-                
+                <a href="/ofertas" id="offers-link">Ofertas</a>
 
             </div>
             <div id="header">

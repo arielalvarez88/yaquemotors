@@ -77,7 +77,13 @@ root {
     position: relative;
 }
 
-#news-link
+#offers-link
+{
+     margin-right: 8px;
+    padding-top: 1px;
+}
+#news-link,
+#offers-link
 {
     border-right: 1px solid #999999;
     color: #333333;
@@ -1186,6 +1192,10 @@ ul.contacts-slider-title
     z-index: 2000;
     right: 6px;
     top: 371px;
+}
+#make-appointment-text
+{
+    margin: 18px 0;
 }
 
 #make-appointment-text-container p
